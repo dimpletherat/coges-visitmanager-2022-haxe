@@ -1,0 +1,862 @@
+http://eurosatory.dev.object23.fr/site/visitmanager/flash/index.php?pDelId=450&pProgId=15&pOzId=0&pAdId=0&pMburId=0&pFlagProg=1&pLang=fr&checkSelect=&tri=del_nom&ordre=ASC&ordre_oz=&num_page=1&prem_connec=1&page=on&etat=Tous&dispo=Tous&typedo=Tous&oz=Tous&do=Toutes&oa=Tous&pays=Tous&nbParPage=10&pFrom=planning_do_prog
+
+
+
+
+AMF Message	Message	
+Header		
+Body		
+[0]	Body Part	
+Target	String	StaticServices.getCountryList
+Response	String	/3
+Content	Array	
+[0]	String	fr
+[1]	Body Part	
+
+	
+Target	String	/3/onResult
+Response	String	null
+Content	Array	
+[0]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Afghanistan
+id	String	1
+idIcon	String	Afghanistan
+[1]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Afrique du Sud
+id	String	2
+idIcon	String	South Africa
+[2]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Albanie
+id	String	3
+idIcon	String	Albania
+[3]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Alg�rie
+id	String	4
+idIcon	String	Algeria
+[4]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Allemagne
+id	String	5
+idIcon	String	Germany
+[5]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	AMERIPOL
+id	String	211
+idIcon	String	AMERIPOL
+[6]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Andorre
+id	String	170
+idIcon	String	Andorra
+[7]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Angola
+id	String	201
+idIcon	String	Angola
+[8]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Antigua-et-Barbuda
+id	String	212
+idIcon	String	Antigua and Barbuda
+[9]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Arabie saoudite
+id	String	9
+idIcon	String	Saudi Arabia
+[10]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Argentine
+id	String	10
+idIcon	String	Argentina
+[11]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Arm�nie
+id	String	11
+idIcon	String	Armenia
+[12]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Association des Nations de l'Asie du Sud-est
+id	String	214
+idIcon	String	Association of Southeast Asian Nations
+[13]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Australie
+id	String	12
+idIcon	String	Australia
+[14]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Autorit� Palestinienne
+id	String	215
+idIcon	String	Palestinian Authority
+[15]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Autriche
+id	String	13
+idIcon	String	Austria
+[16]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Azerba�djan
+id	String	14
+idIcon	String	Azerbaijan
+[17]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Bahamas
+id	String	175
+idIcon	String	Bahamas
+[18]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Bahre�n
+id	String	186
+idIcon	String	Bahrain
+[19]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Bangladesh
+id	String	17
+idIcon	String	Bangladesh
+[20]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Barbade
+id	String	216
+idIcon	String	Barbados
+[21]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Belgique
+id	String	20
+idIcon	String	Belgium
+[22]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Belize
+id	String	187
+idIcon	String	Belize
+[23]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Benin
+id	String	203
+idIcon	String	Benin
+[24]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Bhoutan
+id	String	217
+idIcon	String	Bhutan
+[25]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Bi�lorussie
+id	String	23
+idIcon	String	Byelorussia
+[26]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Birmanie
+id	String	24
+idIcon	String	Burma
+[27]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Bolivie
+id	String	25
+idIcon	String	Bolivia
+[28]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Bosnie Herz�govine
+id	String	26
+idIcon	String	Bosnia Herzegovina
+[29]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Botswana
+id	String	177
+idIcon	String	Botswana
+[30]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Br�sil
+id	String	28
+idIcon	String	Brazil
+[31]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Brunei
+id	String	176
+idIcon	String	Brunei
+[32]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Bulgarie
+id	String	30
+idIcon	String	Bulgaria
+[33]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Burkina Faso
+id	String	31
+idIcon	String	Burkina Faso
+[34]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Burundi
+id	String	218
+idIcon	String	Burundi
+[35]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Cambodge
+id	String	33
+idIcon	String	Cambodia
+[36]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Cameroun
+id	String	34
+idIcon	String	Cameroon
+[37]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Canada
+id	String	35
+idIcon	String	Canada
+[38]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Cap-Vert
+id	String	219
+idIcon	String	Cape Verde
+[39]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Chili
+id	String	37
+idIcon	String	Chile
+[40]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Chine
+id	String	38
+idIcon	String	China
+[41]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Chypre
+id	String	39
+idIcon	String	Cyprus
+[42]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	CLAC (Comisi�n Latinoamericana de Aviaci�n Civil)
+id	String	220
+idIcon	String	CLAC (Comisi�n Latinoamericana de Aviaci�n Civil)
+[43]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Colombie
+id	String	40
+idIcon	String	Colombia
+[44]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Comores
+id	String	221
+idIcon	String	Comoros
+[45]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Congo
+id	String	42
+idIcon	String	Congo
+[46]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Coop�ration Economique pour l'Asie-Pacifique
+id	String	213
+idIcon	String	Asia-Pacific Economic Cooperation
+[47]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Cor�e du Nord
+id	String	44
+idIcon	String	North Korea
+[48]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Cor�e du Sud
+id	String	45
+idIcon	String	South Korea
+[49]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Costa Rica
+id	String	222
+idIcon	String	Costa Rica
+[50]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	C�te d'Ivoire
+id	String	47
+idIcon	String	Ivory Coast
+[51]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Croatie
+id	String	48
+idIcon	String	Croatia
+[52]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Cuba
+id	String	49
+idIcon	String	Cuba
+[53]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Danemark
+id	String	50
+idIcon	String	Denmark
+[54]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Djibouti
+id	String	205
+idIcon	String	Djibouti
+[55]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Dominique
+id	String	223
+idIcon	String	Dominica
+[56]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Egypte
+id	String	179
+idIcon	String	Egypt
+[57]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	El Salvador
+id	String	184
+idIcon	String	El Salvador
+[58]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Emirats arabes unis
+id	String	54
+idIcon	String	United Arab Emirates
+[59]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Equateur
+id	String	178
+idIcon	String	Ecuador
+[60]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Erythr�e
+id	String	224
+idIcon	String	Eritrea
+[61]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Espagne
+id	String	57
+idIcon	String	Spain
+[62]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Estonie
+id	String	67
+idIcon	String	Estonia
+[63]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Etats-Unis
+id	String	68
+idIcon	String	United States
+[64]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Ethiopie
+id	String	69
+idIcon	String	Ethiopia
+[65]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Fidji
+id	String	225
+idIcon	String	Fiji
+[66]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Finlande
+id	String	70
+idIcon	String	Finland
+[67]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	France
+id	String	71
+idIcon	String	France
+[68]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Gabon
+id	String	73
+idIcon	String	Gabon
+[69]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Gambie
+id	String	74
+idIcon	String	Gambia
+[70]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	G�orgie
+id	String	72
+idIcon	String	Georgia
+[71]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Ghana
+id	String	204
+idIcon	String	Ghana
+[72]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Gibraltar
+id	String	75
+idIcon	String	Gibraltar
+[73]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Gr�ce
+id	String	77
+idIcon	String	Greece
+[74]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Grenade
+id	String	226
+idIcon	String	Grenada
+[75]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Groenland
+id	String	78
+idIcon	String	Greenland
+[76]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Guatemala
+id	String	79
+idIcon	String	Guatemala
+[77]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Guin�e
+id	String	80
+idIcon	String	Guinea
+[78]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Guin�e Equatoriale
+id	String	227
+idIcon	String	Equatorial Guinea
+[79]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Guinee-Bissau
+id	String	228
+idIcon	String	Guinea-Bissau
+[80]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Guyana
+id	String	229
+idIcon	String	Guyana
+[81]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Ha�ti
+id	String	81
+idIcon	String	Haiti
+[82]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Honduras
+id	String	82
+idIcon	String	Honduras
+[83]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Hong Kong
+id	String	180
+idIcon	String	Hong Kong
+[84]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Hongrie
+id	String	83
+idIcon	String	Hungary
+[85]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Iles Marshall
+id	String	230
+idIcon	String	Marshall Islands
+[86]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Iles Salomon
+id	String	231
+idIcon	String	Solomon Islands
+[87]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Iles vierges britanniques
+id	String	185
+idIcon	String	British Virgin Islands
+[88]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Inde
+id	String	84
+idIcon	String	India
+[89]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Indon�sie
+id	String	85
+idIcon	String	Indonesia
+[90]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Irak
+id	String	87
+idIcon	String	Iraq
+[91]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Iran
+id	String	86
+idIcon	String	Iran
+[92]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Irlande
+id	String	88
+idIcon	String	Ireland
+[93]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Islande
+id	String	89
+idIcon	String	Iceland
+[94]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Isra�l
+id	String	90
+idIcon	String	Israel
+[95]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Italie
+id	String	91
+idIcon	String	Italy
+[96]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Jama�que
+id	String	92
+idIcon	String	Jamaica
+[97]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Japon
+id	String	93
+idIcon	String	Japan
+[98]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Jordanie
+id	String	94
+idIcon	String	Jordan
+[99]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Kazakhstan
+id	String	95
+idIcon	String	Kazakhstan
+[100]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Kenya
+id	String	96
+idIcon	String	Kenya
+[101]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Kirghizistan
+id	String	97
+idIcon	String	Kyrgyzstan
+[102]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Kiribati
+id	String	232
+idIcon	String	Kiribati
+[103]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Kosovo
+id	String	98
+idIcon	String	Kosovo
+[104]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Kowe�t
+id	String	99
+idIcon	String	Kuwait
+[105]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Laos
+id	String	100
+idIcon	String	Laos
+[106]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Lesotho
+id	String	233
+idIcon	String	Lesotho
+[107]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Lettonie
+id	String	101
+idIcon	String	Latvia
+[108]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Liban
+id	String	102
+idIcon	String	Lebanon
+[109]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Liberia
+id	String	234
+idIcon	String	Liberia
+[110]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Libye
+id	String	103
+idIcon	String	Libya
+[111]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Lichtenstein
+id	String	104
+idIcon	String	Liechtenstein
+[112]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Lituanie
+id	String	105
+idIcon	String	Lithuania
+[113]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Luxembourg
+id	String	106
+idIcon	String	Luxembourg
+[114]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Mac�doine
+id	String	107
+idIcon	String	Macedonia
+[115]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Madagascar
+id	String	108
+idIcon	String	Madagascar
+[116]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Malaisie
+id	String	109
+idIcon	String	Malaysia
+[117]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Malawi
+id	String	235
+idIcon	String	Malawi
+[118]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Maldives
+id	String	110
+idIcon	String	Maldives
+[119]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Mali
+id	String	111
+idIcon	String	Mali
+[120]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Malte
+id	String	112
+idIcon	String	Malta
+[121]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Maroc
+id	String	113
+idIcon	String	Morocco
+[122]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Maurice
+id	String	236
+idIcon	String	Mauritius
+[123]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Mauritanie
+id	String	114
+idIcon	String	Mauritania
+[124]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Mexique
+id	String	115
+idIcon	String	Mexico
+[125]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Micron�sie
+id	String	237
+idIcon	String	Micronesia
+[126]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Moldavie
+id	String	116
+idIcon	String	Moldavia
+[127]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Monaco
+id	String	117
+idIcon	String	Monaco
+[128]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Mongolie
+id	String	118
+idIcon	String	Mongolia
+[129]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Mont�n�gro
+id	String	181
+idIcon	String	Montenegro
+[130]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Mozambique
+id	String	119
+idIcon	String	Mozambique
+[131]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Namibie
+id	String	120
+idIcon	String	Namibia
+[132]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Nauru
+id	String	238
+idIcon	String	Nauru
+[133]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	N�pal
+id	String	121
+idIcon	String	Nepal
+[134]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Nicaragua
+id	String	189
+idIcon	String	Nicaragua
+[135]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Niger
+id	String	122
+idIcon	String	Niger
+[136]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Nigeria
+id	String	191
+idIcon	String	Nigeria
+[137]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Norv�ge
+id	String	124
+idIcon	String	Norway
+[138]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Nouvelle Z�lande
+id	String	125
+idIcon	String	New Zealand
+[139]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Oman (Sultanat d')
+id	String	182
+idIcon	String	Oman (Sultanate of)
+[140]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	ONU
+id	String	202
+idIcon	String	UN
+[141]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	OTAN
+id	String	198
+idIcon	String	NATO
+[142]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Ouganda
+id	String	126
+idIcon	String	Uganda
+[143]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Ouzb�kistan
+id	String	127
+idIcon	String	Uzbekistan
+[144]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	PAHO (Pan American Health Organization)
+id	String	239
+idIcon	String	PAHO (Pan American Health Organization)
+[145]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Pakistan
+id	String	128
+idIcon	String	Pakistan
+[146]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Palaos
+id	String	240
+idIcon	String	Palau
+[147]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Panama
+id	String	129
+idIcon	String	Panama
+[148]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Papouasie-Nouvelle-Guin�e
+id	String	130
+idIcon	String	Papua New Guinea
+[149]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Paraguay
+id	String	131
+idIcon	String	Paraguay
+[150]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Pays Bas
+id	String	132
+idIcon	String	Netherlands
+[151]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	P�rou
+id	String	133
+idIcon	String	Peru
+[152]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Philippines
+id	String	134
+idIcon	String	Philippines
+[153]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Pologne
+id	String	135
+idIcon	String	Poland
+[154]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Porto Rico
+id	String	190
+idIcon	String	Puerto Rico
+[155]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Portugal
+id	String	136
+idIcon	String	Portugal
+[156]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Qatar
+id	String	183
+idIcon	String	Qatar
+[157]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	R�publique Centrafricaine
+id	String	241
+idIcon	String	Central African Republic
+[158]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	R�publique D�mocratique du Congo
+id	String	242
+idIcon	String	Congo, the Democratic Republic of the
+[159]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	R�publique dominicaine
+id	String	137
+idIcon	String	Dominican Republic
+[160]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	R�publique tch�que
+id	String	138
+idIcon	String	Czech Republic
+[161]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Roumanie
+id	String	139
+idIcon	String	Romania
+[162]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Royaume-Uni
+id	String	140
+idIcon	String	United Kingdom
+[163]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Russie
+id	String	141
+idIcon	String	Russia
+[164]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Rwanda
+id	String	142
+idIcon	String	Rwanda
+[165]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Saint Lucie
+id	String	243
+idIcon	String	Saint Lucia
+[166]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Saint Marin
+id	String	244
+idIcon	String	San Marino
+[167]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Saint Vincent et les Grenadines
+id	String	245
+idIcon	String	Saint Vincent and the Grenadines
+[168]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Salvador
+id	String	208
+idIcon	String	Salvador
+[169]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Samoa
+id	String	246
+idIcon	String	Samoa
+[170]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	San Cristobal y Nevies
+id	String	247
+idIcon	String	San Cristobal y Nevies
+[171]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Sao Tome-et-Principe
+id	String	248
+idIcon	String	Sao Tome and Principe
+[172]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	S�n�gal
+id	String	143
+idIcon	String	Senegal
+[173]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Serbie
+id	String	144
+idIcon	String	Serbia
+[174]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Serbie Montenegro
+id	String	199
+idIcon	String	Serbia Montenegro
+[175]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Seychelles
+id	String	145
+idIcon	String	Seychelles
+[176]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Sierra Leone
+id	String	146
+idIcon	String	Sierra Leone
+[177]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Singapour
+id	String	147
+idIcon	String	Singapore
+[178]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Slovaquie
+id	String	148
+idIcon	String	Slovakia
+[179]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Slov�nie
+id	String	149
+idIcon	String	Slovenia
+[180]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Somalie
+id	String	150
+idIcon	String	Somalia
+[181]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Soudan
+id	String	152
+idIcon	String	Sudan
+[182]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Sri Lanka
+id	String	151
+idIcon	String	Sri Lanka
+[183]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Su�de
+id	String	153
+idIcon	String	Sweden
+[184]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Suisse
+id	String	154
+idIcon	String	Switzerland
+[185]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Suriname
+id	String	249
+idIcon	String	Suriname
+[186]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Swaziland
+id	String	250
+idIcon	String	Swaziland
+[187]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Syrie
+id	String	155
+idIcon	String	Syria
+[188]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Tadjikistan
+id	String	192
+idIcon	String	Tajikistan
+[189]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Ta�wan
+id	String	156
+idIcon	String	Taiwan
+[190]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Tanzanie
+id	String	157
+idIcon	String	Tanzania
+[191]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Tchad
+id	String	196
+idIcon	String	Chad
+[192]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Tha�lande
+id	String	158
+idIcon	String	Thailand
+[193]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Timor Oriental
+id	String	251
+idIcon	String	Timor-Leste
+[194]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Togo
+id	String	159
+idIcon	String	Togo
+[195]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Tonga
+id	String	252
+idIcon	String	Tonga
+[196]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Trinit� et Tobago
+id	String	188
+idIcon	String	Trinidad and Tobago
+[197]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Tunisie
+id	String	160
+idIcon	String	Tunisia
+[198]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Turkm�nistan
+id	String	161
+idIcon	String	Turkmenistan
+[199]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Turquie
+id	String	162
+idIcon	String	Turkey
+[200]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Tuvalu
+id	String	253
+idIcon	String	Tuvalu
+[201]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Ukraine
+id	String	163
+idIcon	String	Ukraine
+[202]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Union europeenne
+id	String	197
+idIcon	String	European union
+[203]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Uruguay
+id	String	164
+idIcon	String	Uruguay
+[204]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Vanuatu
+id	String	254
+idIcon	String	Vanuatu
+[205]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Venezuela
+id	String	165
+idIcon	String	Venezuela
+[206]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Vietnam
+id	String	166
+idIcon	String	Vietnam
+[207]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Y�men
+id	String	167
+idIcon	String	Yemen
+[208]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Zambie
+id	String	168
+idIcon	String	Zambie
+[209]	Object	com.coges.visitmanager.vo.remote.CountryVO
+label	String	Zimbabwe
+id	String	169
+idIcon	String	Zimbabwe
+
+
+

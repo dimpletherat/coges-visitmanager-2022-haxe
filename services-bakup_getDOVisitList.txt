@@ -1,0 +1,2331 @@
+http://eurosatory.dev.object23.fr/site/visitmanager/flash/index.php?pDelId=450&pProgId=15&pOzId=0&pAdId=0&pMburId=0&pFlagProg=1&pLang=fr&checkSelect=&tri=del_nom&ordre=ASC&ordre_oz=&num_page=1&prem_connec=1&page=on&etat=Tous&dispo=Tous&typedo=Tous&oz=Tous&do=Toutes&oa=Tous&pays=Tous&nbParPage=10&pFrom=planning_do_prog
+
+AMF Message	Message	
+Header		
+Body		
+[0]	Body Part	
+Target	String	PlanningServices.getDOVisitList
+Response	String	/10
+Content	Array	
+[0]	Number	450
+[1]	Number	6806
+[2]	String	prog
+[3]	String	fr
+
+
+
+AMF Message	Message	
+Header		
+[0]	Header Part	
+Name	String	AppendToGatewayUrl
+Must Understand	Boolean	false
+Content	String	?PHPSESSID=8640cf37f88630ded1586076240d7bec
+Body		
+[0]	Body Part	
+Target	String	/10/onResult
+Response	String	null
+Content	Array	
+[0]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181586
+idPlanning	String	6806
+idDemand	String	5699
+demandPriority	String	p1
+idSpecialVisit	Null	
+idExhibitor	String	13048
+exhibitorCode	String	2261
+idDO	String	450
+dateStartString	String	2016-06-15 10:30:00
+dateEndString	String	2016-06-15 11:00:00
+contact	String	BOSQUIN
+phone	String	+33 1 39 26 92 93 
+isLocked	Boolean	false
+location	String	HALL 6 - Stand H371
+motivation	String	S�curisation des fronti�res
+Radiocommunications: HF et SATCOM
+Shelters
+comment	String	
+isValdidateByProgrammer	Boolean	true
+isValdidateByOZ	Boolean	false
+name	String	
+notes	String	
+notesProg	String	
+idStatus	String	Envisage
+exhibitorName	String	INEO DEFENSE -  
+exhibitorWelcomeCapacity	String	4
+idExhibitorCountry	String	71
+specialVisitName	Null	
+visitActivityList	Array	
+idVotePeriod	String	
+[1]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181587
+idPlanning	String Reference	6806
+idDemand	String	7294
+demandPriority	String Reference	p1
+idSpecialVisit	Null	
+idExhibitor	String	13037
+exhibitorCode	String	1953
+idDO	String Reference	450
+dateStartString	String	2016-06-15 12:00:00
+dateEndString	String	2016-06-15 12:30:00
+contact	String	BUREL
+phone	String	+33 5 45 67 70 30
+isLocked	Boolean	false
+location	String	HALL 6 - Stand E71
+motivation	String	Contrat en cours avec l'Arm�e de Terre Alg�rienne (Helipad)
+comment	String	
+isValdidateByProgrammer	Boolean	true
+isValdidateByOZ	Boolean	false
+name	String	
+notes	String	
+notesProg	String	
+idStatus	String Reference	Envisage
+exhibitorName	String	DESCHAMPS -  
+exhibitorWelcomeCapacity	String	3
+idExhibitorCountry	String Reference	71
+specialVisitName	Null	
+visitActivityList	Array	
+idVotePeriod	String	
+[2]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181588
+idPlanning	String Reference	6806
+idDemand	String	7206
+demandPriority	String	p2
+idSpecialVisit	Null	
+idExhibitor	String	13030
+exhibitorCode	String	1829
+idDO	String Reference	450
+dateStartString	String	2016-06-16 17:00:00
+dateEndString	String	2016-06-16 17:30:00
+contact	String	Ehrhardt
+phone	String	+49 7 27 17 11449
+isLocked	Boolean	false
+location	String	EXT Pe6b - Stand C260
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	true
+isValdidateByOZ	Boolean	false
+name	String	
+notes	String	
+notesProg	String	
+idStatus	String	Attente
+exhibitorName	String	DAIMLER AG - MERCEDES-BENZ SPECIAL TRUCKS
+exhibitorWelcomeCapacity	String	5
+idExhibitorCountry	String Reference	5
+specialVisitName	Null	
+visitActivityList	Array	
+idVotePeriod	String	
+[3]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181589
+idPlanning	String Reference	6806
+idDemand	String	7590
+demandPriority	String Reference	p2
+idSpecialVisit	Null	
+idExhibitor	String	13141
+exhibitorCode	String	4139
+idDO	String Reference	450
+dateStartString	String Reference	2016-06-15 11:00:00
+dateEndString	String	2016-06-15 11:30:00
+contact	String	GAUTIER
+phone	String	+33 6 70 44 76 54
+isLocked	Boolean	false
+location	String	EXT Pe6b - Stand G180
+motivation	String	Pr�sentation des solutions d�fense du groupe Manitou
+Depuis plus de 30 ans, Manitou Group fournit des solutions de manutention tout terrain pour les arm�es. Nos machines sont
+reconnues pour leur polyvalence et fiabilit� (capacit� jusqu�� 40t, hauteur de travail jusqu�� 42m). Elles r�pondent � vos
+besoins de logistique, de construction, de maintenance de vos avions et de stockage/magasinage. Gr�ce � notre r�seau de
+1400 concessionnaires, nous assurons le MCO de vos machines dans le monde entier.
+Affaires en cours
+comment	String	Nous vous invitons � vous rendre aux d�monstrations dynamiques pour d�couvrir les capacit�s de nos chariots t�lescopiques.
+https://youtu.be/HbAh6UXaj_8
+isValdidateByProgrammer	Boolean	true
+isValdidateByOZ	Boolean	false
+name	String	
+notes	String	
+notesProg	String	
+idStatus	String Reference	Envisage
+exhibitorName	String	MANITOU BF -  
+exhibitorWelcomeCapacity	String Reference	3
+idExhibitorCountry	String Reference	71
+specialVisitName	Null	
+visitActivityList	Array	
+idVotePeriod	String	
+[4]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181590
+idPlanning	String Reference	6806
+idDemand	String	6828
+demandPriority	String Reference	p2
+idSpecialVisit	Null	
+idExhibitor	String	13236
+exhibitorCode	String	5694
+idDO	String Reference	450
+dateStartString	String	2016-06-15 17:30:00
+dateEndString	String	2016-06-15 18:00:00
+contact	String	BOUILLON
+phone	String	0680356744
+isLocked	Boolean	false
+location	String	EXT Pe6b - Stand G311
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	true
+isValdidateByOZ	Boolean	false
+name	String	
+notes	String	
+notesProg	String	
+idStatus	String Reference	Attente
+exhibitorName	String	SERT - Soci�t� d'Etudes et de R�alisations Thermiques
+exhibitorWelcomeCapacity	String	2
+idExhibitorCountry	String Reference	71
+specialVisitName	Null	
+visitActivityList	Array	
+[0]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	239792
+idVisit	String Reference	181590
+label	String	Petit déjeuner
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[1]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	239793
+idVisit	String Reference	181590
+label	String	Déjeuner
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[2]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	239794
+idVisit	String Reference	181590
+label	String	Cocktail
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[3]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	239795
+idVisit	String Reference	181590
+label	String	Petit déjeuner (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[4]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	239796
+idVisit	String Reference	181590
+label	String	Cocktail (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[5]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	239797
+idVisit	String Reference	181590
+label	String	Diner (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[6]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	239798
+idVisit	String Reference	181590
+label	String	Soirée (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+idVotePeriod	String	
+[5]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181591
+idPlanning	String Reference	6806
+idDemand	String	9454
+demandPriority	String	p3
+idSpecialVisit	Null	
+idExhibitor	String	13013
+exhibitorCode	String	1476
+idDO	String Reference	450
+dateStartString	String	2016-06-14 10:30:00
+dateEndString	String	2016-06-14 11:00:00
+contact	String	YANG
+phone	String	+86 10 83918544
+isLocked	Boolean	false
+location	String	HALL 5 - Stand H521
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	true
+isValdidateByOZ	Boolean	false
+name	String	
+notes	String	
+notesProg	String	
+idStatus	String Reference	Envisage
+exhibitorName	String	NORINCO  
+exhibitorWelcomeCapacity	String	15
+idExhibitorCountry	String	38
+specialVisitName	Null	
+visitActivityList	Array	
+idVotePeriod	String	
+[6]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181592
+idPlanning	String Reference	6806
+idDemand	String	8607
+demandPriority	String Reference	p3
+idSpecialVisit	Null	
+idExhibitor	String	13061
+exhibitorCode	String	2497
+idDO	String Reference	450
+dateStartString	String	2016-06-14 17:00:00
+dateEndString	String	2016-06-14 17:30:00
+contact	String	OTTEN
+phone	String	+32 2 706 81 48
+isLocked	Boolean	false
+location	String	Pavilion meeting point
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	true
+isValdidateByOZ	Boolean	false
+name	String	
+notes	String	
+notesProg	String	
+idStatus	String Reference	Envisage
+exhibitorName	String	BSDI ASBL - BELGIAN SECURITY & DEFENCE INDUSTRY
+exhibitorWelcomeCapacity	String Reference	15
+idExhibitorCountry	String	20
+specialVisitName	Null	
+visitActivityList	Array	
+idVotePeriod	String	
+[7]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181594
+idPlanning	String Reference	6806
+idDemand	String	8277
+demandPriority	String Reference	p3
+idSpecialVisit	Null	
+idExhibitor	String	13215
+exhibitorCode	String	5392
+idDO	String Reference	450
+dateStartString	String Reference	2016-06-15 11:30:00
+dateEndString	String Reference	2016-06-15 12:00:00
+contact	String	Fraebel
+phone	String	+498941290
+isLocked	Boolean	false
+location	String	HALL 6 - Stand K353
+motivation	String	Presentation of expertise to radiocommunications, i.e. innovative IP � based waveforms for network-centric operations.
+Portfolio of tactical communications products & systems.
+
+comment	String	CEO level from Monday, June 13 to Wednesday, June 15, 2016 available at the booth.
+POC: Michael Fraebel, Mobile.: +49 171 5660411
+
+isValdidateByProgrammer	Boolean	true
+isValdidateByOZ	Boolean	false
+name	String	
+notes	String	
+notesProg	String	
+idStatus	String Reference	Envisage
+exhibitorName	String	ROHDE & SCHWARZ  GMBH & CO KG -  
+exhibitorWelcomeCapacity	String Reference	2
+idExhibitorCountry	String Reference	5
+specialVisitName	Null	
+visitActivityList	Array	
+idVotePeriod	String	
+[8]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181595
+idPlanning	String Reference	6806
+idDemand	String	0
+demandPriority	String	
+idSpecialVisit	Null	
+idExhibitor	String	14017
+exhibitorCode	String	25985
+idDO	String Reference	450
+dateStartString	String	2016-06-14 11:30:00
+dateEndString	String	2016-06-14 12:00:00
+contact	String	HACIA
+phone	String	+33 9 88 67 29 81
+isLocked	Boolean	false
+location	String	HALL 5 - Stand F141
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	true
+isValdidateByOZ	Boolean	false
+name	String	
+notes	String	
+notesProg	String	
+idStatus	String Reference	Envisage
+exhibitorName	String	Stand D�fense - DICOD
+exhibitorWelcomeCapacity	String	6
+idExhibitorCountry	String Reference	71
+specialVisitName	Null	
+visitActivityList	Array	
+idVotePeriod	String	
+[9]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181596
+idPlanning	String Reference	6806
+idDemand	String Reference	0
+demandPriority	String	
+idSpecialVisit	Null	
+idExhibitor	String	13085
+exhibitorCode	String	2876
+idDO	String Reference	450
+dateStartString	String Reference	2016-06-14 12:00:00
+dateEndString	String	2016-06-14 12:30:00
+contact	String	LENOIR
+phone	String	+33 6 20 49 93 48
+isLocked	Boolean	false
+location	String	Point d'accueil pavillon
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	true
+isValdidateByOZ	Boolean	false
+name	String	
+notes	String	
+notesProg	String	
+idStatus	String Reference	Envisage
+exhibitorName	String	GILEP
+exhibitorWelcomeCapacity	String Reference	2
+idExhibitorCountry	String Reference	71
+specialVisitName	Null	
+visitActivityList	Array	
+idVotePeriod	String	
+[10]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181597
+idPlanning	String Reference	6806
+idDemand	String Reference	0
+demandPriority	String	
+idSpecialVisit	Null	
+idExhibitor	String	12984
+exhibitorCode	String	781
+idDO	String Reference	450
+dateStartString	String	2016-06-14 09:00:00
+dateEndString	String	2016-06-14 09:30:00
+contact	String	
+phone	String	
+isLocked	Boolean	false
+location	String	HALL 5 - Stand B697
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	true
+isValdidateByOZ	Boolean	false
+name	String	
+notes	String	
+notesProg	String	
+idStatus	String Reference	Envisage
+exhibitorName	String	BARRETT FIREARMS MANUFACTURING -  
+exhibitorWelcomeCapacity	Null	
+idExhibitorCountry	String	68
+specialVisitName	Null	
+visitActivityList	Array	
+idVotePeriod	String	
+[11]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181598
+idPlanning	String Reference	6806
+idDemand	String Reference	0
+demandPriority	String	
+idSpecialVisit	Null	
+idExhibitor	String	13954
+exhibitorCode	String	24082
+idDO	String Reference	450
+dateStartString	String	2016-06-16 12:00:00
+dateEndString	String	2016-06-16 12:30:00
+contact	String	
+phone	String	
+isLocked	Boolean	false
+location	String	HALL 6 - Stand F797
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	true
+isValdidateByOZ	Boolean	false
+name	String	
+notes	String	
+notesProg	String	
+idStatus	String Reference	Envisage
+exhibitorName	String	GETAC TECHNOLOGY CORP -  
+exhibitorWelcomeCapacity	Null	
+idExhibitorCountry	String	156
+specialVisitName	Null	
+visitActivityList	Array	
+idVotePeriod	String	
+[12]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181600
+idPlanning	String Reference	6806
+idDemand	String Reference	0
+demandPriority	String	
+idSpecialVisit	Null	
+idExhibitor	String	13211
+exhibitorCode	String	5342
+idDO	String Reference	450
+dateStartString	String	2016-06-15 17:00:00
+dateEndString	String Reference	2016-06-15 17:30:00
+contact	String	BERGER
+phone	String	+41443164120
+isLocked	Boolean	false
+location	String	EXT Pe6b - Stand D-D261-211
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	true
+isValdidateByOZ	Boolean	false
+name	String	
+notes	String	
+notesProg	String	
+idStatus	String Reference	Attente
+exhibitorName	String	RHEINMETALL AG -  
+exhibitorWelcomeCapacity	String	10
+idExhibitorCountry	String Reference	5
+specialVisitName	Null	
+visitActivityList	Array	
+idVotePeriod	String	
+[13]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181601
+idPlanning	String Reference	6806
+idDemand	String Reference	0
+demandPriority	String	
+idSpecialVisit	Null	
+idExhibitor	String	13011
+exhibitorCode	String	1426
+idDO	String Reference	450
+dateStartString	String Reference	2016-06-14 11:00:00
+dateEndString	String Reference	2016-06-14 11:30:00
+contact	String	
+phone	String	
+isLocked	Boolean	false
+location	String	HALL 5 - Stand K521
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	true
+isValdidateByOZ	Boolean	false
+name	String	
+notes	String	
+notesProg	String	
+idStatus	String Reference	Envisage
+exhibitorName	String	CESKA ZBROJOVKA -  
+exhibitorWelcomeCapacity	Null	
+idExhibitorCountry	String	138
+specialVisitName	Null	
+visitActivityList	Array	
+idVotePeriod	String	
+[14]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181602
+idPlanning	String Reference	6806
+idDemand	String Reference	0
+demandPriority	String	
+idSpecialVisit	Null	
+idExhibitor	String	13094
+exhibitorCode	String	3073
+idDO	String Reference	450
+dateStartString	String	2016-06-16 10:30:00
+dateEndString	String	2016-06-16 11:00:00
+contact	String	
+phone	String	
+isLocked	Boolean	false
+location	String	HALL 6 - Stand K616
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	true
+isValdidateByOZ	Boolean	false
+name	String	
+notes	String	
+notesProg	String	
+idStatus	String Reference	Envisage
+exhibitorName	String	HECKLER & KOCH GMBH -  
+exhibitorWelcomeCapacity	Null	
+idExhibitorCountry	String Reference	5
+specialVisitName	Null	
+visitActivityList	Array	
+idVotePeriod	String	
+[15]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181603
+idPlanning	String Reference	6806
+idDemand	String Reference	0
+demandPriority	String	
+idSpecialVisit	Null	
+idExhibitor	String	13277
+exhibitorCode	String	6454
+idDO	String Reference	450
+dateStartString	String	2016-06-16 10:00:00
+dateEndString	String Reference	2016-06-16 10:30:00
+contact	String	ROGER
+phone	String	+33 2 41 31 16 31
+isLocked	Boolean	false
+location	String	HALL 6 - Stand B147
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	true
+isValdidateByOZ	Boolean	false
+name	String	
+notes	String	
+notesProg	String	
+idStatus	String Reference	Envisage
+exhibitorName	String	TR EQUIPEMENT -  
+exhibitorWelcomeCapacity	String Reference	2
+idExhibitorCountry	String Reference	71
+specialVisitName	Null	
+visitActivityList	Array	
+idVotePeriod	String	
+[16]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181604
+idPlanning	String Reference	6806
+idDemand	String Reference	0
+demandPriority	String	
+idSpecialVisit	Null	
+idExhibitor	String	13087
+exhibitorCode	String	2905
+idDO	String Reference	450
+dateStartString	String	2016-06-14 14:00:00
+dateEndString	String	2016-06-14 14:30:00
+contact	String	
+phone	String	
+isLocked	Boolean	false
+location	String	HALL 5 - Stand K377
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	true
+isValdidateByOZ	Boolean	false
+name	String	
+notes	String	
+notesProg	String	
+idStatus	String Reference	Envisage
+exhibitorName	String	GLOCK GMBH -  
+exhibitorWelcomeCapacity	Null	
+idExhibitorCountry	String	13
+specialVisitName	Null	
+visitActivityList	Array	
+idVotePeriod	String	
+[17]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181605
+idPlanning	String Reference	6806
+idDemand	String Reference	0
+demandPriority	String	
+idSpecialVisit	Null	
+idExhibitor	String	14760
+exhibitorCode	String	6673
+idDO	String Reference	450
+dateStartString	String	2016-06-16 09:00:00
+dateEndString	String	2016-06-16 09:30:00
+contact	String	
+phone	String	
+isLocked	Boolean	false
+location	String	HALL 6 - Stand F750
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	true
+isValdidateByOZ	Boolean	false
+name	String	
+notes	String	
+notesProg	String	
+idStatus	String Reference	Envisage
+exhibitorName	String	VERNEY CARRON SECURITY -  
+exhibitorWelcomeCapacity	Null	
+idExhibitorCountry	String Reference	71
+specialVisitName	Null	
+visitActivityList	Array	
+idVotePeriod	String	
+[18]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181606
+idPlanning	String Reference	6806
+idDemand	String Reference	0
+demandPriority	String	
+idSpecialVisit	Null	
+idExhibitor	String	13212
+exhibitorCode	String	5358
+idDO	String Reference	450
+dateStartString	String Reference	2016-06-14 09:30:00
+dateEndString	String	2016-06-14 10:00:00
+contact	String	BAUDIN
+phone	String	06 43 26 45 23
+isLocked	Boolean	false
+location	String	HALL 5 - Stand E831
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	true
+isValdidateByOZ	Boolean	false
+name	String	
+notes	String	
+notesProg	String	
+idStatus	String Reference	Envisage
+exhibitorName	String	RIVOLIER SAS -  
+exhibitorWelcomeCapacity	String Reference	2
+idExhibitorCountry	String Reference	71
+specialVisitName	Null	
+visitActivityList	Array	
+idVotePeriod	String	
+[19]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181607
+idPlanning	String Reference	6806
+idDemand	String Reference	0
+demandPriority	String	
+idSpecialVisit	Null	
+idExhibitor	String	13494
+exhibitorCode	String	11960
+idDO	String Reference	450
+dateStartString	String	2016-06-14 16:00:00
+dateEndString	String	2016-06-14 16:30:00
+contact	String	JARNO
+phone	String	+39 030 8341257
+isLocked	Boolean	false
+location	String	HALL 6 - Stand E371
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	true
+isValdidateByOZ	Boolean	false
+name	String	
+notes	String	
+notesProg	String	
+idStatus	String Reference	Envisage
+exhibitorName	String	BDT-  BERETTA DEFENSE TECHNOLOGIES - DEFENCE DIVISION
+exhibitorWelcomeCapacity	String	1
+idExhibitorCountry	String	91
+specialVisitName	Null	
+visitActivityList	Array	
+idVotePeriod	String	
+[20]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181608
+idPlanning	String Reference	6806
+idDemand	String Reference	0
+demandPriority	String	
+idSpecialVisit	Null	
+idExhibitor	String	14758
+exhibitorCode	String	4335
+idDO	String Reference	450
+dateStartString	String Reference	2016-06-16 09:30:00
+dateEndString	String Reference	2016-06-16 10:00:00
+contact	String	
+phone	String	
+isLocked	Boolean	false
+location	String	HALL 6 - Stand G733
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	true
+isValdidateByOZ	Boolean	false
+name	String	
+notes	String	
+notesProg	String	
+idStatus	String Reference	Envisage
+exhibitorName	String	01 DB METRAVIB - ACOEM
+exhibitorWelcomeCapacity	Null	
+idExhibitorCountry	String Reference	71
+specialVisitName	Null	
+visitActivityList	Array	
+idVotePeriod	String	
+[21]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181609
+idPlanning	String Reference	6806
+idDemand	String Reference	0
+demandPriority	String	
+idSpecialVisit	Null	
+idExhibitor	String	13097
+exhibitorCode	String	3140
+idDO	String Reference	450
+dateStartString	String Reference	2016-06-14 10:00:00
+dateEndString	String Reference	2016-06-14 10:30:00
+contact	String	Campana
+phone	String	0169354770
+isLocked	Boolean	false
+location	String	HALL 6 - Stand F370
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	true
+isValdidateByOZ	Boolean	false
+name	String	
+notes	String	
+notesProg	String	
+idStatus	String Reference	Envisage
+exhibitorName	String	HGH SYSTEMES INFRAROUGES - SA
+exhibitorWelcomeCapacity	String Reference	1
+idExhibitorCountry	String Reference	71
+specialVisitName	Null	
+visitActivityList	Array	
+idVotePeriod	String	
+[22]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181610
+idPlanning	String Reference	6806
+idDemand	String Reference	0
+demandPriority	String	
+idSpecialVisit	Null	
+idExhibitor	String	13185
+exhibitorCode	String	4920
+idDO	String Reference	450
+dateStartString	String	2016-06-14 15:30:00
+dateEndString	String Reference	2016-06-14 16:00:00
+contact	String	SIPILAINEN
+phone	String	+358 40 820 3521
+isLocked	Boolean	false
+location	String	HALL 6 - Stand E353
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	true
+isValdidateByOZ	Boolean	false
+name	String	
+notes	String	
+notesProg	String	
+idStatus	String Reference	Envisage
+exhibitorName	String	PATRIA OYJ -  
+exhibitorWelcomeCapacity	String Reference	4
+idExhibitorCountry	String	70
+specialVisitName	Null	
+visitActivityList	Array	
+idVotePeriod	String	
+[23]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181611
+idPlanning	String Reference	6806
+idDemand	String Reference	0
+demandPriority	String	
+idSpecialVisit	Null	
+idExhibitor	String	14945
+exhibitorCode	String	30744
+idDO	String Reference	450
+dateStartString	String Reference	2016-06-16 11:00:00
+dateEndString	String	2016-06-16 11:30:00
+contact	String	
+phone	String	
+isLocked	Boolean	false
+location	String	HALL 6 - Stand K420
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	true
+isValdidateByOZ	Boolean	false
+name	String	
+notes	String	
+notesProg	String	
+idStatus	String Reference	Envisage
+exhibitorName	String	MINIST�RE DE L'INT�RIEUR - D�L�GATION � L'INFORMATION ET � LA COMMUNICATION
+exhibitorWelcomeCapacity	Null	
+idExhibitorCountry	String Reference	71
+specialVisitName	Null	
+visitActivityList	Array	
+idVotePeriod	String	
+[24]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181612
+idPlanning	String Reference	6806
+idDemand	String Reference	0
+demandPriority	String	
+idSpecialVisit	String	57
+idExhibitor	String Reference	0
+exhibitorCode	Null	
+idDO	String Reference	450
+dateStartString	String	2016-06-16 14:30:00
+dateEndString	String	2016-06-16 16:30:00
+contact	String	
+phone	String	
+isLocked	Boolean	false
+location	String	
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	false
+isValdidateByOZ	Boolean	false
+name	String	
+notes	String	
+notesProg	String	
+idStatus	String	Reserve
+exhibitorName	Null	
+exhibitorWelcomeCapacity	Null	
+idExhibitorCountry	Null	
+specialVisitName	String	D�monstrations dynamiques
+visitActivityList	Array	
+[0]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	239799
+idVisit	String Reference	181612
+label	String Reference	Petit déjeuner
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[1]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	239800
+idVisit	String Reference	181612
+label	String Reference	Déjeuner
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[2]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	239801
+idVisit	String Reference	181612
+label	String Reference	Cocktail
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[3]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	239802
+idVisit	String Reference	181612
+label	String Reference	Petit déjeuner (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[4]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	239803
+idVisit	String Reference	181612
+label	String Reference	Cocktail (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[5]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	239804
+idVisit	String Reference	181612
+label	String Reference	Diner (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[6]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	239805
+idVisit	String Reference	181612
+label	String Reference	Soirée (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+idVotePeriod	String	
+[25]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181613
+idPlanning	String Reference	6806
+idDemand	String Reference	0
+demandPriority	String	
+idSpecialVisit	Null	
+idExhibitor	String	14557
+exhibitorCode	String	31489
+idDO	String Reference	450
+dateStartString	String Reference	2016-06-14 14:30:00
+dateEndString	String	2016-06-14 15:00:00
+contact	String	GUALDONI
+phone	String	+33 (0)6 88 13 86 98
+isLocked	Boolean	false
+location	String	HALL 5 - Stand K840
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	true
+isValdidateByOZ	Boolean	false
+name	String	
+notes	String	
+notesProg	String	
+idStatus	String Reference	Envisage
+exhibitorName	String	DRONE VOLT -  
+exhibitorWelcomeCapacity	String Reference	1
+idExhibitorCountry	String Reference	71
+specialVisitName	Null	
+visitActivityList	Array	
+idVotePeriod	String	
+[26]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181614
+idPlanning	String Reference	6806
+idDemand	String Reference	0
+demandPriority	String	
+idSpecialVisit	Null	
+idExhibitor	String	14759
+exhibitorCode	String	4976
+idDO	String Reference	450
+dateStartString	String Reference	2016-06-16 11:30:00
+dateEndString	String Reference	2016-06-16 12:00:00
+contact	String	
+phone	String	
+isLocked	Boolean	false
+location	String	HALL 6 - Stand F598
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	true
+isValdidateByOZ	Boolean	false
+name	String	
+notes	String	
+notesProg	String	
+idStatus	String Reference	Envisage
+exhibitorName	String	PGM PRECISION -  
+exhibitorWelcomeCapacity	Null	
+idExhibitorCountry	String Reference	71
+specialVisitName	Null	
+visitActivityList	Array	
+idVotePeriod	String	
+[27]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181615
+idPlanning	String Reference	6806
+idDemand	String Reference	0
+demandPriority	String	
+idSpecialVisit	Null	
+idExhibitor	String	13440
+exhibitorCode	String	9225
+idDO	String Reference	450
+dateStartString	String	2016-06-16 14:00:00
+dateEndString	String Reference	2016-06-16 14:30:00
+contact	String	
+phone	String	
+isLocked	Boolean	false
+location	String	  - Stand   
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	true
+isValdidateByOZ	Boolean	false
+name	String	
+notes	String	
+notesProg	String	
+idStatus	String Reference	Envisage
+exhibitorName	String	TECKNISOLAR -  
+exhibitorWelcomeCapacity	Null	
+idExhibitorCountry	String Reference	71
+specialVisitName	Null	
+visitActivityList	Array	
+idVotePeriod	String	
+[28]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181616
+idPlanning	String Reference	6806
+idDemand	String Reference	0
+demandPriority	String	
+idSpecialVisit	String	112
+idExhibitor	String Reference	0
+exhibitorCode	Null	
+idDO	String Reference	450
+dateStartString	String Reference	2016-06-14 12:30:00
+dateEndString	String Reference	2016-06-14 14:00:00
+contact	String	
+phone	String	
+isLocked	Boolean	false
+location	String	
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	false
+isValdidateByOZ	Boolean	false
+name	String	
+notes	String	
+notesProg	String	
+idStatus	String Reference	Reserve
+exhibitorName	Null	
+exhibitorWelcomeCapacity	Null	
+idExhibitorCountry	Null	
+specialVisitName	String	Dejeuner salle � manger DI GICAT
+visitActivityList	Array	
+[0]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	239806
+idVisit	String Reference	181616
+label	String Reference	Petit déjeuner
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[1]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	239807
+idVisit	String Reference	181616
+label	String Reference	Déjeuner
+isChecked	Boolean	true
+comment	String	
+urlIcon	String	
+[2]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	239808
+idVisit	String Reference	181616
+label	String Reference	Cocktail
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[3]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	239809
+idVisit	String Reference	181616
+label	String Reference	Petit déjeuner (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[4]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	239810
+idVisit	String Reference	181616
+label	String Reference	Cocktail (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[5]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	239811
+idVisit	String Reference	181616
+label	String Reference	Diner (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[6]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	239812
+idVisit	String Reference	181616
+label	String Reference	Soirée (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+idVotePeriod	String	
+[29]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181618
+idPlanning	String Reference	6806
+idDemand	String Reference	0
+demandPriority	String	
+idSpecialVisit	Null	
+idExhibitor	String Reference	0
+exhibitorCode	Null	
+idDO	String Reference	450
+dateStartString	String Reference	2016-06-16 12:30:00
+dateEndString	String Reference	2016-06-16 14:00:00
+contact	String	
+phone	String	
+isLocked	Boolean	false
+location	String	
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	false
+isValdidateByOZ	Boolean	false
+name	String	D�jeuner ticket
+notes	String	
+notesProg	String	
+idStatus	String Reference	Reserve
+exhibitorName	Null	
+exhibitorWelcomeCapacity	Null	
+idExhibitorCountry	Null	
+specialVisitName	Null	
+visitActivityList	Array	
+[0]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	239820
+idVisit	String Reference	181618
+label	String Reference	Petit déjeuner
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[1]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	239821
+idVisit	String Reference	181618
+label	String Reference	Déjeuner
+isChecked	Boolean	true
+comment	String	
+urlIcon	String	
+[2]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	239822
+idVisit	String Reference	181618
+label	String Reference	Cocktail
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[3]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	239823
+idVisit	String Reference	181618
+label	String Reference	Petit déjeuner (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[4]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	239824
+idVisit	String Reference	181618
+label	String Reference	Cocktail (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[5]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	239825
+idVisit	String Reference	181618
+label	String Reference	Diner (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[6]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	239826
+idVisit	String Reference	181618
+label	String Reference	Soirée (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+idVotePeriod	String	
+[30]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181619
+idPlanning	String Reference	6806
+idDemand	String Reference	0
+demandPriority	String	
+idSpecialVisit	String	94
+idExhibitor	String Reference	0
+exhibitorCode	Null	
+idDO	String Reference	450
+dateStartString	String	2016-06-14 19:00:00
+dateEndString	String	2016-06-14 22:00:00
+contact	String	
+phone	String	
+isLocked	Boolean	false
+location	String	
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	false
+isValdidateByOZ	Boolean	false
+name	String	
+notes	String	
+notesProg	String	
+idStatus	String Reference	Reserve
+exhibitorName	Null	
+exhibitorWelcomeCapacity	Null	
+idExhibitorCountry	Null	
+specialVisitName	String	Soir�e officielle 14 juin
+visitActivityList	Array	
+[0]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	239827
+idVisit	String Reference	181619
+label	String Reference	Petit déjeuner
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[1]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	239828
+idVisit	String Reference	181619
+label	String Reference	Déjeuner
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[2]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	239829
+idVisit	String Reference	181619
+label	String Reference	Cocktail
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[3]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	239830
+idVisit	String Reference	181619
+label	String Reference	Petit déjeuner (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[4]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	239831
+idVisit	String Reference	181619
+label	String Reference	Cocktail (ext)
+isChecked	Boolean	true
+comment	String	
+urlIcon	String	
+[5]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	239832
+idVisit	String Reference	181619
+label	String Reference	Diner (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[6]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	239833
+idVisit	String Reference	181619
+label	String Reference	Soirée (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+idVotePeriod	String	
+[31]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181620
+idPlanning	String Reference	6806
+idDemand	String Reference	0
+demandPriority	String	
+idSpecialVisit	Null	
+idExhibitor	String	13337
+exhibitorCode	String	7935
+idDO	String Reference	450
+dateStartString	String	2016-06-15 09:00:00
+dateEndString	String	2016-06-15 09:30:00
+contact	String	
+phone	String	
+isLocked	Boolean	false
+location	String	HALL 5 - Stand L701
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	true
+isValdidateByOZ	Boolean	false
+name	String	
+notes	String	
+notesProg	String	
+idStatus	String Reference	Envisage
+exhibitorName	String	UKTI DEFENCE & SECURITY ORGANISATION -  
+exhibitorWelcomeCapacity	Null	
+idExhibitorCountry	String	140
+specialVisitName	Null	
+visitActivityList	Array	
+idVotePeriod	String	
+[32]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181621
+idPlanning	String Reference	6806
+idDemand	String Reference	0
+demandPriority	String	
+idSpecialVisit	Null	
+idExhibitor	String	13043
+exhibitorCode	String	2027
+idDO	String Reference	450
+dateStartString	String Reference	2016-06-15 09:30:00
+dateEndString	String	2016-06-15 10:00:00
+contact	String	James
+phone	String	+44787006624
+isLocked	Boolean	false
+location	String Reference	Pavilion meeting point
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	true
+isValdidateByOZ	Boolean	false
+name	String	
+notes	String	
+notesProg	String	
+idStatus	String Reference	Envisage
+exhibitorName	String	ADS GROUP LIMITED -  
+exhibitorWelcomeCapacity	String Reference	5
+idExhibitorCountry	String Reference	140
+specialVisitName	Null	
+visitActivityList	Array	
+idVotePeriod	String	
+[33]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181622
+idPlanning	String Reference	6806
+idDemand	String Reference	0
+demandPriority	String	
+idSpecialVisit	Null	
+idExhibitor	String	13309
+exhibitorCode	String	7469
+idDO	String Reference	450
+dateStartString	String	2016-06-15 16:00:00
+dateEndString	String	2016-06-15 16:30:00
+contact	String	
+phone	String	
+isLocked	Boolean	false
+location	String	EXT Pe6b - Stand G81
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	true
+isValdidateByOZ	Boolean	false
+name	String	
+notes	String	
+notesProg	String	
+idStatus	String Reference	Envisage
+exhibitorName	String	MINSK WHEEL TRACTOR PLANT -  
+exhibitorWelcomeCapacity	Null	
+idExhibitorCountry	String	23
+specialVisitName	Null	
+visitActivityList	Array	
+idVotePeriod	String	
+[34]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181623
+idPlanning	String Reference	6806
+idDemand	String Reference	0
+demandPriority	String	
+idSpecialVisit	Null	
+idExhibitor	String	13829
+exhibitorCode	String	23071
+idDO	String Reference	450
+dateStartString	String Reference	2016-06-14 17:30:00
+dateEndString	String	2016-06-14 18:00:00
+contact	String	
+phone	String	
+isLocked	Boolean	false
+location	String	EXT Pe6b - Stand E310
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	true
+isValdidateByOZ	Boolean	false
+name	String	
+notes	String	
+notesProg	String	
+idStatus	String Reference	Attente
+exhibitorName	String	ARINC TECHNOLOGIES -  
+exhibitorWelcomeCapacity	Null	
+idExhibitorCountry	String Reference	71
+specialVisitName	Null	
+visitActivityList	Array	
+idVotePeriod	String	
+[35]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181624
+idPlanning	String Reference	6806
+idDemand	String Reference	0
+demandPriority	String	
+idSpecialVisit	Null	
+idExhibitor	String Reference	0
+exhibitorCode	Null	
+idDO	String Reference	450
+dateStartString	String	2016-06-17 13:00:00
+dateEndString	String	2016-06-17 13:30:00
+contact	String	
+phone	String	
+isLocked	Boolean	false
+location	String	
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	false
+isValdidateByOZ	Boolean	false
+name	String	Prix Cochonou
+notes	String	
+notesProg	String	
+idStatus	String Reference	Attente
+exhibitorName	Null	
+exhibitorWelcomeCapacity	Null	
+idExhibitorCountry	Null	
+specialVisitName	Null	
+visitActivityList	Array	
+[0]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	239834
+idVisit	String Reference	181624
+label	String Reference	Petit déjeuner
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[1]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	239835
+idVisit	String Reference	181624
+label	String Reference	Déjeuner
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[2]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	239836
+idVisit	String Reference	181624
+label	String Reference	Cocktail
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[3]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	239837
+idVisit	String Reference	181624
+label	String Reference	Petit déjeuner (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[4]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	239838
+idVisit	String Reference	181624
+label	String Reference	Cocktail (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[5]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	239839
+idVisit	String Reference	181624
+label	String Reference	Diner (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[6]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	239840
+idVisit	String Reference	181624
+label	String Reference	Soirée (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+idVotePeriod	String	
+[36]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181625
+idPlanning	String Reference	6806
+idDemand	String Reference	0
+demandPriority	String	
+idSpecialVisit	String	63
+idExhibitor	String Reference	0
+exhibitorCode	Null	
+idDO	String Reference	450
+dateStartString	String	2016-06-17 09:00:00
+dateEndString	String	2016-06-17 09:30:00
+contact	String	
+phone	String	
+isLocked	Boolean	false
+location	String	
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	false
+isValdidateByOZ	Boolean	false
+name	String	
+notes	String	
+notesProg	String	
+idStatus	String Reference	Attente
+exhibitorName	Null	
+exhibitorWelcomeCapacity	Null	
+idExhibitorCountry	Null	
+specialVisitName	String	Allocution inaugurale MINDEF
+visitActivityList	Array	
+[0]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	239841
+idVisit	String Reference	181625
+label	String Reference	Petit déjeuner
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[1]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	239842
+idVisit	String Reference	181625
+label	String Reference	Déjeuner
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[2]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	239843
+idVisit	String Reference	181625
+label	String Reference	Cocktail
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[3]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	239844
+idVisit	String Reference	181625
+label	String Reference	Petit déjeuner (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[4]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	239845
+idVisit	String Reference	181625
+label	String Reference	Cocktail (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[5]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	239846
+idVisit	String Reference	181625
+label	String Reference	Diner (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[6]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	239847
+idVisit	String Reference	181625
+label	String Reference	Soirée (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+idVotePeriod	String	
+[37]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181723
+idPlanning	String Reference	6806
+idDemand	String Reference	0
+demandPriority	String	
+idSpecialVisit	Null	
+idExhibitor	String Reference	0
+exhibitorCode	Null	
+idDO	String Reference	450
+dateStartString	String	2016-06-15 13:30:00
+dateEndString	String	2016-06-15 14:00:00
+contact	String	
+phone	String	
+isLocked	Boolean	false
+location	String	
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	false
+isValdidateByOZ	Boolean	false
+name	String	Test
+notes	Null	
+notesProg	Null	
+idStatus	String Reference	Reserve
+exhibitorName	Null	
+exhibitorWelcomeCapacity	Null	
+idExhibitorCountry	Null	
+specialVisitName	Null	
+visitActivityList	Array	
+[0]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240086
+idVisit	String Reference	181723
+label	String Reference	Petit déjeuner
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[1]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240087
+idVisit	String Reference	181723
+label	String Reference	Déjeuner
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[2]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240088
+idVisit	String Reference	181723
+label	String Reference	Cocktail
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[3]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240089
+idVisit	String Reference	181723
+label	String Reference	Petit déjeuner (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[4]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240090
+idVisit	String Reference	181723
+label	String Reference	Cocktail (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[5]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240091
+idVisit	String Reference	181723
+label	String Reference	Diner (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[6]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240092
+idVisit	String Reference	181723
+label	String Reference	Soirée (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+idVotePeriod	String	
+[38]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181730
+idPlanning	String Reference	6806
+idDemand	String Reference	0
+demandPriority	String	
+idSpecialVisit	Null	
+idExhibitor	String Reference	0
+exhibitorCode	Null	
+idDO	String Reference	450
+dateStartString	String	2016-06-13 09:30:00
+dateEndString	String	2016-06-13 10:00:00
+contact	String	
+phone	String	
+isLocked	Boolean	false
+location	String	
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	false
+isValdidateByOZ	Boolean	false
+name	String	test 2
+notes	String	
+notesProg	String	
+idStatus	String Reference	Reserve
+exhibitorName	Null	
+exhibitorWelcomeCapacity	Null	
+idExhibitorCountry	Null	
+specialVisitName	Null	
+visitActivityList	Array	
+[0]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240135
+idVisit	String Reference	181730
+label	String Reference	Petit déjeuner
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[1]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240136
+idVisit	String Reference	181730
+label	String Reference	Déjeuner
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[2]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240137
+idVisit	String Reference	181730
+label	String Reference	Cocktail
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[3]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240138
+idVisit	String Reference	181730
+label	String Reference	Petit déjeuner (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[4]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240139
+idVisit	String Reference	181730
+label	String Reference	Cocktail (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[5]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240140
+idVisit	String Reference	181730
+label	String Reference	Diner (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[6]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240141
+idVisit	String Reference	181730
+label	String Reference	Soirée (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+idVotePeriod	String	
+[39]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181733
+idPlanning	String Reference	6806
+idDemand	String Reference	0
+demandPriority	String	
+idSpecialVisit	Null	
+idExhibitor	String	13326
+exhibitorCode	String	7832
+idDO	String Reference	450
+dateStartString	String	2016-06-15 14:30:00
+dateEndString	String	2016-06-15 15:00:00
+contact	String	
+phone	String	
+isLocked	Boolean	false
+location	String	HALL 5 - Stand H277
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	true
+isValdidateByOZ	Boolean	false
+name	String	
+notes	String	
+notesProg	String	
+idStatus	String Reference	Attente
+exhibitorName	String	DUPONT INTERNATIONAL OPERATIONS SARL -  
+exhibitorWelcomeCapacity	Null	
+idExhibitorCountry	String	154
+specialVisitName	Null	
+visitActivityList	Array	
+idVotePeriod	String	
+[40]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181736
+idPlanning	String Reference	6806
+idDemand	String Reference	0
+demandPriority	String	
+idSpecialVisit	Null	
+idExhibitor	String Reference	0
+exhibitorCode	Null	
+idDO	String Reference	450
+dateStartString	String	2016-06-17 17:30:00
+dateEndString	String	2016-06-17 18:00:00
+contact	String	
+phone	String	
+isLocked	Boolean	false
+location	String	
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	false
+isValdidateByOZ	Boolean	false
+name	String Reference	Prix Cochonou
+notes	Null	
+notesProg	Null	
+idStatus	String Reference	Attente
+exhibitorName	Null	
+exhibitorWelcomeCapacity	Null	
+idExhibitorCountry	Null	
+specialVisitName	Null	
+visitActivityList	Array	
+[0]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240163
+idVisit	String Reference	181736
+label	String Reference	Petit déjeuner
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[1]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240164
+idVisit	String Reference	181736
+label	String Reference	Déjeuner
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[2]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240165
+idVisit	String Reference	181736
+label	String Reference	Cocktail
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[3]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240166
+idVisit	String Reference	181736
+label	String Reference	Petit déjeuner (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[4]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240167
+idVisit	String Reference	181736
+label	String Reference	Cocktail (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[5]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240168
+idVisit	String Reference	181736
+label	String Reference	Diner (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[6]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240169
+idVisit	String Reference	181736
+label	String Reference	Soirée (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+idVotePeriod	String	
+[41]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181740
+idPlanning	String Reference	6806
+idDemand	String Reference	0
+demandPriority	String	
+idSpecialVisit	Null	
+idExhibitor	String Reference	0
+exhibitorCode	Null	
+idDO	String Reference	450
+dateStartString	String	2016-06-17 10:00:00
+dateEndString	String	2016-06-17 10:30:00
+contact	String	
+phone	String	
+isLocked	Boolean	false
+location	String	
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	false
+isValdidateByOZ	Boolean	false
+name	String	Kro
+notes	Null	
+notesProg	Null	
+idStatus	String Reference	Reserve
+exhibitorName	Null	
+exhibitorWelcomeCapacity	Null	
+idExhibitorCountry	Null	
+specialVisitName	Null	
+visitActivityList	Array	
+[0]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240191
+idVisit	String Reference	181740
+label	String Reference	Petit déjeuner
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[1]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240192
+idVisit	String Reference	181740
+label	String Reference	Déjeuner
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[2]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240193
+idVisit	String Reference	181740
+label	String Reference	Cocktail
+isChecked	Boolean	true
+comment	String	
+urlIcon	String	
+[3]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240194
+idVisit	String Reference	181740
+label	String Reference	Petit déjeuner (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[4]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240195
+idVisit	String Reference	181740
+label	String Reference	Cocktail (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[5]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240196
+idVisit	String Reference	181740
+label	String Reference	Diner (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[6]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240197
+idVisit	String Reference	181740
+label	String Reference	Soirée (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+idVotePeriod	String	
+[42]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181743
+idPlanning	String Reference	6806
+idDemand	String Reference	0
+demandPriority	String	
+idSpecialVisit	Null	
+idExhibitor	String Reference	0
+exhibitorCode	Null	
+idDO	String Reference	450
+dateStartString	String	2016-06-17 11:00:00
+dateEndString	String	2016-06-17 11:30:00
+contact	String	
+phone	String	
+isLocked	Boolean	false
+location	String	
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	false
+isValdidateByOZ	Boolean	false
+name	String	Maitre Kanter
+notes	Null	
+notesProg	Null	
+idStatus	String Reference	Reserve
+exhibitorName	Null	
+exhibitorWelcomeCapacity	Null	
+idExhibitorCountry	Null	
+specialVisitName	Null	
+visitActivityList	Array	
+[0]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240212
+idVisit	String Reference	181743
+label	String Reference	Petit déjeuner
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[1]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240213
+idVisit	String Reference	181743
+label	String Reference	Déjeuner
+isChecked	Boolean	true
+comment	String	
+urlIcon	String	
+[2]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240214
+idVisit	String Reference	181743
+label	String Reference	Cocktail
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[3]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240215
+idVisit	String Reference	181743
+label	String Reference	Petit déjeuner (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[4]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240216
+idVisit	String Reference	181743
+label	String Reference	Cocktail (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[5]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240217
+idVisit	String Reference	181743
+label	String Reference	Diner (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[6]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240218
+idVisit	String Reference	181743
+label	String Reference	Soirée (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+idVotePeriod	String	
+[43]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181744
+idPlanning	String Reference	6806
+idDemand	String Reference	0
+demandPriority	String	
+idSpecialVisit	Null	
+idExhibitor	String	14756
+exhibitorCode	String	2424
+idDO	String Reference	450
+dateStartString	String	2016-06-17 16:30:00
+dateEndString	String	2016-06-17 17:00:00
+contact	String	HERMITE
+phone	String	+33149344315
+isLocked	Boolean	false
+location	String	HALL 5 - Stand B193
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	false
+isValdidateByOZ	Boolean	false
+name	String	
+notes	String	
+notesProg	String	
+idStatus	String Reference	Attente
+exhibitorName	String	AIRBUS HELICOPTERS -  
+exhibitorWelcomeCapacity	String Reference	2
+idExhibitorCountry	String Reference	71
+specialVisitName	Null	
+visitActivityList	Array	
+idVotePeriod	String	
+[44]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181763
+idPlanning	String Reference	6806
+idDemand	String Reference	0
+demandPriority	String	
+idSpecialVisit	Null	
+idExhibitor	String	13655
+exhibitorCode	String	15600
+idDO	String Reference	450
+dateStartString	String	2016-06-15 15:30:00
+dateEndString	String	2016-06-15 15:45:00
+contact	String	BOBBY
+phone	String	+1613-288-5652
+isLocked	Boolean	false
+location	String	HALL 5 - Stand J662
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	true
+isValdidateByOZ	Boolean	false
+name	String	
+notes	Null	
+notesProg	Null	
+idStatus	String Reference	Attente
+exhibitorName	String	ALLEN VANGUARD -  
+exhibitorWelcomeCapacity	String Reference	1
+idExhibitorCountry	String Reference	140
+specialVisitName	Null	
+visitActivityList	Array	
+[0]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240254
+idVisit	String Reference	181763
+label	String Reference	Petit déjeuner
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[1]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240255
+idVisit	String Reference	181763
+label	String Reference	Déjeuner
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[2]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240256
+idVisit	String Reference	181763
+label	String Reference	Cocktail
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[3]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240257
+idVisit	String Reference	181763
+label	String Reference	Petit déjeuner (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[4]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240258
+idVisit	String Reference	181763
+label	String Reference	Cocktail (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[5]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240259
+idVisit	String Reference	181763
+label	String Reference	Diner (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[6]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240260
+idVisit	String Reference	181763
+label	String Reference	Soirée (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+idVotePeriod	String	
+[45]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181774
+idPlanning	String Reference	6806
+idDemand	String Reference	0
+demandPriority	String	
+idSpecialVisit	Null	
+idExhibitor	String Reference	0
+exhibitorCode	Null	
+idDO	String Reference	450
+dateStartString	String	2016-06-17 16:30:30
+dateEndString	String	2016-06-17 18:00:30
+contact	String	
+phone	String	
+isLocked	Boolean	false
+location	String	
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	false
+isValdidateByOZ	Boolean	false
+name	String	D�jeuner Ticket
+notes	Null	
+notesProg	Null	
+idStatus	String Reference	Attente
+exhibitorName	Null	
+exhibitorWelcomeCapacity	Null	
+idExhibitorCountry	Null	
+specialVisitName	Null	
+visitActivityList	Array	
+[0]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240331
+idVisit	String Reference	181774
+label	String Reference	Petit déjeuner
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[1]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240332
+idVisit	String Reference	181774
+label	String Reference	Déjeuner
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[2]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240333
+idVisit	String Reference	181774
+label	String Reference	Cocktail
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[3]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240334
+idVisit	String Reference	181774
+label	String Reference	Petit déjeuner (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[4]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240335
+idVisit	String Reference	181774
+label	String Reference	Cocktail (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[5]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240336
+idVisit	String Reference	181774
+label	String Reference	Diner (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[6]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240337
+idVisit	String Reference	181774
+label	String Reference	Soirée (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+idVotePeriod	String	
+[46]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181785
+idPlanning	String Reference	6806
+idDemand	String Reference	0
+demandPriority	String	
+idSpecialVisit	Null	
+idExhibitor	String Reference	0
+exhibitorCode	Null	
+idDO	String Reference	450
+dateStartString	String Reference	2016-06-15 16:30:00
+dateEndString	String Reference	2016-06-15 17:00:00
+contact	String	
+phone	String	
+isLocked	Boolean	false
+location	String	
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	false
+isValdidateByOZ	Boolean	false
+name	String	Test Special RDV
+notes	Null	
+notesProg	Null	
+idStatus	String Reference	Reserve
+exhibitorName	Null	
+exhibitorWelcomeCapacity	Null	
+idExhibitorCountry	Null	
+specialVisitName	Null	
+visitActivityList	Array	
+[0]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240408
+idVisit	String Reference	181785
+label	String Reference	Petit déjeuner
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[1]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240409
+idVisit	String Reference	181785
+label	String Reference	Déjeuner
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[2]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240410
+idVisit	String Reference	181785
+label	String Reference	Cocktail
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[3]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240411
+idVisit	String Reference	181785
+label	String Reference	Petit déjeuner (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[4]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240412
+idVisit	String Reference	181785
+label	String Reference	Cocktail (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[5]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240413
+idVisit	String Reference	181785
+label	String Reference	Diner (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[6]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240414
+idVisit	String Reference	181785
+label	String Reference	Soirée (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+idVotePeriod	String	
+[47]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181795
+idPlanning	String Reference	6806
+idDemand	String Reference	0
+demandPriority	String	
+idSpecialVisit	Null	
+idExhibitor	String Reference	0
+exhibitorCode	Null	
+idDO	String Reference	450
+dateStartString	String Reference	2016-06-15 15:30:00
+dateEndString	String Reference	2016-06-15 16:00:00
+contact	String	
+phone	String	
+isLocked	Boolean	false
+location	String	
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	false
+isValdidateByOZ	Boolean	false
+name	String	test Special Visit
+notes	Null	
+notesProg	Null	
+idStatus	String Reference	Reserve
+exhibitorName	Null	
+exhibitorWelcomeCapacity	Null	
+idExhibitorCountry	Null	
+specialVisitName	Null	
+visitActivityList	Array	
+[0]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240478
+idVisit	String Reference	181795
+label	String Reference	Petit déjeuner
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[1]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240479
+idVisit	String Reference	181795
+label	String Reference	Déjeuner
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[2]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240480
+idVisit	String Reference	181795
+label	String Reference	Cocktail
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[3]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240481
+idVisit	String Reference	181795
+label	String Reference	Petit déjeuner (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[4]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240482
+idVisit	String Reference	181795
+label	String Reference	Cocktail (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[5]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240483
+idVisit	String Reference	181795
+label	String Reference	Diner (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[6]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240484
+idVisit	String Reference	181795
+label	String Reference	Soirée (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+idVotePeriod	String	
+[48]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181802
+idPlanning	String Reference	6806
+idDemand	String Reference	0
+demandPriority	String	
+idSpecialVisit	Null	
+idExhibitor	String	13084
+exhibitorCode	String	2864
+idDO	String Reference	450
+dateStartString	String	2016-06-17 15:00:00
+dateEndString	String	2016-06-17 15:30:00
+contact	String	BOLLE
+phone	String	+33 6 73 48 90 97 
+isLocked	Boolean	false
+location	String	EXT P3 sud - Stand A600
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	false
+isValdidateByOZ	Boolean	false
+name	String	
+notes	String	
+notesProg	String	
+idStatus	String Reference	Attente
+exhibitorName	String	NEXTER SYSTEMS -  
+exhibitorWelcomeCapacity	String Reference	5
+idExhibitorCountry	String Reference	71
+specialVisitName	Null	
+visitActivityList	Array	
+idVotePeriod	String	
+[49]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181882
+idPlanning	String Reference	6806
+idDemand	String Reference	0
+demandPriority	String	
+idSpecialVisit	Null	
+idExhibitor	String	14647
+exhibitorCode	String	31658
+idDO	String Reference	450
+dateStartString	String	2018-06-12 11:00:00
+dateEndString	String	2018-06-12 11:20:00
+contact	String	
+phone	String	
+isLocked	Boolean	false
+location	String	HALL 5 - Stand J607
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	false
+isValdidateByOZ	Boolean	false
+name	String	
+notes	String	
+notesProg	String	
+idStatus	String Reference	Attente
+exhibitorName	String	ARVEKA -  
+exhibitorWelcomeCapacity	Null	
+idExhibitorCountry	String	105
+specialVisitName	Null	
+visitActivityList	Array	
+idVotePeriod	String	
+[50]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181883
+idPlanning	String Reference	6806
+idDemand	String Reference	0
+demandPriority	String	
+idSpecialVisit	Null	
+idExhibitor	String	13488
+exhibitorCode	String	11274
+idDO	String Reference	450
+dateStartString	String	2018-06-12 13:00:00
+dateEndString	String	2018-06-12 13:20:00
+contact	String	
+phone	String	
+isLocked	Boolean	false
+location	String	HALL 6 - Stand J312
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	false
+isValdidateByOZ	Boolean	false
+name	String	
+notes	String	
+notesProg	String	
+idStatus	String Reference	Attente
+exhibitorName	String	3M / PELTOR -  
+exhibitorWelcomeCapacity	Null	
+idExhibitorCountry	String	153
+specialVisitName	Null	
+visitActivityList	Array	
+idVotePeriod	String	
+[51]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181884
+idPlanning	String Reference	6806
+idDemand	String Reference	0
+demandPriority	String	
+idSpecialVisit	Null	
+idExhibitor	String	13070
+exhibitorCode	String	2624
+idDO	String Reference	450
+dateStartString	String	2018-06-12 14:00:00
+dateEndString	String	2018-06-12 14:20:00
+contact	String	MARNALO
+phone	String	+32 4 240 81 36
+isLocked	Boolean	false
+location	String	HALL 6 - Stand F197
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	false
+isValdidateByOZ	Boolean	false
+name	String	
+notes	String	
+notesProg	String	
+idStatus	String Reference	Attente
+exhibitorName	String	FN HERSTAL -  
+exhibitorWelcomeCapacity	String Reference	1
+idExhibitorCountry	String Reference	20
+specialVisitName	Null	
+visitActivityList	Array	
+idVotePeriod	String	

@@ -1,0 +1,928 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations> 
+	<item id="MAIN_TITLE">
+		<fr><![CDATA[VISIT MANAGER - Eurosatory 2016]]></fr>
+        <es><![CDATA[VISIT MANAGER - Expodefensa 2015]]></es>
+        <en><![CDATA[VISIT MANAGER - Eurosatory 2016]]></en>
+	</item>
+  <item id="BT_SEARCH_LABEL">
+        <fr>Rechercher</fr>
+        <es><![CDATA[Buscar]]></es>
+        <en>Search</en>
+      </item>
+  <item id="BT_BACK_LABEL">
+        <fr><![CDATA[Retour]]></fr>
+        <es><![CDATA[Atrás]]></es>
+        <en><![CDATA[Back]]></en>
+      </item>
+  <item id="BT_SEND_MESSAGE_LABEL">
+        <fr>Envoyer</fr>
+        <es><![CDATA[Enviar]]></es>
+        <en>Send</en>
+      </item>
+  <item id="BT_ADD_LOCKED_LABEL">
+        <fr>Ajouter une plage réservée</fr>
+        <es><![CDATA[Añadir una franja horaria reservada]]></es>
+        <en>Add a reserved slot</en>
+      </item>
+  <item id="BT_PRINT_LABEL">
+        <fr>Imprimer le planning</fr>
+        <es><![CDATA[Imprimir el programa]]></es>
+        <!--<es><![CDATA[Imprimir el planning]]></es>-->
+        <en>Print schedule</en>
+      </item>
+  <item id="LBL_SEARCH_EXHIBITOR">
+        <fr>Rechercher un exposant</fr>
+        <es><![CDATA[Buscar un expositor]]></es>
+        <en>Search exhibitor</en>
+      </item>
+  <item id="LBL_SEARCH_TEXT_INPUT">
+        <fr>Nom d'exposant...</fr>
+        <es><![CDATA[Nombre del expositor]]></es>
+        <en>Exhibitor name ...</en>
+      </item>
+  <item id="LBL_CB_INVITATION">
+        <fr>Avec demande d'invitation</fr>
+        <es><![CDATA[Con pedido de invitación]]></es>
+        <en>With request</en>
+      </item>
+	<!--
+  <item id="LBL_RESULT_NUMBER">
+        <fr>Nb. : </fr>
+        <es><![CDATA[Núm. : ]]></es>
+        <en>Nber: </en>
+      </item>
+		-->
+  <item id="LBL_EXHIBITOR">
+        <fr>Exposants</fr>
+        <es><![CDATA[Expositores]]></es>
+        <en>Exhibitors</en>
+      </item>
+  <item id="LBL_MESSAGE_PANEL">
+        <fr>Commentaire OZ/Programmeur</fr>
+        <es><![CDATA[Observación del resp. de zona/Planificador]]></es>
+        <en>Comments Managing Officer/Planner</en>
+      </item>
+  <item id="LBL_REFRESH">
+        <fr>Rafraîchir</fr>
+        <es><![CDATA[Actualizar]]></es>
+        <en>Refresh</en>
+      </item>
+  <item id="LBL_LAST_UPDATE">
+        <fr>Dernière mise à jour : </fr>
+        <es><![CDATA[Ultima modificación : ]]></es>
+        <en>Last update: </en>
+      </item>
+  <item id="LBL_PLANNING">
+        <fr>Planning : </fr>
+        <es><![CDATA[Planning : ]]></es>
+        <en>Schedule: </en>
+      </item>
+  <item id="LBL_MANAGER">
+        <fr>Géré par : </fr>
+        <es><![CDATA[Dirigido por : ]]></es>
+        <en>Managed by: </en>
+      </item>
+  <item id="LBL_SLOTS">
+        <fr>Nb. créneaux max. : </fr>
+        <es><![CDATA[Núm. Máx. de franjas horarias : ]]></es>
+        <en>Max Nber of slots: </en>
+      </item>
+  <item id="LBL_PHONE">
+        <fr>Tél. : </fr>
+        <es><![CDATA[Tel. : ]]></es>
+        <en>Tel.: </en>
+      </item>
+  <item id="LBL_ALLOCATION">
+        <fr>Répartition créneaux : </fr>
+        <es><![CDATA[Repartición de las franjas horarias : ]]></es>
+        <en>Slot distribution: </en>
+      </item>
+  <item id="DO_STATUS_CANCELED">
+        <fr>D.O. annulée</fr>
+        <es><![CDATA[DO cancelada]]></es>
+        <en>OD cancelled</en>
+      </item>
+  <item id="DO_STATUS_INTENDED">
+        <fr>D.O. à confirmer</fr>
+        <es><![CDATA[DO prevista]]></es>	  
+        <en>OD to be confirmed</en>
+      </item>
+	  <item id="DO_STATUS_CONFIRMED">
+        <fr>D.O. confirmée - sans dates</fr>
+        <es><![CDATA[DO Confirmada - sin fechas]]></es>
+        <en>OD confirmed - without dates</en>
+      </item>
+  <item id="DO_STATUS_FULLY_CONFIRMED">
+        <fr>D.O. dates confirmées</fr>
+        <es><![CDATA[DO Confirmada]]></es>
+        <en>OD dates confirmed</en>
+      </item>
+  <item id="LBL_SEARCH_ALL_COUNTRIES">
+        <fr>Tous les pays</fr>
+        <es><![CDATA[Todos países]]></es>
+        <en>All countries</en>
+      </item>
+  <item id="LBL_SEARCH_FRANCE_EUROPE">
+        <fr><![CDATA[FRANCE & EUROPE]]></fr>
+        <es><![CDATA[FRANCIA & EUROPA]]></es>
+        <en><![CDATA[FRANCE/EU]]></en>
+      </item>
+  <item id="LBL_SEARCH_FOREIGNER">
+        <fr>ÉTRANGER</fr>
+        <es><![CDATA[EXTRANJERO]]></es>
+        <en>FOREIGN</en>
+      </item>
+  <item id="LBL_LOADING_RESOURCES">
+        <fr>Chargement des ressources...</fr>
+        <es><![CDATA[Cargo de los datos...]]></es>
+        <en>Ressources loading...</en>
+      </item>
+  <item id="DAY_MONDAY">
+        <fr>Lundi</fr>
+        <es><![CDATA[Lunes]]></es>
+        <en>Monday</en>
+      </item>
+  <item id="DAY_TUESDAY">
+        <fr>Mardi</fr>
+        <es><![CDATA[Martes]]></es>
+        <en>Tuesday</en>
+      </item>
+  <item id="DAY_WEDNESDAY">
+        <fr>Mercredi</fr>
+        <es><![CDATA[Miércoles]]></es>
+        <en>Wednesday</en>
+      </item>
+  <item id="DAY_THURSDAY">
+        <fr>Jeudi</fr>
+        <es><![CDATA[Jueves]]></es>
+        <en>Thursday</en>
+      </item>
+  <item id="DAY_FRIDAY">
+        <fr>Vendredi</fr>
+        <es><![CDATA[Viernes]]></es>
+        <en>Friday</en>		
+      </item>
+	  <item id="VISIT_STATUS_ACCEPTED">
+        <fr>Validé</fr>
+        <es><![CDATA[Validado]]></es>
+        <en>Validated</en>
+      </item>
+  <item id="VISIT_STATUS_ACCEPTED_FRANCE">
+        <fr>Validé</fr>
+        <es><![CDATA[Validado]]></es>
+        <en>Validated</en>
+      </item>
+  <item id="VISIT_STATUS_PENDING">
+        <fr>En cours</fr>
+        <es><![CDATA[Pendiente]]></es>
+        <en>In progress</en>
+      </item>
+  <item id="VISIT_STATUS_CANCELED">
+        <fr>Ajourné</fr>
+        <es><![CDATA[Cancelado]]></es>
+        <en>Adjourned</en>
+      </item>
+  <item id="VISIT_STATUS_LOCKED">
+        <fr>Réservé</fr>
+        <es><![CDATA[Réservé]]></es>
+        <en>Reserved</en>
+      </item>
+  <item id="BT_VALID_LABEL">
+        <fr>Confirmer</fr>
+        <es><![CDATA[Confirmar]]></es>
+        <en>Confirm</en>
+      </item>
+  <item id="BT_CANCEL_LABEL">
+        <fr>Annuler</fr>
+        <es><![CDATA[Borrar]]></es>
+        <en>Cancel</en>
+      </item>
+  <item id="BT_VALID_VISIT_LABEL">
+        <fr>Valider</fr>
+        <es><![CDATA[Validar]]></es>
+        <en>Validate</en>
+      </item>
+  <item id="BT_CANCEL_VISIT_LABEL">
+        <fr>Ajourner</fr>
+        <es><![CDATA[Aplazar]]></es>
+        <en>Adjourn</en>
+      </item>
+  <item id="BT_REMOVE_VISIT_LABEL">
+        <fr>Supprimer</fr>
+        <es><![CDATA[Eliminar]]></es>
+        <en>Delete</en>
+      </item>
+  <item id="BT_SAVE_VISIT_LABEL">
+        <fr>Enregistrer</fr>
+        <es><![CDATA[Registrar]]></es>
+        <en>Save</en>
+      </item>
+  <item id="BT_GET_DEMAND_VISIT_LABEL">
+        <fr>Voir la demande initiale</fr>
+        <es><![CDATA[Ver el pedido INICIAL]]></es>
+        <en>See initial request</en>
+      </item>
+  <item id="CONFIRM_REMOVE_VISIT">
+        <fr><![CDATA[Voulez-vous vraiment supprimer ce rendez-vous ?]]></fr>
+        <es><![CDATA[¿Quiere cancelar esta cita?]]></es>
+        <en><![CDATA[Do you really want to delete this appointment?]]></en>
+      </item>
+	  <item id="VISIT_DETAIL_LABEL_NAME">
+        <fr>Exposant / Évènement : </fr>
+        <es><![CDATA[Expositor/ Evento : ]]></es>
+        <en>Exhibitor/ Event: </en>
+      </item>
+  <item id="VISIT_DETAIL_LABEL_START">
+        <fr>Début :</fr>
+        <es><![CDATA[Inicio :]]></es>
+        <en>Start:</en>
+      </item>
+  <item id="VISIT_DETAIL_LABEL_END">
+        <fr>Fin :</fr>
+        <es><![CDATA[Fin :]]></es>
+        <en>End:</en>
+      </item>
+  <item id="VISIT_DETAIL_LABEL_ACTIVITIES">
+        <fr>Activités :</fr>
+        <es><![CDATA[Actividades :]]></es>
+        <en>Activities:</en>
+      </item>
+  <item id="VISIT_DETAIL_LABEL_LOCATION">
+        <fr>Lieu :</fr>
+        <es><![CDATA[Lugar :]]></es>
+        <en>Location:</en>
+      </item>
+  <item id="VISIT_DETAIL_LABEL_CONTACT">
+        <fr>Contact :</fr>
+        <es><![CDATA[Contacto :]]></es>
+        <en>Contact:</en>
+      </item>
+  <item id="VISIT_DETAIL_LABEL_PHONE">
+        <fr>Tél. :</fr>
+        <es><![CDATA[Tel. :]]></es>
+        <en>Tel.:</en>
+      </item>
+  <item id="VISIT_DETAIL_LABEL_NOTES">
+        <fr>Notes :</fr>
+        <es><![CDATA[Observ. :]]></es>
+        <en>Notes:</en>
+      </item>
+  <item id="DURATION_ALL_DAY">
+        <fr>Journée</fr>
+        <es><![CDATA[Día]]></es>
+        <en>All day</en>
+      </item>
+  <item id="DURATION_AFTERNOON">
+        <fr>Après-midi</fr>
+        <es><![CDATA[Tarde]]></es>
+        <en>Afternoon</en>
+      </item>
+  <item id="DURATION_MORNING">
+        <fr>Matin</fr>
+        <es><![CDATA[Mañana]]></es>
+        <en>Morning</en>
+      </item>
+  <item id="BT_CLOSE_LABEL">
+        <fr>Fermer</fr>
+        <es><![CDATA[Cerrar]]></es>
+        <en>Close</en>
+      </item>
+  <item id="WARNING_PLANNING_LOCKED">
+        <fr><![CDATA[Le Planning actuellement sélectionné est verrouillé.
+Seul le planning 'Travail' peut être modifié]]></fr>
+        <es><![CDATA[Es encerrado el programa actualmente seleccionado. Sólo puede modificar el programa 'Trabajo'.]]></es>
+        <en><![CDATA[The currently selected schedule is locked.
+Only 'Working' version schedule can be modified.]]></en>
+      </item>
+  <item id="LBL_SEARCH_ANY_DAY">
+        <fr>Journée indifférente</fr>
+        <es><![CDATA[Día indiferente]]></es>
+        <en>Indifferent day</en>
+      </item>
+  <item id="DAY_SATURDAY">
+        <fr>Samedi</fr>
+        <es><![CDATA[Sábado]]></es>
+        <en>Saturday</en>
+      </item>
+  <item id="DAY_SUNDAY">
+        <fr>Dimanche</fr>
+        <es><![CDATA[Domingo]]></es>
+        <en>Sunday</en>
+      </item>
+  <item id="LBL_MESSAGE_TEXT_INPUT">
+        <fr>Tapez votre message ici...</fr>
+        <es><![CDATA[Marque su mensaje aquí...]]></es>
+        <en>Type your message here...</en>
+      </item>
+  <item id="CB_SPECIAL_VISIT">
+        <fr>Autres visites...</fr>
+        <es><![CDATA[Otras visitas...]]></es>
+        <en>Other visits...</en>
+      </item>
+  <item id="BT_LOCK_VISIT_LABEL">
+        <fr>Verrouillé</fr>
+        <es><![CDATA[Bloqueado]]></es>
+        <en>Locked</en>
+      </item>
+  <item id="BT_UNLOCK_VISIT_LABEL">
+        <fr>Déverrouillé</fr>
+        <es><![CDATA[Desbloqueado]]></es>
+        <en>Unlocked</en>
+      </item>
+  <item id="VISIT_DETAIL_LABEL_NOTES_PROG">
+        <fr>Notes (prog) :</fr>
+        <es><![CDATA[Observ.(Planif) :]]></es>
+        <en>Notes (plan):</en>
+      </item>
+  <item id="BT_EXPORT_EXCEL_LABEL">
+        <fr>Exporter</fr>
+        <es><![CDATA[Exportar]]></es>
+        <en>Export</en>
+      </item>
+  <item id="LBL_EMAIL_TEXT_INPUT">
+        <fr>Ajouter un email...</fr>
+        <es><![CDATA[Añadir un email...]]></es>
+        <en>Add an email...</en>
+      </item>
+  <item id="EXPORT_EXCEL">
+        <fr>Cet export Excel sera également transmis par email aux destinataires que vous ajouterez ci-dessous</fr>
+        <es><![CDATA[Esa exportación Excel será también transmitida por correo electrónico a los destinatarios que añadirá más abajo.]]></es>
+        <en>This Excel export will also be sent by email to the recipients you add below</en>
+      </item>
+  <item id="ADD_DO_NOTES">
+        <fr>Ajoutez un commentaire pour cette DO</fr>
+        <es><![CDATA[Añada una observación para esa Delegación Oficial.]]></es>
+        <en>Add a comment to this OD</en>
+      </item>
+  <item id="NO_RESULT">
+        <fr>Aucun résultat</fr>
+        <es><![CDATA[Ningún resultado.]]></es>
+        <en>No result</en>
+      </item>
+	  <item id="EDIT_DO_AVAILABLE_PERIOD">
+        <fr>Définissez une plage de présence pour cette journée</fr>
+        <es><![CDATA[Indique una fanja horaria de presencia por este día.]]></es>
+        <en>Set a presence slot for today</en>
+      </item>
+  <item id="ALERT_EXHIBITOR_NOT_AVAILABLE">
+        <fr><![CDATA[<b>Création du rendez-vous impossible.</b><br><br>Cet exposant a atteint sa capacité d'accueil de délégations pour le créneau demandé.{DOList}<br><br><b>Autres disponibilités :</b><br><font size='12'>{AvailabilityList}</font><br><br><b>Voulez-vous malgré tout créer ce rendez-vous ?</b>]]></fr>
+		<es><![CDATA[<b>Creación de Cita imposible.</b><br><br>Este expositor alcanzó su capacidad máxima de acogida de Delegación en el horario solicitado.{DOList}<br><br><b>Horario libre :</b><br><font size='12'>{AvailabilityList}</font><br><br><b><b>No obstante ¿quiere crear esta cita?</b>]]></es>
+        <en><![CDATA[<b>Creation of appointment impossible.</b><br><br>This exhibitor has reached its hosting OD capacity for the requested slot.{DOList}<br><br><b>Available slots:</b><br><font size='12'>{AvailabilityList}</font><br><br><b>Would you still want to create this appointment?</b>]]></en>
+	</item>
+  <item id="ALERT_PERIOD_NOT_AVAILABLE">
+        <fr><![CDATA[<b>Création du rendez-vous impossible.</b><br><br>Le créneau demandé pour ce rendez-vous n'est pas disponible]]></fr>
+        <es><![CDATA[<b>Creación de Cita imposible.</b><br><br>No es libre el horario solicitado par esa cita.]]></es>
+        <en><![CDATA[<b>Creation of appointment impossible.</b><br><br>Slot requested for this appointment is not available]]></en>
+      </item>
+  <item id="ALERT_NAME_MISSING">
+        <fr><![CDATA[Veuillez saisir un nom pour cette plage réservée]]></fr>
+        <es><![CDATA[Por favor, escriba un nombre por este horario reservado]]></es>
+        <en><![CDATA[Please enter a name for the reserved slot]]></en>
+      </item>
+  <item id="ALERT_EXHIBITOR_IN_PLANNING">
+        <fr><![CDATA[<b>Attention !</b><br><br>Cet exposant est déjà présent sur le planning de travail de cette délégation]]></fr>
+        <es><![CDATA[<b>¡Atención!</b><br><br>Ya está presente ese expositor en la agenda de la delegación.]]></es>
+        <en><![CDATA[<b>Caution!</b><br><br>This exhibitor is already on the schedule working version of this OD]]></en>
+      </item>
+  <item id="CONFIRM_CHANGE_VISIT_STATUS">
+        <fr><![CDATA[Vous allez modifier l'état de ce rendez-vous.<br><br>Confirmez-vous cette action ?]]></fr>
+        <es><![CDATA[Va a modificar el estatuto de esa cita.<br><br>¿Confirma esa acción ?]]></es>
+        <en><![CDATA[You will change the status of this appointment.<br><br>Do you confirm this action?]]></en>
+      </item>
+  <item id="LBL_CB_DONT_SHOW_NEXT_TIME">
+        <fr><![CDATA[Ne pas montrer cet avertissement la prochaine fois]]></fr>
+        <es><![CDATA[No mostrar esta advertencia la próxima vez.]]></es>
+        <en><![CDATA[Do not show this warning message next time]]></en>
+      </item>
+  <item id="CONFIRM_REMOVE_VISIT_PENDING">
+        <fr><![CDATA[Voulez-vous vraiment supprimer ce rendez-vous ?<br><br><br>La demande associée sera remise en état "Soumis"]]></fr>
+        <es><![CDATA[¿Verdaderamente quiere suprimir esta cita?<br><br><br>El pedido vinculado pasará en estatuto "presentado".]]></es>
+        <en><![CDATA[Do you really want to delete this appointment?<br><br><br>The associated request will be reversed to "Submitted"]]></en>
+      </item>
+  <item id="CONFIRM_REMOVE_VISIT_CANCELED">
+        <fr><![CDATA[Voulez-vous vraiment supprimer ce rendez-vous ?<br><br><br>Attention ! La demande associée sera archivée]]></fr>
+        <es><![CDATA[¿Verdaderamente quiere suprimir esta cita?<br><br><br>¡Atención! El pedido vinculado pasará en estatuto "archivado".]]></es>
+        <en><![CDATA[Do you really want to delete this appointment?<br><br><br>Caution! The associated request will be archived]]></en>
+      </item>
+  <item id="TOOLTIP_BT_REFRESH_MESSAGES">
+        <fr><![CDATA[Rafraîchir les commentaires]]></fr>
+        <es><![CDATA[Actualizar los comentarios.]]></es>
+        <en><![CDATA[Refresh comments]]></en>
+      </item>
+  <item id="TOOLTIP_SEND_MESSAGE">
+        <fr><![CDATA[Envoyer le commentaire]]></fr>
+        <es><![CDATA[Enviar los comentarios.]]></es>
+        <en><![CDATA[Send comment]]></en>
+      </item>
+	  <item id="TOOLTIP_BT_REFRESH_PLANNING">
+        <fr><![CDATA[Rafraîchir le planning de la délégation]]></fr>
+        <es><![CDATA[Actualizar el planning de la Delegación.]]></es>
+        <en><![CDATA[Refresh OD schedule]]></en>
+      </item>
+  <item id="TOOLTIP_BT_ADD_DO_NOTE">
+        <fr><![CDATA[Ajouter une note pour la délégation]]></fr>
+        <es><![CDATA[Añadir una observación para la Delegación.]]></es>
+        <en><![CDATA[Add a comment to the OD]]></en>
+      </item>
+  <item id="TOOLTIP_BT_SEARCH">
+        <fr><![CDATA[Rechercher selon les critères ci-dessus]]></fr>
+        <es><![CDATA[Buscar según los comentarios mencionados más arriba.]]></es>
+        <en><![CDATA[Search according to the above criteria]]></en>
+      </item>
+  <item id="TOOLTIP_BT_NEXT_PAGE">
+        <fr><![CDATA[Page suivante]]></fr>
+        <es><![CDATA[Pagina siguiente.]]></es>
+        <en><![CDATA[Next]]></en>
+      </item>
+  <item id="TOOLTIP_BT_PREVIOUS_PAGE">
+        <fr><![CDATA[Page précédente]]></fr>
+        <es><![CDATA[Page anterior.]]></es>
+        <en><![CDATA[Previous]]></en>
+      </item>
+  <item id="TOOLTIP_BT_FIRST_PAGE">
+        <fr><![CDATA[Première page]]></fr>
+        <es><![CDATA[Primera pagina.]]></es>
+        <en><![CDATA[First page]]></en>
+      </item>
+  <item id="TOOLTIP_BT_LAST_PAGE">
+        <fr><![CDATA[Dernière page]]></fr>
+        <es><![CDATA[Última pagina.]]></es>
+        <en><![CDATA[Last page]]></en>
+      </item>
+  <item id="TOOLTIP_BT_CREATE_NEW_VERSION">
+        <fr><![CDATA[Créer une version archivée du planning de travail en cours]]></fr>
+        <es><![CDATA[Crear una versión archivada del planning de trabajo corriente.]]></es>
+        <en><![CDATA[Create an archived version of the current working schedule]]></en>
+      </item>
+  <item id="TOOLTIP_BT_EXTRACT_OLD_PLANNING">
+        <fr><![CDATA[Remplacer le planning de travail par un nouveau basé sur cette version archivée]]></fr>
+        <es><![CDATA[Sustituir el planning de trabajo por un nuevo basado en esta versión archivada.]]></es>
+        <en><![CDATA[Replace the working schedule with a new one based on this archived version]]></en> 
+      </item>
+  <item id="TOOLTIP_BT_EDIT_DO_AVAILABLE_PERIOD">
+        <fr><![CDATA[Modifier les horaires de présence de la délégation]]></fr>
+        <es><![CDATA[Modificar los horarios de presencia de la Delegación.]]></es>
+        <en><![CDATA[Adjust schedules presence of the OD]]></en>
+      </item>
+  <item id="TOOLTIP_BT_ADD_LOCKED_VISIT">
+        <fr><![CDATA[Ajouter une plage réservée sur ce planning]]></fr>
+        <es><![CDATA[Añadir un horario reservado en este planning.]]></es>
+        <en><![CDATA[Add a reserved slot on this schedule]]></en>
+      </item>
+  <item id="TOOLTIP_BT_PRINT_PLANNING">
+        <fr><![CDATA[Imprimer le planning en cours.]]></fr>
+        <es><![CDATA[Imprimir el planning corriente.]]></es>
+        <en><![CDATA[Print the current schedule]]></en>
+      </item>
+  <item id="TOOLTIP_BT_EXPORT_PLANNING">
+        <fr><![CDATA[Exporter/Envoyer par mail le planning en cours]]></fr>
+        <es><![CDATA[Exportar/Enviar por E-mail el planning corriente.]]></es>
+        <en><![CDATA[Export/Email the current schedule]]></en>
+      </item>
+  <item id="TOOLTIP_BT_CANCEL_VISIT">
+        <fr><![CDATA[Ajourner le rendez-vous]]></fr>
+        <es><![CDATA[Cancelar la Cita.]]></es>
+        <en><![CDATA[Adjourn appointment]]></en>
+      </item>
+  <item id="TOOLTIP_BT_ACCEPT_VISIT">
+        <fr><![CDATA[Valider le rendez-vous]]></fr>
+        <es><![CDATA[Validar la Cita.]]></es>
+        <en><![CDATA[Validate appointment]]></en>
+      </item>
+	  <item id="TOOLTIP_BT_GET_DEMAND">
+        <fr><![CDATA[Accéder à la demande initale de ce rendez-vous]]></fr>
+        <es><![CDATA[Ir al pedido inicial de esta cita.]]></es>
+        <en><![CDATA[Access the inital request of the appointment]]></en>
+      </item>
+  <item id="TOOLTIP_BT_REMOVE_VISIT">
+        <fr><![CDATA[Supprimer ce rendez-vous du planning en cours]]></fr>
+        <es><![CDATA[Suprimir esta cita del planning corriente.]]></es>
+        <en><![CDATA[Delete appointment from the current schedule]]></en>
+      </item>
+  <item id="TOOLTIP_BT_SAVE_VISITE">
+        <fr><![CDATA[Enregistrer les modifications et fermer la fenêtre]]></fr>
+        <es><![CDATA[Registra las modificaciones y cerrar la ventana.]]></es>
+        <en><![CDATA[Save the changes and close the window]]></en>
+      </item>
+  <item id="TOOLTIP_BT_CLOSE_POPUP">
+        <fr><![CDATA[Fermer la fenêtre]]></fr>
+        <es><![CDATA[Cerrar la ventana.]]></es>
+        <en><![CDATA[Close window]]></en>
+      </item>
+  <item id="TOOLTIP_BT_LOCALIZE">
+        <fr><![CDATA[Localiser cet exposant sur le salon]]></fr>
+        <es><![CDATA[Localizar este expositor en la feria.]]></es>
+        <en><![CDATA[Locate this exhibitor on the exhibition]]></en>
+      </item>
+  <item id="TOOLTIP_BT_ADD_TO_PLANNING">
+        <fr><![CDATA[Créer un rendez-vous d'après cette demande sur le planning en cours]]></fr>
+        <es><![CDATA[A partir de este pedido crear una cita en el planning corriente.]]></es>
+        <en><![CDATA[Create an appointment from this request on the current schedule]]></en>
+      </item>
+  <item id="TOOLTIP_BT_LOCK_VISIT">
+        <fr><![CDATA[Verrouiller ce rendez-vous sur le planning en cours]]></fr>
+        <es><![CDATA[Fijar esta cita en el planning corriente.]]></es>
+        <en><![CDATA[Lock this appointment on the current schedule]]></en>
+      </item>
+  <item id="TOOLTIP_BT_UNLOCK_VISIT">
+        <fr><![CDATA[Déverrouiller ce rendez-vous sur le planning en cours]]></fr>
+        <es><![CDATA[Desbloquear esta cita en el planning corriente.]]></es>
+        <en><![CDATA[Unlock this appointment on the current schedule]]></en>
+      </item>
+  <item id="TOOLTIP_BT_RESULT_ORDER">
+        <fr><![CDATA[Trier les résultats par ordre alphabétique]]></fr>
+        <es><![CDATA[Clasificar los resultados por orden alfabético.]]></es>
+        <en><![CDATA[Sort results alphabetically]]></en>
+      </item>
+  <item id="LBL_WAIT_ITEM_SEARCH">
+        <fr><![CDATA[Recherche en cours...]]></fr>
+        <es><![CDATA[Búsqueda en proceso...]]></es>
+        <en><![CDATA[Search in progress...]]></en>
+      </item>
+  <item id="ALERT_EXHIBITOR_NON_ELIGIBLE">
+        <fr><![CDATA[<b>Attention ! Cet exposant est non-éligible.</b><br><br>{name}<br>- Capacité d'accueil DO : {welcomeCapacity}<br>- Lieu : {welcomeStand}<br>- Contact : {contact}<br><br><b>Voulez-vous malgré tout créer ce rendez-vous ?</b>]]></fr>
+        <es><![CDATA[<b>¡Atención! Este expositor no es elegible.</b><br><br>{name}<br>- Capacidad de acogida DO : {welcomeCapacity}<br>- Lugar : {welcomeStand}<br>- Contacto : {contact}<br><br><b>¿Quiere a pesar de todo crear esta cita?</b>]]></es>
+        <en><![CDATA[<b>Caution! This exhibitor is not eligible.</b><br><br>{name}<br>- OD Capacity: {welcomeCapacity}<br>- Location: {welcomeStand}<br>- Contact: {contact}<br><br><b>Would you still want create this appointment?</b>]]></en>
+      </item>
+  <item id="BT_VALID_ANYWAY_LABEL">
+        <fr><![CDATA[<b>Créer le rendez-vous malgré tout]]></fr>
+        <es><![CDATA[<b>A pesar de todo, crear la cita.]]></es>
+        <en><![CDATA[<b>Create appointment anyway]]></en>
+      </item>
+  <item id="FLAG_WITH_DEMAND">
+        <fr><![CDATA[<b>* Avec Demande *</b>]]></fr>
+        <es><![CDATA[<b>* Con pedido *</b>]]></es>
+        <en><![CDATA[<b>* With request *</b>]]></en>
+      </item>	  
+  <item id="LBL_OA">
+        <fr><![CDATA[O.A. : ]]></fr>
+        <es><![CDATA[Edecán : ]]></es>
+        <en><![CDATA[O.A.: ]]></en>
+      </item>
+  <item id="LBL_PRIORITY">
+        <fr><![CDATA[Priorité :]]></fr>
+        <es><![CDATA[Prioridad :]]></es>
+        <en><![CDATA[Priority:]]></en>
+      </item>
+  <item id="LBL_SEARCH_ALL_EXHIBITOR_GROUPS">
+        <fr><![CDATA[Tous les groupes]]></fr>">
+        <es><![CDATA[Todos los grupos]]></es>
+        <en><![CDATA[All groups]]></en>
+      </item>
+  <item id="LBL_PENDING">
+        <fr>RDV en attente</fr>
+        <es><![CDATA[Cita en espera]]></es>
+        <en>Pending appointment</en>
+      </item>
+  <item id="BT_REFRESH_PENDING_LABEL">
+        <fr>Actualiser</fr>
+        <es><![CDATA[Actualizar]]></es>
+        <en>Refresh</en>
+      </item>
+  <item id="BT_CLEAR_PENDING_LABEL">
+        <fr>Vider</fr>
+        <es><![CDATA[Vaciar]]></es>
+        <en>Empty</en>
+      </item>
+  <item id="TOOLTIP_BT_REFRESH_PENDING">
+        <fr>Actualiser la liste des RDV en attente</fr>
+        <es><![CDATA[Actualizar la lista de las citas en espera]]></es>
+        <en>Refresh the list of pending appointments</en>
+      </item>
+  <item id="TOOLTIP_BT_CLEAR_PENDING">
+        <fr>Vider la liste des RDV en attente</fr>
+        <es><![CDATA[Vacaiar la lista de las citas en espera]]></es>
+        <en>Empty the list of pending appointments</en>
+      </item>
+  <item id="TOOLTIP_BT_DUPLICATE_PLANNING">
+        <fr>Dupliquer ce planning pour une autre DO</fr>
+        <es><![CDATA[Duplicar este planning para una otra DO]]></es>
+        <en>Duplicate this schedule for another OD</en>
+      </item>
+  <item id="TOOLTIP_BT_CLEAR_PLANNING">
+        <fr>Vider le planning actuel</fr>
+        <es><![CDATA[Vaciar el planning corriente]]></es>
+        <en>Empty the current schedule</en>
+      </item>
+  <item id="DUPLICATE_PLANNING">
+        <fr><![CDATA[<b>Duplication du planning actuel.</b><br><br>Choisissez la délégation pour laquelle ce planning sera dupliqué. <b>Attention ! </b>Le planning de <b>travail</b> de cette délégation sera automatiquement archivé et remplacé par celui-ci]]></fr>
+        <es><![CDATA[<b>Duplicación del planning corriente.</b><br><br>Indique la delegación para la cual este planning será duplicado. <b>¡Atención!</b>Automáticamente el planning de <b>Trabajo</b> de esta delegación va a ser archivado y sustituido por este.]]></es>
+        <en><![CDATA[<b>Duplicate the current schedule</b><br><br>Choose the delegation for which this schedule will be duplicated. <b>Caution!</b>The <b>working version</b>schedule of this OD will be automatically archived and replaced by this one.]]></en>
+      </item>
+  <item id="CLEAR_PENDING_LIST">
+        <fr><![CDATA[Vous allez supprimer tous les RDV de la liste d'attente.<br><br>Les demandes associées seront remises en état "Soumis".<br><br><br>Voulez-vous continuer ?]]></fr>
+        <es><![CDATA[Va a suprimir todas las citas de la lista en espera.<br><br>Los pedidos asociados pasarán de nuevo en estatuto "Presentado".<br><br><br>¿Quiere continuar?]]></es>
+        <en><![CDATA[You will delete all the appointments of the waiting list.<br><br>Associated requests will be reversed as "Submitted".<br><br><br>Do you want to continue?]]></en>
+      </item>
+  <item id="CLEAR_PLANNING">
+        <fr><![CDATA[<b>Attention ! </b><br><br>Vous allez vider ce planning de la totalité de ses RDV.<br><br>Voulez-vous continuer ?]]></fr>
+        <es><![CDATA[<b>¡Atención! </b><br><br>Va a vaciar todas las citas del planning.<br><br>¿Quiere continuar?]]></es>
+        <en><![CDATA[<b>Caution!</b><br><br>You are going to empty this schedule of all its appointments.<br><br>Do you want to continue?]]></en>
+      </item>
+  <item id="LBL_WAIT_ITEM_WAIT">
+        <fr><![CDATA[Veuillez patienter...]]></fr>
+        <es><![CDATA[Espere por favor...]]></es>
+        <en><![CDATA[Please wait...]]></en>
+      </item>
+  <item id="ALERT_DUPLICATE_DO">
+        <fr><![CDATA[Le planning actuel a bien été dupliqué pour la délégation <b>{0}</b>]]></fr>
+        <es><![CDATA[Se duplicó el planning para la delegación <b>{0}</b>.]]></es>
+        <en><![CDATA[The current schedule has been duplicated for delegation <b>{0}</b>.]]></en>
+      </item>
+  <item id="BT_DUPLICATE_VISIT_LABEL">
+        <fr><![CDATA[Dupliquer pour d'autres DO]]></fr>
+        <es><![CDATA[Duplicar para otras DO.]]></es>
+        <en><![CDATA[Duplicate for other ODs]]></en>
+      </item>
+  <item id="TOOLTIP_BT_DUPLICATE_FOR_DO">
+        <fr><![CDATA[Dupliquer le rendez-vous pour une ou plusieurs autres DO]]></fr>
+        <es><![CDATA[Duplicar la cita para una o varias DO]]></es>
+        <en><![CDATA[Duplicate this appointment for one or many ODs]]></en>
+      </item>
+  <item id="DUPLICATE_VISIT_MESSAGE">
+        <fr><![CDATA[Sélectionnez les délégations pour lesquelles vous voulez dupliquer ce rendez-vous]]></fr>
+        <es><![CDATA[Elija las delegaciones para las cuales quiere duplicar esa cita.]]></es>
+        <en><![CDATA[Select the delegations for which you want to duplicate this appointment]]></en>
+      </item>
+  <item id="LABEL_AVAILABLE_DO_LIST">
+        <fr><![CDATA[Liste des délégations disponibles]]></fr>
+        <es><![CDATA[Lista de las delegaciones disponibles.]]></es>
+        <en><![CDATA[List of delegations available]]></en>    
+      </item>
+  <item id="LABEL_SELECTED_DO_LIST">
+        <fr><![CDATA[Liste des délégations sélectionnées]]></fr>
+        <es><![CDATA[Lista de las delegaciones seleccionadas.]]></es>
+        <en><![CDATA[List of delegations selected]]></en>
+      </item>
+  <item id="BT_CLEAR_LABEL">
+        <fr>Vider</fr>
+        <es><![CDATA[Vaciar]]></es>
+        <en>Empty</en>
+      </item>
+  <item id="BT_SELECT_ALL_LABEL">
+        <fr>Tout sélectionner</fr>
+        <es><![CDATA[Seleccionar todo]]></es>
+        <en>Select all</en>
+      </item>
+  <item id="DUPLICATE_VISIT_COMPLETE_OK_MESSAGE">
+        <fr><![CDATA[Le rendez-vous a bien été dupliqué pour toutes les délégations sélectionnées.]]></fr>
+        <es><![CDATA[Se duplicó con éxito la cita para todas las delegaciones seleccionadas.]]></es>
+        <en><![CDATA[The appointment has been duplicated for all selected delegations.]]></en>
+      </item>
+  <item id="DUPLICATE_VISIT_COMPLETE_ERROR_MESSAGE">
+        <fr><![CDATA[Le rendez-vous a été dupliqué pour certaines des délégations sélectionnées seulement.
+Vous trouverez ci-dessous la liste des délégations pour lesquelles ce rendez-vous n'a pas été dupliqué pour cause de conflit de créneau horaire.]]></fr>
+        <es><![CDATA[Solo se duplicó la cita para ciertas delegaciones seleccionadas.
+Encontrará más abajo la lista de las delegaciones por las cuales no se duplicó la cita por conflicto de horario.]]></es>
+        <en><![CDATA[The appointment was duplicated only for some of the selected delegations.
+You will find below the list of ODs to which this appointment has not been duplicated because of time slot conflict.]]></en>
+      </item>
+  <item id="LOCALIZATION_ERROR_MESSAGE">
+        <fr><![CDATA[Localisation impossible]]></fr>
+        <es><![CDATA[Ubicación imposible.]]></es>
+        <en><![CDATA[Location impossible]]></en>
+      </item>
+  <item id="TOOLTIP_LOCALIZATION_DAY_PATH">
+        <fr><![CDATA[Visualisez le parcours de cette journée sur le plan]]></fr>
+        <es><![CDATA[Ver el recorrido de este día en el plano.]]></es>
+        <en><![CDATA[Visualize the itinerary of the day on the map]]></en>
+      </item>
+  <item id="VISIT_VOTE_PM_LABEL">
+        <fr><![CDATA[Après midi 14h]]></fr>
+        <es><![CDATA[Tarde 14h.]]></es>
+        <en><![CDATA[Afternoon 14h]]></en>
+      </item>
+  <item id="VISIT_VOTE_PM_DEJ_LABEL">
+        <fr><![CDATA[12h - 13h30 (déj + visite stand)]]></fr>
+        <es><![CDATA[12h - 13h30 (Almuerzo + visita del stand).]]></es>
+        <en><![CDATA[12h - 13h30 (lunch + booth visit)]]></en>
+      </item>
+  <item id="VISIT_VOTE_AM_LABEL">
+        <fr><![CDATA[Matin, début du salon]]></fr>
+        <es><![CDATA[Mañana, abertura de la feria.]]></es>
+        <en><![CDATA[Morning, exhbition opening]]></en>
+      </item>
+  <item id="VISIT_VOTE_AM_DEJ_LABEL">
+        <fr><![CDATA[11h30 - 13h (visite stand + déj)]]></fr>
+        <es><![CDATA[11h30 - 13h (visita del stand + almuerzo).]]></es>
+        <en><![CDATA[11h30 - 13h (booth visit + lunch)]]></en>
+      </item>
+	<item id="MESSAGE_REMOVAL">
+		<fr><![CDATA[SUPPRESSION : ]]></fr>
+		<es><![CDATA[SUPRESIÓN : ]]></es>
+		<en><![CDATA[CANCELLATION: ]]></en>
+	</item>
+	<item id="MESSAGE_ADJOURNMENT">
+		<fr><![CDATA[AJOURNEMENT : ]]></fr>
+		<es><![CDATA[APLAZAMIENTO : ]]></es>
+		<en><![CDATA[ADJOURNMENT: ]]></en>
+	</item>
+	<item id="LBL_DO_REPRESENTED_HTML">
+		<fr><![CDATA[<i><font size='10'>{guestRepresentative} représente {guest}</font></i>]]></fr>
+		<es><![CDATA[<i><font size='10'>{guestRepresentative} representa {guest}</font></i>]]></es>
+		<en><![CDATA[<i><font size='10'>{guestRepresentative} represents {guest}</font></i>]]></en>
+	</item>
+	<item id="LBL_DO_REPRESENTED">
+		<fr><![CDATA[{guestRepresentative} représente {guest}]]></fr>
+		<es><![CDATA[{guestRepresentative} representa {guest}]]></es>
+		<en><![CDATA[{guestRepresentative} represents {guest}]]></en>
+	</item>
+	<item id="TOOLTIP_VISIT_DETAIL_FROM">
+		<fr><![CDATA[<b>De : </b>]]></fr>
+		<es><![CDATA[<b>De : </b>]]></es>
+		<en><![CDATA[<b>From: </b>]]></en>
+	</item>
+	<item id="TOOLTIP_VISIT_DETAIL_TO">
+		<fr><![CDATA[<b> à : </b>]]></fr>
+		<es><![CDATA[<b> a : </b>]]></es>
+		<en><![CDATA[<b>To: </b>]]></en>
+	</item>
+	<item id="TOOLTIP_VISIT_DETAIL_LOCATION">
+		<fr><![CDATA[<b>Lieu : </b>]]></fr>
+		<es><![CDATA[<b>Lugar : </b>]]></es>
+		<en><![CDATA[<b>Location: </b>]]></en>
+	</item>
+	<item id="TOOLTIP_VISIT_DETAIL_ACTIVITIES">
+		<fr><![CDATA[<b>Activités : </b>]]></fr>
+		<es><![CDATA[<b>Actividades : </b>]]></es>
+		<en><![CDATA[<b>Activities: </b>]]></en>
+	</item>
+	<item id="TOOLTIP_VISIT_DETAIL_DATE">
+		<fr><![CDATA[<b>Date : </b>]]></fr>
+		<es><![CDATA[<b>Fecha : </b>]]></es>
+		<en><![CDATA[<b>Date: </b>]]></en>
+	</item>
+	<item id="TOOLTIP_VISIT_DETAIL_VOTE_PERIOD">
+		<fr><![CDATA[<b>Créneau Vote : </b>]]></fr>
+		<es><![CDATA[<b>Horario Vota : </b>]]></es>
+		<en><![CDATA[<b>Slot Vote: </b>]]></en>
+	</item>
+	<item id="MESSAGE_PANEL_YOU">
+		<fr><![CDATA[Vous]]></fr>
+		<es><![CDATA[Usted]]></es>
+		<en><![CDATA[You]]></en>
+	</item>
+	<item id="MESSAGE_CHANGE_DO_STATUS">
+		<fr><![CDATA[La délégation <b>{DOLabel}</b> a maintenant le statut <b>{DOStatus}</b>]]></fr>
+		<es><![CDATA[La delegación <b>{DOLabel}</b> tiene ahora el estatuto <b>{DOStatus}</b>.]]></es>
+		<en><![CDATA[Delegation <b>{DOLabel}</b> is now at status <b>{DOStatus}</b>]]></en>
+	</item>
+	<item id="MESSAGE_DO_NOT_AVAILABLE">
+		<fr><![CDATA[La délégation demandée n'est pas disponible dans la liste actuelle]]></fr>
+		<es><![CDATA[La delegación solicitada no es disponible en la lista actual.]]></es>
+		<en><![CDATA[The requested delegation is not available in the current list]]></en>
+	</item>
+	<item id="MESSAGE_PERIOD_NOT_AVAILABLE">
+		<fr><![CDATA[Le créneau défini pour ce rendez-vous n'est pas disponible]]></fr>
+		<es><![CDATA[No es disponible el horario definido para esa cita.]]></es>
+		<en><![CDATA[The slot defined for this appointment is not available]]></en>
+	</item>
+	<item id="MESSAGE_NEW_PLANNING_VERSION_COMPLETE">
+		<fr><![CDATA[Céation d'une <b>version {version}</b> pour le planning de la délégation <b>{DOLabel}</b> terminée]]></fr>
+		<es><![CDATA[Creación de una <b>versión {version}</b> para el planning de la delegación <b>{DOLabel}</b> terminada.]]></es>
+		<en><![CDATA[Creation of <b>version {version}</b> for the schedule of delegation <b>{DOLabel}</b> is completed]]></en>
+	</item>
+	<item id="MESSAGE_EXTRACT_OLD_PLANNING_COMPLETE">
+		<fr><![CDATA[Création d'une nouvelle version de <b>Travail</b> pour la délégation <b>{DOLabel}</b> terminée]]></fr>
+		<es><![CDATA[Creación de una nueva versión de <b>Trabajo</b> para la delegación <b>{DOLabel}</b> terminada.]]></es>
+		<en><![CDATA[Creation of a new <b>Working</b> version for delegation <b>{DOLabel}</b> is completed]]></en>
+	</item>
+	<item id="ALERT_EXTRACT_OLD_PLANNING">
+		<fr><![CDATA[<b>Attention !</b><br><br>Vous allez remplacer le planning de Travail par un nouveau basé sur le planning {planningLabel}. <br><br>Voulez-vous continuer ?]]></fr>
+		<es><![CDATA[<b>¡Atención!</b><br><br>Va a sustituir el planning de trabajo por un nuevo planning basado sobre el planning {planningLabel}. <br><br>¿Quiere continuar?]]></es>
+		<en><![CDATA[<b>Caution!</b><br><br>You will replace the Working version of the schedule by another based on schedule {planningLabel}. <br><br>Do you want to continue?]]></en>
+	</item>
+	<item id="LBL_WORKING_PLANNING">
+		<fr><![CDATA[Travail]]></fr>
+		<es><![CDATA[Trabajo]]></es>
+		<en><![CDATA[Working]]></en>
+	</item>
+	<item id="LBL_FOREIGNER">
+		<fr><![CDATA[Étranger]]></fr>
+		<es><![CDATA[Extranjero]]></es>
+		<en><![CDATA[Foreign]]></en>
+      </item>
+	<item id="LBL_FRANCE">
+		<fr><![CDATA[France]]></fr>
+		<es><![CDATA[Francia]]></es>
+		<en><![CDATA[France]]></en>
+	</item>
+	<item id="MONTH_JANUARY">
+        <fr><![CDATA[Janvier]]></fr>
+		<es><![CDATA[Enero]]></es>
+		<en><![CDATA[January]]></en>
+	</item>
+	<item id="MONTH_FEBRUARY">
+        <fr><![CDATA[Février]]></fr>
+		<es><![CDATA[Febrero]]></es>
+		<en><![CDATA[February]]></en>
+	</item>
+	<item id="MONTH_MARCH">
+		<fr><![CDATA[Mars]]></fr>
+		<es><![CDATA[Marzo]]></es>
+		<en><![CDATA[March]]></en>
+	</item>
+	<item id="MONTH_APRIL">
+        <fr><![CDATA[Avril]]></fr>
+		<es><![CDATA[Abril]]></es>
+		<en><![CDATA[April]]></en>
+	</item>
+	<item id="MONTH_MAY">
+        <fr><![CDATA[Mai]]></fr>
+		<es><![CDATA[Mayo]]></es>
+		<en><![CDATA[May]]></en>
+	</item>
+	<item id="MONTH_JUNE">
+        <fr><![CDATA[Juin]]></fr>
+		<es><![CDATA[Jnio]]></es>
+		<en><![CDATA[June]]></en>
+	</item>
+	<item id="MONTH_JULY">
+        <fr><![CDATA[Juillet]]></fr>
+		<es><![CDATA[Julio]]></es>
+		<en><![CDATA[July]]></en>
+	</item>
+	<item id="MONTH_AUGUST">
+        <fr><![CDATA[Août]]></fr>
+		<es><![CDATA[Agosto]]></es>
+		<en><![CDATA[August]]></en>
+	</item>
+	<item id="MONTH_SEPTEMBER">
+        <fr><![CDATA[Septembre]]></fr>
+		<es><![CDATA[Septiembre]]></es>
+		<en><![CDATA[September]]></en>
+	</item>
+	<item id="MONTH_OCTOBER">
+        <fr><![CDATA[Octobre]]></fr>
+		<es><![CDATA[Octubre]]></es>
+		<en><![CDATA[October]]></en>
+	</item>
+	<item id="MONTH_NOVEMBER">
+        <fr><![CDATA[Novembre]]></fr>
+		<es><![CDATA[Noviembre]]></es>
+		<en><![CDATA[November]]></en>
+	</item>
+	<item id="MONTH_DECEMBER">
+        <fr><![CDATA[Décembre]]></fr>
+		<es><![CDATA[Diciembre]]></es>
+		<en><![CDATA[December]]></en>
+	</item>
+	<item id="LBL_SAVED_PLANNING">
+        <fr><![CDATA[Version]]></fr>
+		<es><![CDATA[Versión]]></es>
+		<en><![CDATA[Version]]></en>
+	</item>
+	<item id="ALERT_VISIT_IS_SERIE">
+        <fr><![CDATA[<b>Attention !</b><br><br>Le RDV que vous souhaitez modifier semble être identique à une série de <b>{visitCount}</b> rdv sur d'autres DO.<br><br>Souhaitez-vous appliquer votre modification à cette instance uniquement, ou à la série complète ?]]></fr>
+		<es><![CDATA[<b>¡Atención!</b><br><br>La cita que desea editar parece ser la misma que una serie de <b>{visitCount}</b> citas con otras DO.<br><br>¿Desea cambiar la cita solo para esta DO o para la serie completa?]]></es>
+		<en><![CDATA[<b>Warning!</b><br><br>The meeting you want to edit seems to be the same as a series of <b>{visitCount}</b> meeting with others OD’s.<br><br>Do you want to change the meeting for this OD only, or the complete series?]]></en>
+	</item>
+	<item id="BT_VALID_SERIE_SINGLE_LABEL">
+        <fr>Ce RDV</fr>
+		<es>Esta cita</es>
+		<en>This appointment</en>
+	</item>
+	<item id="BT_VALID_SERIE_ALL_LABEL">
+        <fr>Tous les RDV</fr>
+		<es>Todas las citas</es>
+		<en>All appointments</en>
+	</item>
+	<item id="SAVE_VISIT_SERIE_ERROR_MESSAGE">
+        <fr><![CDATA[La modification du rendez-vous n'a pas pu être appliquée à la série complète pour cause de conflit de créneau horaire.<br><br>Vous trouverez ci-dessous la liste des DO concernées.]]></fr>
+		<es><![CDATA[La edición de citas no se pudo aplicar al conjunto completo debido a conflictos de agenda.<br><br>A continuación, se muestra la lista de los DO relevantes.]]></es>
+		<en><![CDATA[Appointment editing could not be applied to the complete set due to a conflict in time slot.<br><br>Below is a list of the OD’s concerned.]]></en>
+	</item>
+	
+	<!-- 2020 -->
+	<item id="LBL_LEGEND">
+        <fr><![CDATA[Légende :]]></fr>
+		<es><![CDATA[Leyenda :]]></es>
+		<en><![CDATA[Caption:]]></en>
+	</item>
+	<item id="LBL_LEGEND_STATUS_PENDING">
+        <fr><![CDATA[RDV en attente]]></fr>
+		<es><![CDATA[Cita pendiente]]></es>
+		<en><![CDATA[Pending appointment]]></en>
+	</item>
+	<item id="LBL_LEGEND_STATUS_ACCEPTED">
+        <fr><![CDATA[RDV validé]]></fr>
+		<es><![CDATA[Cita confirmada]]></es>
+		<en><![CDATA[Validated appointment]]></en>
+	</item>
+	<item id="LBL_LEGEND_STATUS_CANCELED">
+        <fr><![CDATA[RDV ajourné]]></fr>
+		<es><![CDATA[Cita cancelada]]></es>
+		<en><![CDATA[Canceled appointment]]></en>
+	</item>
+	<item id="LBL_LEGEND_STATUS_LOCKED_OFFICIAL">
+        <fr><![CDATA[Plage réservée Officielle]]></fr>
+		<es><![CDATA[Intervalo oficial reservado]]></es>
+		<en><![CDATA[Official reserved slot]]></en>
+	</item>
+	<item id="LBL_LEGEND_STATUS_LOCKED">
+        <fr><![CDATA[Plage réservée Libre]]></fr>
+		<es><![CDATA[Intervalo libre]]></es>
+		<en><![CDATA[Vacant reserved slot]]></en>
+	</item>
+</translations>

@@ -1,0 +1,26 @@
+http://eurosatory.dev.object23.fr/site/visitmanager/flash/index.php?pDelId=450&pProgId=15&pOzId=0&pAdId=0&pMburId=0&pFlagProg=1&pLang=fr&checkSelect=&tri=del_nom&ordre=ASC&ordre_oz=&num_page=1&prem_connec=1&page=on&etat=Tous&dispo=Tous&typedo=Tous&oz=Tous&do=Toutes&oa=Tous&pays=Tous&nbParPage=10&pFrom=planning_do_prog
+
+AMF Message	Message	
+Header		
+Body		
+[0]	Body Part	
+Target	String	MessageServices.saveUserMessage
+Response	String	/13
+Content	Array	
+[0]	Object	com.coges.visitmanager.vo.remote.MessageVO
+authorLastName	String	TestPROG
+content	String	testééé
+idAuthor	Integer	15
+idDO	Integer	450
+id	Integer	0
+dateString	String	2020-12-29 21:36:59
+authorFirstName	String Reference	TestPROG
+[1]	String	prog
+
+AMF Message	Message	
+Header		
+Body		
+[0]	Body Part	
+Target	String	/13/onResult
+Response	String	null
+Content	Boolean	true

@@ -1,0 +1,49 @@
+http://eurosatory.dev.object23.fr/site/visitmanager/flash/index.php?pDelId=450&pProgId=15&pOzId=0&pAdId=0&pMburId=0&pFlagProg=1&pLang=fr&checkSelect=&tri=del_nom&ordre=ASC&ordre_oz=&num_page=1&prem_connec=1&page=on&etat=Tous&dispo=Tous&typedo=Tous&oz=Tous&do=Toutes&oa=Tous&pays=Tous&nbParPage=10&pFrom=planning_do_prog
+
+AMF Message	Message	
+Target	String	MessageServices.getUserMessageList
+Response	String	/12
+Content	Array	
+[0]	Number	15
+[1]	Array	
+[0]	Object	com.coges.visitmanager.vo.remote.OppositeOwnerVO
+email	String	b.de-pommerol@cogesevents.com
+oaList	Array	
+[0]	String	HOCQUET André (06 80 23 10 85)
+firstName	String	Bertrand
+id	Integer	118
+phone	String	
+lastName	String	Coges
+[2]	Number	450
+
+
+
+AMF Message	Message	
+[2]	Body Part	
+Target	String	/12/onResult
+Response	String	null
+Content	Array	
+[0]	Object	com.coges.visitmanager.vo.remote.MessageVO
+id	String	728
+idAuthor	String	118
+authorFirstName	String	Bertrand
+authorLastName	String	Coges
+idDO	String	450
+content	String	SUPPRESSION : AIRBUS HELICOPTERS -  
+dateString	String	2016-04-21 09:52:18
+[1]	Object	com.coges.visitmanager.vo.remote.MessageVO
+id	String	729
+idAuthor	String Reference	118
+authorFirstName	String Reference	Bertrand
+authorLastName	String Reference	Coges
+idDO	String Reference	450
+content	String	AJOURNEMENT : AIRBUS HELICOPTERS -  
+dateString	String	2016-04-21 09:59:53
+[2]	Object	com.coges.visitmanager.vo.remote.MessageVO
+id	String	730
+idAuthor	String Reference	118
+authorFirstName	String Reference	Bertrand
+authorLastName	String Reference	Coges
+idDO	String Reference	450
+content	String	AJOURNEMENT : AKRON -  
+dateString	String	2016-04-21 10:11:38

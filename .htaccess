@@ -1,0 +1,27 @@
+Options +FollowSymlinks
+RewriteEngine on
+AddDefaultCharset UTF-8
+
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+</IfModule>
+
+#DirectoryIndex site/index.php
+
+#RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} !-f
+#RewriteRule .* site/$1 [L]
+
+#RewriteCond %{REQUEST_URI} !/site($|/)
+#RewriteRule .* site/$0 [L,NC,QSA,NS]
+
+
+#RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} !-f
+#RewriteRule (.*) site/$1 [R=301,L]
+
+
+#Redirect /espaceexposants2012/site http://www.eurosatory.com/espaceexposants2012 [R=301]
+
+#RewriteCond %{REQUEST_URI} !(/site/)
+#RewriteRule ^espaceexposants2012/(.*)$ /espaceexposants2012/site/$1 [L]
+
+php_value magic_quotes_gpc off

@@ -1,0 +1,76 @@
+http://eurosatory.dev.object23.fr/site/visitmanager/flash/index.php?pDelId=450&pProgId=15&pOzId=0&pAdId=0&pMburId=0&pFlagProg=1&pLang=fr&checkSelect=&tri=del_nom&ordre=ASC&ordre_oz=&num_page=1&prem_connec=1&page=on&etat=Tous&dispo=Tous&typedo=Tous&oz=Tous&do=Toutes&oa=Tous&pays=Tous&nbParPage=10&pFrom=planning_do_prog
+
+
+Target	String	StaticServices.getExhibitorGroupList
+Response	String	/4
+Content	Array	
+[0]	String	fr
+[2]	Body Part	
+
+Target	String	/4/onResult
+Response	String	null
+Content	Array	
+[0]	Object	com.coges.visitmanager.vo.remote.ExhibitorGroupVO
+label	String	GTI 400+(220)
+id	String	1
+[1]	Object	com.coges.visitmanager.vo.remote.ExhibitorGroupVO
+label	String	GICAT 99-60(40)
+id	String	2
+[2]	Object	com.coges.visitmanager.vo.remote.ExhibitorGroupVO
+label	String	FR 399-200(50)
+id	String	3
+[3]	Object	com.coges.visitmanager.vo.remote.ExhibitorGroupVO
+label	String	INT Sup200(70)
+id	String	4
+[4]	Object	com.coges.visitmanager.vo.remote.ExhibitorGroupVO
+label	String	INT 199-60(30)
+id	String	5
+[5]	Object	com.coges.visitmanager.vo.remote.ExhibitorGroupVO
+label	String	INT 59-30(10)
+id	String	6
+[6]	Object	com.coges.visitmanager.vo.remote.ExhibitorGroupVO
+label	String	GICAT 59-30(20)
+id	String	10
+[7]	Object	com.coges.visitmanager.vo.remote.ExhibitorGroupVO
+label	String	FR 199-60(35)
+id	String	11
+[8]	Object	com.coges.visitmanager.vo.remote.ExhibitorGroupVO
+label	String	FR 59-30(15)
+id	String	12
+[9]	Object	com.coges.visitmanager.vo.remote.ExhibitorGroupVO
+label	String	F�d� Inf299(10)
+id	String	13
+[10]	Object	com.coges.visitmanager.vo.remote.ExhibitorGroupVO
+label	String	F�d� Sup300(15)
+id	String	14
+[11]	Object	com.coges.visitmanager.vo.remote.ExhibitorGroupVO
+label	String	Surclass�(25)
+id	String	16
+[12]	Object	com.coges.visitmanager.vo.remote.ExhibitorGroupVO
+label	String	GTI 199-100(50)
+id	String	18
+[13]	Object	com.coges.visitmanager.vo.remote.ExhibitorGroupVO
+label	String	Surclass�(100)
+id	String	19
+[14]	Object	com.coges.visitmanager.vo.remote.ExhibitorGroupVO
+label	String	Hors tour
+id	String	20
+[15]	Object	com.coges.visitmanager.vo.remote.ExhibitorGroupVO
+label	String	Prospect
+id	String	21
+[16]	Object	com.coges.visitmanager.vo.remote.ExhibitorGroupVO
+label	String	Pr�sent
+id	String	23
+[17]	Object	com.coges.visitmanager.vo.remote.ExhibitorGroupVO
+label	String	Absent
+id	String	27
+[18]	Object	com.coges.visitmanager.vo.remote.ExhibitorGroupVO
+label	String	GTI 399-200(150)
+id	String	33
+[19]	Object	com.coges.visitmanager.vo.remote.ExhibitorGroupVO
+label	String	NB demande FEDERATEUR
+id	String	34
+[20]	Object	com.coges.visitmanager.vo.remote.ExhibitorGroupVO
+label	String	Non �ligible F�d�r�
+id	String	35
+

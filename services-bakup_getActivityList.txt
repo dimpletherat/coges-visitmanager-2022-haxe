@@ -1,0 +1,42 @@
+http://eurosatory.dev.object23.fr/site/visitmanager/flash/index.php?pDelId=450&pProgId=15&pOzId=0&pAdId=0&pMburId=0&pFlagProg=1&pLang=fr&checkSelect=&tri=del_nom&ordre=ASC&ordre_oz=&num_page=1&prem_connec=1&page=on&etat=Tous&dispo=Tous&typedo=Tous&oz=Tous&do=Toutes&oa=Tous&pays=Tous&nbParPage=10&pFrom=planning_do_prog
+
+AMF Message	Message	
+Header		
+Body		
+[0]	Body Part	
+Target	String	StaticServices.getActivityList
+Response	String	/19
+Content	Array	
+[0]	String	fr
+
+AMF Message	Message	
+Header		
+[0]	Header Part	
+Name	String	AppendToGatewayUrl
+Must Understand	Boolean	false
+Content	String	?PHPSESSID=8640cf37f88630ded1586076240d7bec
+Body		
+[0]	Body Part	
+Target	String	/19/onResult
+Response	String	null
+Content	Array	
+[0]	Object	com.coges.visitmanager.vo.remote.ActivityVO
+num	String	1
+labelInt	String	Petit d�jeuner
+labelExt	String	Petit d�jeuner (ext)
+[1]	Object	com.coges.visitmanager.vo.remote.ActivityVO
+num	String	2
+labelInt	String	D�jeuner
+labelExt	String	
+[2]	Object	com.coges.visitmanager.vo.remote.ActivityVO
+num	String	3
+labelInt	String	Cocktail
+labelExt	String	Cocktail (ext)
+[3]	Object	com.coges.visitmanager.vo.remote.ActivityVO
+num	String	4
+labelInt	String	
+labelExt	String	Diner (ext)
+[4]	Object	com.coges.visitmanager.vo.remote.ActivityVO
+num	String	5
+labelInt	String	
+labelExt	String	Soir�e (ext)

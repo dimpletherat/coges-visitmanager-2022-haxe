@@ -1,0 +1,123 @@
+http://eurosatory.dev.object23.fr/site/visitmanager/flash/index.php?pDelId=450&pProgId=15&pOzId=0&pAdId=0&pMburId=0&pFlagProg=1&pLang=fr&checkSelect=&tri=del_nom&ordre=ASC&ordre_oz=&num_page=1&prem_connec=1&page=on&etat=Tous&dispo=Tous&typedo=Tous&oz=Tous&do=Toutes&oa=Tous&pays=Tous&nbParPage=10&pFrom=planning_do_prog
+
+AMF Message	Message	
+Header		
+Body		
+[0]	Body Part	
+Target	String	PlanningServices.getDOPlanningList
+Response	String	/6
+Content	Array	
+[0]	Number	450
+[1]	Body Part
+
+
+
+AMF Message	Message	
+Header		
+[0]	Header Part	
+Name	String	AppendToGatewayUrl
+Must Understand	Boolean	false
+Content	String	?PHPSESSID=8640cf37f88630ded1586076240d7bec
+Body		
+[0]	Body Part	
+Target	String	/6/onResult
+Response	String	null
+Content	Array	
+[0]	Object	com.coges.visitmanager.vo.remote.PlanningVO
+id	String	6011
+idDO	String	450
+version	String	13
+label	String	Version 13
+dateCreaString	String	2018-03-26 12:22:21
+dateEditString	String	2018-03-26 12:22:21
+[1]	Object	com.coges.visitmanager.vo.remote.PlanningVO
+id	String	5994
+idDO	String	450
+version	String	12
+label	String	Version 12
+dateCreaString	String	2016-06-12 15:44:22
+dateEditString	String	2016-06-12 15:44:22
+[2]	Object	com.coges.visitmanager.vo.remote.PlanningVO
+id	String	5879
+idDO	String	450
+version	String	11
+label	String	Version 11
+dateCreaString	String	2016-06-12 14:54:15
+dateEditString	String	2016-06-12 14:54:15
+[3]	Object	com.coges.visitmanager.vo.remote.PlanningVO
+id	String	5651
+idDO	String	450
+version	String	10
+label	String	Version 10
+dateCreaString	String	2016-06-11 17:01:24
+dateEditString	String	2016-06-11 17:01:24
+[4]	Object	com.coges.visitmanager.vo.remote.PlanningVO
+id	String	5249
+idDO	String	450
+version	String	9
+label	String	Version 9
+dateCreaString	String	2016-06-10 15:33:10
+dateEditString	String	2016-06-10 15:33:10
+[5]	Object	com.coges.visitmanager.vo.remote.PlanningVO
+id	String	5161
+idDO	String	450
+version	String	8
+label	String	Version 8
+dateCreaString	String	2016-06-08 20:25:09
+dateEditString	String	2016-06-08 20:25:09
+[6]	Object	com.coges.visitmanager.vo.remote.PlanningVO
+id	String	4931
+idDO	String	450
+version	String	7
+label	String	Version 7
+dateCreaString	String	2016-06-08 18:38:30
+dateEditString	String	2016-06-08 18:38:30
+[7]	Object	com.coges.visitmanager.vo.remote.PlanningVO
+id	String	4858
+idDO	String	450
+version	String	6
+label	String	Version 6
+dateCreaString	String	2016-06-08 09:51:04
+dateEditString	String	2016-06-08 09:51:04
+[8]	Object	com.coges.visitmanager.vo.remote.PlanningVO
+id	String	4429
+idDO	String	450
+version	String	5
+label	String	Version 5
+dateCreaString	String	2016-06-07 19:24:41
+dateEditString	String	2016-06-07 19:24:41
+[9]	Object	com.coges.visitmanager.vo.remote.PlanningVO
+id	String	4160
+idDO	String	450
+version	String	4
+label	String	Version 4
+dateCreaString	String	2016-06-06 12:24:43
+dateEditString	String	2016-06-06 12:24:43
+[10]	Object	com.coges.visitmanager.vo.remote.PlanningVO
+id	String	3701
+idDO	String	450
+version	String	3
+label	String	Version 3
+dateCreaString	String	2016-06-02 14:55:44
+dateEditString	String	2016-06-02 14:55:44
+[11]	Object	com.coges.visitmanager.vo.remote.PlanningVO
+id	String	2959
+idDO	String	450
+version	String	2
+label	String	Version 2
+dateCreaString	String	2016-05-31 11:25:20
+dateEditString	String	2016-05-31 11:25:20
+[12]	Object	com.coges.visitmanager.vo.remote.PlanningVO
+id	String	2449
+idDO	String	450
+version	String	1
+label	String	Version 1
+dateCreaString	String	2016-05-24 17:08:15
+dateEditString	String	2016-05-24 17:08:15
+[13]	Object	com.coges.visitmanager.vo.remote.PlanningVO
+id	String	6806
+idDO	String	450
+version	String	-1
+label	String	Travail
+dateCreaString	String	2018-03-26 12:22:21
+dateEditString	String	2018-03-26 12:22:21

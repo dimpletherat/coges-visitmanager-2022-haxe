@@ -1,0 +1,10 @@
+en fait : sur 208 >> Salvador est 2 fois dans la liste >> SV:El Salvador | SV:Salvador
+
+manque : 
+TV	Tuvalu	Tuvalu
+TW	Taïwan, Province de Chine 	Taiwan (Republic of China) 
+SD	Soudan	Sudan
+NR	Nauru	Nauru
+MH	Îles Marshall 	Marshall Islands 
+KI	Kiribati 	Kiribati 
+

@@ -1,0 +1,159 @@
+http://eurosatory.dev.object23.fr/site/visitmanager/flash/index.php?pDelId=450&pProgId=15&pOzId=0&pAdId=0&pMburId=0&pFlagProg=1&pLang=fr&checkSelect=&tri=del_nom&ordre=ASC&ordre_oz=&num_page=1&prem_connec=1&page=on&etat=Tous&dispo=Tous&typedo=Tous&oz=Tous&do=Toutes&oa=Tous&pays=Tous&nbParPage=10&pFrom=planning_do_prog
+
+AMF Message	Message	
+[1]	Body Part	
+Target	String	PlanningServices.getDOPendingVisitList
+Response	String	/11
+Content	Array	
+[0]	Number	450
+[1]	Number	6806
+[2]	String	prog
+[3]	String	fr
+
+
+
+AMF Message	Message	
+
+
+
+[1]	Body Part	
+Target	String	/11/onResult
+Response	String	null
+Content	Array	
+[0]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181781
+idPlanning	String	6806
+idDemand	String	0
+demandPriority	String	
+idSpecialVisit	Null	
+idExhibitor	String Reference	0
+exhibitorCode	Null	
+idDO	String	450
+dateStartString	String	2016-06-14 14:00:00
+dateEndString	String	2016-06-14 15:30:00
+contact	String	
+phone	String	
+isLocked	Boolean	false
+location	String	
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	false
+isValdidateByOZ	Boolean	false
+name	String	D�jeuner Ticket
+notes	String	
+notesProg	String	
+idStatus	String	Reserve
+exhibitorName	Null	
+exhibitorWelcomeCapacity	Null	
+idExhibitorCountry	Null	
+specialVisitName	Null	
+visitActivityList	Array	
+[0]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240380
+idVisit	String Reference	181781
+label	String	Petit d�jeuner
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[1]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240381
+idVisit	String Reference	181781
+label	String	D�jeuner
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[2]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240382
+idVisit	String Reference	181781
+label	String	Cocktail
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[3]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240383
+idVisit	String Reference	181781
+label	String	Petit d�jeuner (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[4]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240384
+idVisit	String Reference	181781
+label	String	Cocktail (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[5]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240385
+idVisit	String Reference	181781
+label	String	Diner (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+[6]	Object	com.coges.visitmanager.vo.remote.VisitActivityVO
+id	String	240386
+idVisit	String Reference	181781
+label	String	Soir�e (ext)
+isChecked	Boolean	false
+comment	String	
+urlIcon	String	
+idVotePeriod	String	
+[1]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181593
+idPlanning	String Reference	6806
+idDemand	String	10041
+demandPriority	String	p3
+idSpecialVisit	Null	
+idExhibitor	String	13070
+exhibitorCode	String	2624
+idDO	String Reference	450
+dateStartString	String	2016-06-14 15:00:00
+dateEndString	String Reference	2016-06-14 15:30:00
+contact	String	MARNALO
+phone	String	+32 4 240 81 36
+isLocked	Boolean	false
+location	String	HALL 6 - Stand F197
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	true
+isValdidateByOZ	Boolean	false
+name	String	
+notes	String	
+notesProg	String	
+idStatus	String	Attente
+exhibitorName	String	FN HERSTAL -  
+exhibitorWelcomeCapacity	String	1
+idExhibitorCountry	String	20
+specialVisitName	Null	
+visitActivityList	Array	
+idVotePeriod	String	
+[2]	Object	com.coges.visitmanager.vo.remote.VisitVO
+id	String	181599
+idPlanning	String Reference	6806
+idDemand	String Reference	0
+demandPriority	String	
+idSpecialVisit	Null	
+idExhibitor	String	14384
+exhibitorCode	String	30676
+idDO	String Reference	450
+dateStartString	String	2016-06-14 16:30:00
+dateEndString	String	2016-06-14 17:00:00
+contact	String	NADIA
+phone	String	00393933320043
+isLocked	Boolean	false
+location	String	HALL 6 - Stand D432
+motivation	String	
+comment	String	
+isValdidateByProgrammer	Boolean	true
+isValdidateByOZ	Boolean	false
+name	String	
+notes	String	
+notesProg	String	
+idStatus	String Reference	Attente
+exhibitorName	String	INTELLITRONIKA SRL -  
+exhibitorWelcomeCapacity	String Reference	1
+idExhibitorCountry	String	91
+specialVisitName	Null	
+visitActivityList	Array	
+idVotePeriod	String	
+
