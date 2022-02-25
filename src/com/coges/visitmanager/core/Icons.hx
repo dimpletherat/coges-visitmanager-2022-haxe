@@ -84,6 +84,8 @@ enum abstract Icon(String) from String to String{
 	var TMP_TRIANGLE_2 = "tmp-triangle-2.png";
 	var DELETE_WHITE = "delete-white.png";
 	var SEE_VISIT_DEMAND = "see-visit-demand.png";
+	//2022-evolution
+	var ALERT_MULTI_USERS = "alert-multi-users.png";
 	
 	
 	

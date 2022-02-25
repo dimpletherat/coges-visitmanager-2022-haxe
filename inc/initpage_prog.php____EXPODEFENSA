@@ -103,6 +103,12 @@ elseif(!isset($_SESSION["vsLang"])){
 		$_SESSION["vsLang"]="en";
 	}
 }
+
+// EK - 19/10/2021
+elseif (isset($_SESSION["vsLang"]) && $_SESSION["vsLang"] == "gb")
+{
+	$_SESSION["vsLang"]="en";
+}
 //echo "rocks=" . $_SESSION['vsLang'];
 
 /********************* Traduction ***************************/

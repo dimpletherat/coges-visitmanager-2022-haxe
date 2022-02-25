@@ -1,48 +1,48 @@
 <?
 session_start();
 
-$PATH_DLIB = "../../../dlib";
+$PATH_DLIB = "../../dlib";
 include "$PATH_DLIB/dl_inc_all.php";
 
-include "../../../lib/libgen.php";
-include "../../../lib/libsite.php";
+include "../../lib/libgen.php";
+include "../../lib/libsite.php";
 
 if (isset($_GET['deco']) && $_GET['deco'] == 1)
 {
 	$_SESSION = array();
 	session_destroy();
-	header("Location:../index.php");
+	header("Location:index.php");
 	exit;
 }
 
-include "../../../class/csysparam.php";
-include "../../../class/cuser.php";
-include "../../../class/cpays.php";
-include "../../../class/cnationalites.php";
-include "../../../class/cvmexposant.php";
-include "../../../class/cdataexpaccdo.php";
-include "../../../class/cdelegoff.php";
-include "../../../class/cprog.php";
-include "../../../class/cvmoffzone.php";
-include "../../../class/cdemande.php";
-include "../../../class/ccreneau.php";
-include "../../../class/cvmactivites.php";
-include "../../../class/cvmoffac.php";
-include "../../../class/cvmvisite.php";
-include "../../../class/cvmgroupe.php";
-include "../../../class/cvmcivilites.php";
-include "../../../class/cvmplage.php";
-include "../../../class/cvmplanning.php";
-include "../../../class/cvmattachdef.php";
-include "../../../class/cvmmembrebursalon.php";
-include "../../../class/cvmtraduction.php";
-include "../../../class/cvmactvis.php";
-include "../../../class/cvmdossier.php";
-include "../../../class/cvmtache.php";
-include "../../../class/cvmautrvis.php";
+include "../../class/csysparam.php";
+include "../../class/cuser.php";
+include "../../class/cpays.php";
+include "../../class/cnationalites.php";
+include "../../class/cvmexposant.php";
+include "../../class/cdataexpaccdo.php";
+include "../../class/cdelegoff.php";
+include "../../class/cprog.php";
+include "../../class/cvmoffzone.php";
+include "../../class/cdemande.php";
+include "../../class/ccreneau.php";
+include "../../class/cvmactivites.php";
+include "../../class/cvmoffac.php";
+include "../../class/cvmvisite.php";
+include "../../class/cvmgroupe.php";
+include "../../class/cvmcivilites.php";
+include "../../class/cvmplage.php";
+include "../../class/cvmplanning.php";
+include "../../class/cvmattachdef.php";
+include "../../class/cvmmembrebursalon.php";
+include "../../class/cvmtraduction.php";
+include "../../class/cvmactvis.php";
+include "../../class/cvmdossier.php";
+include "../../class/cvmtache.php";
+include "../../class/cvmautrvis.php";
 
-require_once("../../../inc/inc_global.php");
-require_once("../../../inc/inc_bdd.php");
+require_once("../../inc/inc_global.php");
+require_once("../../inc/inc_bdd.php");
 
 $db = new dlDb(BDD_HOST, BDD_NAME, BDD_USER, BDD_PWD);
 
@@ -70,12 +70,12 @@ if (!isset($_GET['pass']) || $_GET['pass'] != 1){
 		{
 			if ($_SESSION["UserStatut"] != "Programmeur")
 			{
-				header("Location:../acces_refuse.php");
+				header("Location:acces_refuse.php");
 			}
 		}
 		else
 		{
-			header("Location:../acces_refuse.php");
+			header("Location:acces_refuse.php");
 		}
 	}
 }
@@ -253,9 +253,6 @@ function getTradActivite($sLibelle, $lng)
 
 function getTrad($pCode, $pPage = "")	
 {
-	if($pCode == "gb")
-		$pCode = "en";
-	
 	if (isset($_SESSION['lstTrads'][$pCode]))	
 	{	
 		return stripslashes($_SESSION['lstTrads'][$pCode]);	
@@ -285,9 +282,6 @@ function getTradJs($pCode, $pCarac)
 
 function getTrad2($pCode, $pPage = "")	
 {
-	if($pCode == "gb")
-		$pCode = "en";
-	
 	if (isset($_SESSION['lstTrads'][$pCode]))	
 	{	
 		return addslashes($_SESSION['lstTrads'][$pCode]);	

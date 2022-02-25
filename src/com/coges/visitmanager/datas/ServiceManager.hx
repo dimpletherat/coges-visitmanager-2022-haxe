@@ -38,6 +38,16 @@ import openfl.net.URLVariables;
 	 * ...
 	 * @author Nicolas Bigot
 	 */
+
+	 
+@:allow(com.coges.visitmanager.ui.panel.MenuPanel)
+typedef MultiUsersDataJSON = {
+	type : String,
+	userList:Array<String>	
+}
+	 
+	 
+	 
 class ServiceManager extends EventDispatcher
 {
     public static var instance(get, never):ServiceManager;
@@ -669,6 +679,35 @@ class ServiceManager extends EventDispatcher
         var error = "* ERROR - registerProgUser *\n\n" + resultJSON.message;
         _serviceErrorHandler2(error);
     }
+	
+	//2022-evolution
+    public function checkMultiUsers(delegation:DO, user:User):Void
+    {
+		// TODO !
+		var http = new Http("./assets/tmp-datas/check-multi-users.json");
+		//var http = new Http(Config.servicesURL);
+		http.onData = _checkMultiUsersCompleteHandler;
+		http.onError = _serviceErrorHandler2;
+		http.addParameter("action", "check-multi-users" );
+		http.addParameter("do-id", Std.string(delegation.id) );
+		http.addParameter("user-id", Std.string(user.id) );
+		http.request(true);
+    }
+    private function _checkMultiUsersCompleteHandler(result:Dynamic)
+    {
+		var resultJSON = Json.parse( result);
+        
+        if (resultJSON.success == true )
+        {		
+			var list:Array<MultiUsersDataJSON> = resultJSON.data;
+			
+            dispatchEvent(new ServiceEvent(ServiceEvent.COMPLETE, list, checkMultiUsers));
+            return;
+        }
+        var error = "* ERROR - checkMultiUsers *\n\n" + resultJSON.message;
+        _serviceErrorHandler2(error);
+    }
+	//----
     
     
     // PLANNING SERVICES
@@ -1236,6 +1275,42 @@ class ServiceManager extends EventDispatcher
         var error = "* ERROR - duplicateDOVisit *\n\n" + resultJSON.message;
         _serviceErrorHandler2(error);
     }
+	
+	//2022-evolution
+	//duplicateVisitOnWorkingPlanning( VisitVO visit )
+    public function duplicateVisitOnWorkingPlanning(visit:Visit):Void
+    {
+		//TODO
+		var http = new Http("./assets/tmp-datas/duplicate-visit-on-working-planning.json");
+		//var http = new Http( Config.servicesURL );
+		http.onData = _duplicateVisitOnWorkingPlanningCompleteHandler;
+		http.onError = _serviceErrorHandler2;
+		http.addParameter("action", "duplicate-visit-on-working-planning" );
+		http.addParameter("visit", Json.stringify(visit.getJSONRepresentation()) );
+		/*
+		var list:Array<String> = new Array<String>();
+		for ( d in doList )
+		{
+			list.push( Std.string(d.id) );
+		}
+		http.addParameter("do-id-list", Json.stringify( list ) );*/
+		http.request(true);
+    }
+    private function _duplicateVisitOnWorkingPlanningCompleteHandler(result:Dynamic):Void
+    {	
+		var resultJSON = Json.parse( result);
+		
+        if (resultJSON.success == true )
+        {			
+            dispatchEvent(new ServiceEvent(ServiceEvent.COMPLETE, resultJSON.data, duplicateVisitOnWorkingPlanning));
+            return;
+        }
+        var error = "* ERROR - duplicateVisitOnWorkingPlanning *\n\n" + resultJSON.message;
+        _serviceErrorHandler2(error);
+    }
+	//---------
+	
+	
     
     //createNewDOPlanningVersion(PlanningVO $p, array $visitList, $lang, $conDB = null )
     public function createNewDOPlanningVersion(planning:Planning, visitList:Collection<Visit>):Void

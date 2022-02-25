@@ -27,8 +27,13 @@ enum abstract Colors(Int) from Int to Int
 	var ORANGE_DARK = 0xbf5f0a;
 	var RED1 = 0xe74c3c;
 	var RED2 = 0xc0392b;
+	//2022-evolution	
+	var RED3 = 0x99220f;
+	
 	var GREY1 = 0xecf0f1;
 	var GREY2 = 0xbdc3c7;
 	var GREY3 = 0x95a5a6;
 	var GREY4 = 0x7f8c8d;
+	//2022-evolution	
+	var GREY5 = 0x576574;
 }

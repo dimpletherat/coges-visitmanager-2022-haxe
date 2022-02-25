@@ -645,6 +645,24 @@ Only 'Working' version schedule can be modified.]]></en>
         <es><![CDATA[Elija las delegaciones para las cuales quiere duplicar esa cita.]]></es>
         <en><![CDATA[Select the delegations for which you want to duplicate this appointment]]></en>
       </item>
+	<!--2022-->
+  <item id="BT_DUPLICATE_VISIT_ON_WORKING_PLANNING_LABEL">
+        <fr><![CDATA[Dupliquer sur planning 'Travail']]></fr>
+        <es><![CDATA[todo*Duplicar para programa 'Trabajo'.]]></es>
+        <en><![CDATA[todo*Duplicate for 'Working' schedule]]></en>
+      </item>
+	<!--2022-->
+  <item id="TOOLTIP_BT_DUPLICATE_ON_WORKING_PLANNING">
+        <fr><![CDATA[Dupliquer le rendez-vous sur le planning de Travail de cette DO]]></fr>
+        <es><![CDATA[todo*Duplicar la cita para el programa 'Trabajo']]></es>
+        <en><![CDATA[todo*Duplicate this appointment for the 'Working' version schedule]]></en>
+      </item>
+	<!--2022-->
+  <item id="ALERT_DUPLICATE_ON_WORKING_PLANNING">
+        <fr><![CDATA[Le rendez-vous a bien été dupliqué sur le planning de Travail de cette DO.]]></fr>
+        <es><![CDATA[todo*Se duplicó la cita para el programa 'Trabajo'.]]></es>
+        <en><![CDATA[todo*This appointment has been duplicated for the 'Working' version schedule.]]></en>
+      </item>
   <item id="LABEL_AVAILABLE_DO_LIST">
         <fr><![CDATA[Liste des délégations disponibles]]></fr>
         <es><![CDATA[Lista de las delegaciones disponibles.]]></es>
@@ -924,5 +942,11 @@ You will find below the list of ODs to which this appointment has not been dupli
         <fr><![CDATA[Plage réservée Libre]]></fr>
 		<es><![CDATA[Intervalo libre]]></es>
 		<en><![CDATA[Vacant reserved slot]]></en>
+	</item>
+	<!--2022-->
+	<item id="MESSAGE_MULTI_USERS">
+        <fr><![CDATA[Attention plusieurs PROGRAMMEURS sont actuellement connectés sur la DO"]]></fr>
+		<es><![CDATA[todo:translation]]></es>
+		<en><![CDATA[todo:translation]]></en>
 	</item>
 </translations>

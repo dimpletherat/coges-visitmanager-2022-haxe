@@ -54,7 +54,10 @@ typedef VisitJSON =
     var idExhibitorCountry:Int;
     var specialVisitName:String;
     var visitActivityList:Array<VisitActivityJSON>;
-    var idVotePeriod:String;    
+    var idVotePeriod:String;   
+	
+	//2022-evolution
+    var exhibitorIsSensitive:Bool;
 }
 	 
 	 
@@ -188,6 +191,9 @@ class Visit
     
     private var _exhibitorName:String;
     private var _specialVisitName:String;
+	
+	//2022-evolution
+    public var exhibitorIsSensitive(default, null):Bool;
     
     
     
@@ -228,7 +234,13 @@ class Visit
         idExhibitorCountry = ( json.idExhibitorCountry == null ) ? 0 : json.idExhibitorCountry;
         _specialVisitName = ( json.specialVisitName == null ) ? "" : json.specialVisitName;
         visitActivityList = ( json.visitActivityList == null ) ? new Collection<VisitActivityJSON>() : new Collection<VisitActivityJSON>(json.visitActivityList);
-        idVotePeriod = ( json.idVotePeriod == null ) ? "" : json.idVotePeriod;
+        idVotePeriod = ( json.idVotePeriod == null ) ? "" : json.idVotePeriod;		
+		
+		//2022-evolution
+		exhibitorIsSensitive = ( json.exhibitorIsSensitive == null ) ? false : json.exhibitorIsSensitive;
+		//TODO:TEST
+		//if ( Math.round( Math.random() ) == 1 )
+		//	exhibitorIsSensitive = true;
     }
     
     
@@ -315,7 +327,9 @@ class Visit
 			idExhibitorCountry:idExhibitorCountry, 
 			specialVisitName:_specialVisitName, 
 			visitActivityList:visitActivityList.innerArray, 
-			idVotePeriod:idVotePeriod
+			idVotePeriod:idVotePeriod,
+			//2022-evolution
+			exhibitorIsSensitive:exhibitorIsSensitive
 		};
         //return Json.stringify( json );
         return json;
@@ -378,7 +392,9 @@ class Visit
 			idExhibitorCountry:0, 
 			specialVisitName:null, 
 			visitActivityList:null, 
-			idVotePeriod:null
+			idVotePeriod:null,
+			//2022-evolution
+			exhibitorIsSensitive:false
 		};
         var v:Visit = new Visit(json);
         v.dateStart = startDate;
@@ -418,7 +434,9 @@ class Visit
 			idExhibitorCountry:searchResult.idExhibitorCountry, 
 			specialVisitName:null, 
 			visitActivityList:activityList, 
-			idVotePeriod:null
+			idVotePeriod:null,
+			//2022-evolution
+			exhibitorIsSensitive:searchResult.exhibitorIsSensitive
 		};
 		
         var v:Visit = new Visit(json);

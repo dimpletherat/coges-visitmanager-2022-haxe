@@ -22,6 +22,9 @@ typedef SearchResultJSON =
     var urlTrianglesIcon:String;
     var contactName:String;
     var contactPhone:String;    
+	
+	//2022-evolution
+    var exhibitorIsSensitive:Bool;
 }
 
 
@@ -84,6 +87,15 @@ class SearchResult
     public var demandSlotDay(get, never):DemandSlotDay;
     public var demandSlotDuration(get, never):DemandSlotDuration;
     public var exhibitorCountry(get, never):Country;
+	
+	//2022-evolution
+    public var exhibitorIsSensitive(get, never):Bool;	
+    private var _exhibitorIsSensitive:Bool;
+    private function get_exhibitorIsSensitive():Bool
+    {
+        return _exhibitorIsSensitive;
+    }
+	
 
     private var _idExhibitor:Int;
     private function get_idExhibitor():Int
@@ -210,6 +222,8 @@ class SearchResult
         }
         return _exhibitorCountry;
     }
+	
+	
     
     
     public function new(json:SearchResultJSON)
@@ -230,6 +244,12 @@ class SearchResult
         _urlTrianglesIcon = json.urlTrianglesIcon;
         _contactName = json.contactName;
         _contactPhone = json.contactPhone;
+		
+		//2022-evolution  
+		_exhibitorIsSensitive = json.exhibitorIsSensitive;		
+		//TODO:TEST
+		//if ( Math.round( Math.random() ) == 1 )
+		//	_exhibitorIsSensitive = true;
 		
     
     //keep .. remember init values
@@ -258,7 +278,8 @@ class SearchResult
 			demandComment:"",
 			urlTrianglesIcon:"",
 			contactName:"",
-			contactPhone:""   		 
+			contactPhone:"",
+			exhibitorIsSensitive:false
 		}
 		return new SearchResult( json );
 	}

@@ -111,10 +111,19 @@ class VMMessageDialog extends BaseDialog
 			_txtTitle.width = titleMaxWidth;
 		}
 		
+		
 		SpriteUtils.drawSquare( _titleLine, Std.int(contentRect.width), 1, _skin.titleBackgroundColor );		
 		
 		// Set the height resulting of all resized elements
-		var dialogHeight:Float = _txtTitle.height + _titleLine.height + _txtMessage.height + _btClose.height + _skin.contentMargin * 5.5;
+		var dialogHeight:Float = _txtTitle.height + _titleLine.height + _txtMessage.height + _btClose.height + _skin.contentMargin * 5.5;		
+		
+		//2022-evolution
+		if ( _icon != null )
+		{
+			if ( _icon.height > _txtTitle.height )
+				dialogHeight += (_icon.height - _txtTitle.height);
+		}
+		
 		// Change contentRect accordingly
 		contentRect.height = dialogHeight - marg * 2;
 		contentRect.y = (parentSize.y - dialogHeight) * 0.5 + marg;
@@ -128,13 +137,20 @@ class VMMessageDialog extends BaseDialog
 		{
 			_icon.x = contentRect.left + ( contentRect.width - _icon.width - marg * 0.5 - _txtTitle.width ) * 0.5;
 			_icon.y = _txtTitle.y + 4;
-			_txtTitle.x = _icon.x + _icon.width + marg * 0.5;
+			_txtTitle.x = _icon.x + _icon.width + marg * 0.5;			
 		}else{			
 			_txtTitle.x = contentRect.left + ( contentRect.width - _txtTitle.width ) * 0.5;
 		}
 		
 		_titleLine.x  = contentRect.left;
 		_titleLine.y  = _txtTitle.y + _txtTitle.height + marg * 0.5;
+		
+		//2022-evolution
+		if ( _icon != null )
+		{
+			if ( _icon.height > _txtTitle.height )
+				_titleLine.y  = _icon.y + _icon.height + marg * 0.5;
+		}
 		
 		_txtMessage.x = contentRect.left;
 		_txtMessage.y = _titleLine.y + _titleLine.height + marg;		

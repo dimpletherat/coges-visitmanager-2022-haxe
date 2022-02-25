@@ -4,6 +4,8 @@ import com.coges.visitmanager.core.Colors;
 import com.coges.visitmanager.core.IDraggerItem;
 import com.coges.visitmanager.fonts.Fonts;
 import com.coges.visitmanager.vo.SearchResult;
+import com.coges.visitmanager.vo.User;
+import com.coges.visitmanager.vo.UserType;
 import nbigot.utils.SpriteUtils;
 import openfl.display.GradientType;
 import openfl.display.IBitmapDrawable;
@@ -67,6 +69,14 @@ class SearchResultDraggerItem extends Sprite implements IDraggerItem
         tf.font = Fonts.OPEN_SANS;
         tf.bold = true;
         tf.color = 0x00;
+		
+		//2022-evolution
+		if ( User.instance.type == UserType.PROGRAMMEUR )
+		{
+			if ( (data:SearchResult).exhibitorIsSensitive )
+				tf.color = Colors.RED3;
+		}
+		
         tf.size = 12;
         t.selectable = false;
         t.embedFonts = true;

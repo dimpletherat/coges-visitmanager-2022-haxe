@@ -4,6 +4,8 @@ import com.coges.visitmanager.core.Colors;
 import com.coges.visitmanager.core.Icons;
 import com.coges.visitmanager.fonts.Fonts;
 import com.coges.visitmanager.vo.Country;
+import com.coges.visitmanager.vo.User;
+import com.coges.visitmanager.vo.UserType;
 import com.coges.visitmanager.vo.Visit;
 import com.coges.visitmanager.vo.VisitStatus;
 import com.coges.visitmanager.vo.VisitStatusID;
@@ -68,6 +70,13 @@ class VisitDisplay extends Sprite
 		
 		
         _txtVisit = _getLabel( 9, Colors.BLACK, true );
+		//2022-evolution
+		if ( User.instance.type == UserType.PROGRAMMEUR )
+		{
+			if ( _data.exhibitorIsSensitive )
+				_txtVisit = _getLabel( 9, Colors.RED3, true );
+		}
+		
         addChild(_txtVisit);
 		
 		_localizationString = "";

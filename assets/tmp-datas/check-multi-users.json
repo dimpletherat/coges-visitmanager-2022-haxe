@@ -1,0 +1,23 @@
+{
+	"success":true,
+	"data":
+		[
+			{
+				"type":"MINISTERE DEFENSE",
+				"userList":
+					[
+						"Jérôme LEGRAND",
+						"Pierre HANDGRAFF"
+					]
+			},
+			{
+				"type":"COGES",
+				"userList":
+					[
+						"Jérôme LEGRAND",
+						"Pierre HANDGRAFF"
+					]
+			}
+		],
+	"message":""
+}

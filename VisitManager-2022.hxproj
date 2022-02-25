@@ -17,7 +17,7 @@
   <!-- Other classes to be compiled into your SWF -->
   <classpaths>
     <class path="D:\Prod\Haxe\_HaxeToolkit\haxe\lib\openfl\9,0,2\lib" />
-    <class path="D:\Prod\Haxe\_HaxeToolkit\haxe\lib\lime\7,8,0\src" />
+    <class path="D:\Prod\Haxe\_HaxeToolkit\haxe\lib\lime\7,9,0\src" />
     <class path="D:\Prod\Haxe\_HaxeToolkit\haxe\lib\feathersui\1,0,0-beta,2\src" />
     <class path="D:\Prod\Haxe\_HaxeToolkit\haxe\lib\actuate\1,8,9\src" />
     <class path="D:\Prod\Haxe\_HaxeToolkit\haxe\lib\hxargs\3,0,2" />
@@ -67,7 +67,7 @@
   </classpaths>
   <!-- Build options -->
   <build>
-    <option directives="openfl=9.0.2&#xA;lime=7.8.0&#xA;feathersui=1.0.0-beta.2&#xA;actuate=1.8.9&#xA;hxargs=3.0.2&#xA;openfl=9.1.0&#xA;svg=1.1.3&#xA;AIR_SDK=D:\StandaloneApps\FlashDevelop-5.3.3\Apps\flexairsdk\4.6.0+32.0.0&#xA;tools=7.8.0&#xA;lime-canvas&#xA;howlerjs&#xA;no-compilation&#xA;openfl-html5&#xA;lime-webgl&#xA;lime-dom&#xA;lime-howlerjs&#xA;lime-html5&#xA;openfl-disable-handle-error&#xA;fdb&#xA;html5&#xA;web&#xA;html5" />
+    <option directives="openfl=9.0.2&#xA;lime=7.9.0&#xA;feathersui=1.0.0-beta.2&#xA;actuate=1.8.9&#xA;hxargs=3.0.2&#xA;openfl=9.2.0&#xA;svg=1.1.3&#xA;AIR_SDK=D:\StandaloneApps\FlashDevelop-5.3.3\Apps\flexairsdk\4.6.0+32.0.0&#xA;tools=7.9.0&#xA;lime-canvas&#xA;howlerjs&#xA;no-compilation&#xA;openfl-html5&#xA;lime-webgl&#xA;lime-dom&#xA;lime-howlerjs&#xA;lime-html5&#xA;openfl-disable-handle-error&#xA;fdb&#xA;html5&#xA;web&#xA;html5" />
     <option flashStrict="False" />
     <option noInlineOnDebug="False" />
     <option mainClass="ApplicationMain" />

@@ -294,7 +294,9 @@ class PendingPanel extends Sprite
 				idExhibitorCountry:0, 
 				specialVisitName:"", 
 				visitActivityList:null, 
-				idVotePeriod:""
+				idVotePeriod:"",
+				//2022-evolution
+				exhibitorIsSensitive:false
 			};
             datas.addItem(new PendingVisit( pvJSON ));
         }

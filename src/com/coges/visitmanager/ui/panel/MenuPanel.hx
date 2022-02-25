@@ -27,6 +27,7 @@ import nbigot.ui.IconPosition;
 import nbigot.ui.control.WaitPanel;
 import nbigot.ui.dialog.DialogEvent;
 import nbigot.ui.dialog.DialogManager;
+import nbigot.ui.dialog.DialogSkin;
 import nbigot.ui.dialog.DialogValue;
 import nbigot.utils.SpriteUtils;
 import openfl.Lib;
@@ -39,6 +40,7 @@ import openfl.net.URLRequest;
 import openfl.net.URLRequestMethod;
 import openfl.net.URLVariables;
 import openfl.text.TextFormat;
+import openfl.text.TextFormatAlign;
 
 /**
 	 * ...
@@ -262,7 +264,7 @@ class MenuPanel extends Sprite
     }
     
     private function _changeDOHandler(e:DataUpdaterEvent):Void
-    {
+    {		
 		ServiceManager.instance.getDOAvailablePeriodList(DO.selected);
         if (User.instance.type == UserType.PROGRAMMEUR)
         {
@@ -273,7 +275,11 @@ class MenuPanel extends Sprite
             ServiceManager.instance.throwNotification(User.instance, DO.selected, NotificationAction.CLEAR);
             ServiceManager.instance.addEventListener(ServiceEvent.COMPLETE, _getDOOppositeOwnerCompleteHandler);
             ServiceManager.instance.getDOOppositeOwner(DO.selected, User.instance);
-        }
+        }		
+		
+		//2022-evolution		
+        ServiceManager.instance.addEventListener(ServiceEvent.COMPLETE, _checkMultiUsersCompleteHandler);
+		ServiceManager.instance.checkMultiUsers(DO.selected, User.instance);
     }
 
     
@@ -285,6 +291,36 @@ class MenuPanel extends Sprite
             OppositeOwner.selected = OppositeOwner.list.getItemAt(0);
         }
     }
+    
+	//2022-evolution
+    private function _checkMultiUsersCompleteHandler(e:ServiceEvent):Void
+    {
+        if (e.currentCall == ServiceManager.instance.checkMultiUsers)
+        {
+            ServiceManager.instance.removeEventListener(ServiceEvent.COMPLETE, _checkMultiUsersCompleteHandler);
+			var ds:DialogSkin = DialogManager.instance.skin.clone();
+			ds.titleBackgroundColor = Colors.YELLOW;
+			ds.contentBackgroundColor = Colors.YELLOW;
+			ds.contentFormat = new TextFormat( Fonts.OPEN_SANS, 16, Colors.GREY5, null, null, null, null, null, TextFormatAlign.CENTER );
+			ds.titleFormat = new TextFormat( Fonts.OPEN_SANS, 16, Colors.GREY5, true );
+			
+			
+			var list:Array<MultiUsersDataJSON> = e.result;
+			var message:String = "";
+			for ( m in list)
+			{
+				message += m.type.toUpperCase() + ":<br>";
+				for ( u in m.userList )
+				{
+					message += "- " + u + "<br>";
+				}
+				message += "<br>";
+			}
+			
+			DialogManager.instance.open( new VMMessageDialog( Locale.get( "MESSAGE_MULTI_USERS" ), message, Icons.getIcon( Icon.ALERT_MULTI_USERS ) ), ds );
+        }
+    }
+	//----
     
     private function _DOSelectHandler(e:Event):Void
     {

@@ -4,6 +4,8 @@ import com.coges.visitmanager.core.Colors;
 import com.coges.visitmanager.core.Config;
 import com.coges.visitmanager.fonts.Fonts;
 import com.coges.visitmanager.vo.SearchResult;
+import com.coges.visitmanager.vo.User;
+import com.coges.visitmanager.vo.UserType;
 import feathers.controls.AssetLoader;
 import feathers.controls.Label;
 import feathers.controls.LayoutGroup;
@@ -278,6 +280,13 @@ class ItemRendererResult extends LayoutGroupItemRenderer
 		var l:VerticalLayout = cast( layout, VerticalLayout);
 		var lineWidth:Float = state.owner.width - l.paddingLeft - l.paddingRight;
 		var labelWidth:Float = lineWidth - 22 - 6 - 6 - 22 - 12;// flag with - gap - gap - triangle width - scrollbar;
+		
+		//2022-evolution
+		if ( User.instance.type == UserType.PROGRAMMEUR )
+		{
+			if ( sr.exhibitorIsSensitive )
+			_lblExhibitor.textFormat = new TextFormat( Fonts.OPEN_SANS, 13, Colors.RED3 , true );
+		}
 		
 		_lblExhibitor.text =  sr.exhibitorCompanyName;
 		_lblExhibitor.width = labelWidth;

@@ -1,95 +1,154 @@
 <?
 session_start();
+$_SESSION["sESTDEBUG"]=false;
 
-$PATH_DLIB = "../../../dlib";
+$PATH_DLIB = "../../dlib";
+
+require_once("../../inc/inc_global.php");
+require_once("../../inc/inc_bdd.php");
+
 include "$PATH_DLIB/dl_inc_all.php";
 
-include "../../../lib/libgen.php";
-include "../../../lib/libsite.php";
+include "../../lib/libgen.php";
+include "../../lib/libsite.php";
+include "../../class/csysparam.php";
+include "../../class/cuser.php";
+include "../../class/cvmtraduction.php";
+include "../../class/cpays.php";
+include "../../class/cnationalites.php";
+include "../../class/cdataexpaccdo.php";
+include "../../class/cdelegoff.php";
+include "../../class/cprog.php";
+include "../../class/cdemande.php";
+include "../../class/ccreneau.php";
+include "../../class/cvmactivites.php";
+include "../../class/cvmgroupe.php";
+include "../../class/cvmoffzone.php";
+include "../../class/cvmexposant.php";
+include "../../class/cvmdossier.php";
+include "../../class/cvmcivilites.php";
+include "../../class/cvmplage.php";
+include "../../class/cvmattachdef.php";
+include "../../class/cvmadmin.php";
+include "../../class/cvmmembrebursalon.php";
+include "../../class/cvmactvis.php";
+include "../../class/cvmvisite.php";
+include "../../class/cvmplanning.php";
+include "../../class/cvmtache.php";
+//include_once "../../class/cauthentificationexposantubiqus.php";
 
-if (isset($_GET['deco']) && $_GET['deco'] == 1)
-{
-	$_SESSION = array();
-	session_destroy();
-	header("Location:../index.php");
-	exit;
-}
-
-include "../../../class/csysparam.php";
-include "../../../class/cuser.php";
-include "../../../class/cpays.php";
-include "../../../class/cnationalites.php";
-include "../../../class/cvmexposant.php";
-include "../../../class/cdataexpaccdo.php";
-include "../../../class/cdelegoff.php";
-include "../../../class/cprog.php";
-include "../../../class/cvmoffzone.php";
-include "../../../class/cdemande.php";
-include "../../../class/ccreneau.php";
-include "../../../class/cvmactivites.php";
-include "../../../class/cvmoffac.php";
-include "../../../class/cvmvisite.php";
-include "../../../class/cvmgroupe.php";
-include "../../../class/cvmcivilites.php";
-include "../../../class/cvmplage.php";
-include "../../../class/cvmplanning.php";
-include "../../../class/cvmattachdef.php";
-include "../../../class/cvmmembrebursalon.php";
-include "../../../class/cvmtraduction.php";
-include "../../../class/cvmactvis.php";
-include "../../../class/cvmdossier.php";
-include "../../../class/cvmtache.php";
-include "../../../class/cvmautrvis.php";
-
-require_once("../../../inc/inc_global.php");
-require_once("../../../inc/inc_bdd.php");
+$BASE_URL = "http://cataloguedev.salon-du-bourget.fr";
+$BASE_HOST_FR= "cataloguedev.salon-du-bourget.fr";
+$BASEPATH_TMP = "/servers/apache/sites/fr/cataloguedev.salon-du-bourget/site/tmp/";
+$baseFicForm = "file/";
 
 $db = new dlDb(BDD_HOST, BDD_NAME, BDD_USER, BDD_PWD);
 
-$_SESSION['osUser'] = new cUser($db);
-
 //error_reporting  (0 );
+//error_reporting  (E_WARNING );
 error_reporting  (E_ALL);
 
-$_SESSION["sDEBUG_REQ"]=false;				//	Echo des requetes
-$_SESSION["sDEBUG_REQEXEC"]=false;			//  Echo des resultats de requetes
+$_SESSION["osUser"]=new cUser($db);
+$_SESSION["osExposant"]=new cVmExposant($db);
 
 
-$vsTitrePage = 'VisitManager - Demandes des exposants';	// Titre g�n�ral des pages
-
-
-/********************* Tests d'accès à la page ***************************/
-
-//by pass de l'authentification pour l'impression des pdf
-if (!isset($_GET['pass']) || $_GET['pass'] != 1){
-	//Si nous ne sommes pas sur la page de login
-	if (lg_nompage($_SERVER['PHP_SELF'])!="index.php" && lg_nompage($_SERVER['PHP_SELF'])!="planning_do_synthese.php" && lg_nompage($_SERVER['PHP_SELF'])!="gen_plan_excel.php")
+// Gestion de la connexion depuis l'extérieur.
+if (isset($_GET['lg']) && isset($_GET['lp']))
+{
+	//Modif du 07/08/2013
+	/*
+	//Connexion auto depuis un site exterieur
+	$oUser = new cUser($db);
+	//$oUser->findByExposant($_POST['chpId']);	
+	$oUser->findByLoginMdp($_GET['lg'], $_GET['lp']);
+	if ($oUser->estIdentifie())	
 	{
-		//Test le statut de l'utilisateur
-		if (isset($_SESSION["UserStatut"]))
-		{
-			if ($_SESSION["UserStatut"] != "Programmeur")
-			{
-				header("Location:../acces_refuse.php");
-			}
-		}
-		else
+		//$_SESSION["vsUserType"]=iif($oUser->estDirect,"D","I");
+		$_SESSION["vsUserId"]=$oUser->id;
+		$_SESSION["vsEstAdmin"]=true;
+	}
+	else
+	{
+		$vMsg=$oUser->msgErr;
+	}*/
+	
+	// Modif
+	
+	//Connexion auto depuis un site exterieur
+	$oVmExposant = new cVmExposant($db);
+	//$oUser->findByExposant($_POST['chpId']);	
+	$oVmExposant->findByLoginMdp($_GET['lg'], $_GET['lp']);
+	
+	if ($oVmExposant->isLoaded())	
+	{
+		$_SESSION["vsUserId"]=$oVmExposant->id;
+		$_SESSION["vsEstAdmin"]=true;
+		$_SESSION["UserStatut"] = "Exposant";
+	}
+	else
+	{
+		$vMsg=$oUser->msgErr;
+	}
+	
+	// Fin modif
+	
+}
+else if (isset($_GET['login']) && isset($_GET['pwd']))
+{
+    // connexion depuis l'extranet (ou autre site)
+    $oVmExposant = new cVmExposant($db);	
+    $bool = $oVmExposant->findByLogin($_GET['login'], $_GET['pwd'], $SALT);
+    if ($bool != true)
+    {
+        //$vMsg = $oUser->msgErr;
+    }
+}
+
+
+if (!isset($_SESSION["vsUserId"]))
+{
+	// Session non initialis�e
+	//$_SESSION["vsUserType"]="";
+	$_SESSION["vsUserId"]="";
+	$_SESSION["vsEstAdmin"]=false;
+	
+	if(lg_nompage($_SERVER['PHP_SELF']) != "" && lg_nompage($_SERVER['PHP_SELF'])!="index.php" && $_SESSION["vsUserId"] == "" && lg_nompage($_SERVER['PHP_SELF'])!="selection_do_ajout.php") 
+	{
+		header("Location:../acces_refuse.php");
+	}
+}
+else
+{
+	if(lg_nompage($_SERVER['PHP_SELF']) != "" && lg_nompage($_SERVER['PHP_SELF'])!="index.php" && lg_nompage($_SERVER['PHP_SELF'])!="selection_do_ajout.php" && lg_nompage($_SERVER['PHP_SELF'])!="genereHTML.php" && lg_nompage($_SERVER['PHP_SELF'])!="genereHTMLcasiers.php" && lg_nompage($_SERVER['PHP_SELF'])!="generefacture.php" && $_SESSION["vsUserId"] == "" && lg_nompage($_SERVER['PHP_SELF'])!="genereHTMLforPDF.php" && lg_nompage($_SERVER['PHP_SELF'])!="generePDF.php" && lg_nompage($_SERVER['PHP_SELF'])!="re_generefacture.php") 
+	{
+		//echo "a".lg_nompage($_SERVER['PHP_SELF'])."b";
+		header("Location:../acces_refuse.php");
+	}
+	
+	$_SESSION["osUser"]->init($_SESSION["vsUserId"]);
+	$_SESSION["osExposant"]->findById($_SESSION['osUser']->expId);
+	if ($_SESSION["osExposant"]->isLoaded())
+	{
+		if ($_SESSION["osExposant"]->bloque == "O")
 		{
 			header("Location:../acces_refuse.php");
 		}
+		
+		$_SESSION["osDossier"] = new cVmDossier ($db);	
+		$_SESSION["osDossier"]->findByLastDosExp($_SESSION["osExposant"]->id);
 	}
+	
 }
 
-$page= substr(
-		 $_SERVER['PHP_SELF'],
-		 strrpos($_SERVER['PHP_SELF'], '/')+1,
-		 strrpos($_SERVER['PHP_SELF'],'.')-1
-	);
+if (isset($_SESSION["vsEstAdmin"]) && $_SESSION["vsEstAdmin"])
+{ 
+	$_SESSION["osUser"]->estAdmin=true;	
+}
 
-/********************* Langue ***************************/
 if((isset($_GET['lg']) && isset($_GET['pLang'])) || isset($_POST['login'])){
 	unset($_SESSION["vsLang"]);
 }
+
 
 if (isset($_GET['pLang']) && !empty($_GET['pLang']))
 { 
@@ -104,37 +163,36 @@ elseif(!isset($_SESSION["vsLang"])){
 	}
 }
 
-// EK - 19/10/2021
-elseif (isset($_SESSION["vsLang"]) && $_SESSION["vsLang"] == "gb")
+//Gestion de la connexion avec un autre MDP depuis le fichier d'identification
+if(isset($_GET['lg_exp']) && isset($_GET["lp_exp"]))
 {
-	$_SESSION["vsLang"]="en";
+	//On voit si on a la possibilité de se connecter
+	$_SESSION["osUser"] = new cUser($db);
+	//$oUser->findByExposant($_POST['chpId']);	
+	$_SESSION["osUser"]->findByLoginMdpF18($_GET['lg_exp'], $_GET['lp_exp'], $_SESSION["vsUserId"]);
+	$_SESSION["osUser"]->id = $_SESSION["vsUserId"];
+	if (!$_SESSION["osUser"]->isIdentifieF18())	
+	{
+		header("Location:../acces_refuse.php");
+	}
+	else
+	{
+		$_SESSION["IDENTIF_F18"] = true;
+	}
 }
-//echo "rocks=" . $_SESSION['vsLang'];
 
-/********************* Traduction ***************************/
+
 //Initialisation du tableau lstTrads en session
 $_SESSION['lstTrads']=array();
 $o=new cvmtraduction($db);
 
 $lstTmp = $o->findByPage(lg_nompage($_SERVER['PHP_SELF']),$_SESSION["vsLang"]);
 
-// une seule page de trad pour planning_do_prog et planning_do
-if(lg_nompage($_SERVER['PHP_SELF']) == "planning_do_prog.php")
-	$lstTmp = $o->findByPage(lg_nompage("planning_do.php"),$_SESSION["vsLang"]);
-if(lg_nompage($_SERVER['PHP_SELF']) == "planning_do_prog_imprim.php")
-	$lstTmp = $o->findByPage(lg_nompage("planning_do.php"),$_SESSION["vsLang"]);
-if(lg_nompage($_SERVER['PHP_SELF']) == "planning_do_edit.php")
-	$lstTmp = $o->findByPage(lg_nompage("manage_do.php"),$_SESSION["vsLang"]);
-if(lg_nompage($_SERVER['PHP_SELF']) == "planning_do_synthese.php")
-	$lstTmp = $o->findByPage(lg_nompage("planning_do.php"),$_SESSION["vsLang"]);
-if(lg_nompage($_SERVER['PHP_SELF']) == "gen_plan_excel.php")
-	$lstTmp = $o->findByPage(lg_nompage("planning_do.php"),$_SESSION["vsLang"]);
-if(lg_nompage($_SERVER['PHP_SELF']) == "planning_exposant_imprim.php")
-	$lstTmp = $o->findByPage(lg_nompage("planning_exposant.php"),$_SESSION["vsLang"]);
-if(lg_nompage($_SERVER['PHP_SELF']) == "demandes_exposants_imprim.php")
-	$lstTmp = $o->findByPage(lg_nompage("demandes_exposants.php"),$_SESSION["vsLang"]);
-
-//echo"rocks=<pre>";print_r($lstTmp);echo"</pre>";
+/******* A supprimer *******/
+if(lg_nompage($_SERVER['PHP_SELF']) == "selection_do_old.php")
+	$lstTmp = $o->findByPage(lg_nompage("selection_do.php",$_SESSION["vsLang"]));
+	
+/******* Fin *******/
 
 foreach ($lstTmp as $t)
 {
@@ -151,16 +209,6 @@ foreach ($lstTmp as $t)
 	$_SESSION['lstTradsGen'][$t->code]=$t->libelle;	
 }
 
-//Initialisation du tableau lstTradsGenVM en session
-$_SESSION['lstTradsGenVM']=array();
-$o=new cvmtraduction($db);
-$lstTmp=$o->findByPage(lg_nompage('_vm'),$_SESSION["vsLang"]);
-
-foreach ($lstTmp as $t)
-{
-	$_SESSION['lstTradsGenVM'][$t->code]=$t->libelle;	
-}
-
 //Initialisation du tableau lstTradsErreur en session
 $_SESSION['lstTradsErreur']=array();
 $o=new cvmtraduction($db);
@@ -175,16 +223,6 @@ $_SESSION["sDEBUG_REQ"]=false;					//	Echo des requetes
 $_SESSION["sDEBUG_REQEXEC"]=false;				//  Echo des resultats de requetes
 
 $vsTitrePage = 'Espace Exposant';				// Titre général des pages
-
-$formLng = "en";
-if (isset($_SESSION["vsLang"]))
-{
-	$formLng = strtolower($_SESSION["vsLang"]);
-}
-if ($formLng == "en")
-{
-	$formLng = "gb";
-}
 
 function getTradActivite($sLibelle, $lng)
 {
@@ -253,9 +291,6 @@ function getTradActivite($sLibelle, $lng)
 
 function getTrad($pCode, $pPage = "")	
 {
-	if($pCode == "gb")
-		$pCode = "en";
-	
 	if (isset($_SESSION['lstTrads'][$pCode]))	
 	{	
 		return stripslashes($_SESSION['lstTrads'][$pCode]);	
@@ -264,30 +299,16 @@ function getTrad($pCode, $pPage = "")
 	{	
 		return stripslashes($_SESSION['lstTradsGen'][$pCode]);	
 	}
-    else if (isset($_SESSION['lstTradsGenVM'][$pCode]))	
-	{	
-		return stripslashes($_SESSION['lstTradsGenVM'][$pCode]);	
-	}
 	else if (isset($_SESSION['lstTradsErreur'][$pCode]))	
 	{	
 		return stripslashes($_SESSION['lstTradsErreur'][$pCode]);	
 	}
 	else
-		return "Trad. inconnue : '$pCode' ($_SESSION[vsLang])";
-}
-
-function getTradJs($pCode, $pCarac)
-{
-	$trad = getTrad($pCode);
-	
-	return str_replace($pCarac, "\\".$pCarac, $trad);
+			return "Trad. inconnue : '$pCode' ($_SESSION[vsLang])";
 }
 
 function getTrad2($pCode, $pPage = "")	
 {
-	if($pCode == "gb")
-		$pCode = "en";
-	
 	if (isset($_SESSION['lstTrads'][$pCode]))	
 	{	
 		return addslashes($_SESSION['lstTrads'][$pCode]);	
@@ -296,10 +317,6 @@ function getTrad2($pCode, $pPage = "")
 	{	
 		return addslashes($_SESSION['lstTradsGen'][$pCode]);	
 	}
-    else if (isset($_SESSION['lstTradsGenVM'][$pCode]))	
-	{	
-		return addslashes($_SESSION['lstTradsGenVM'][$pCode]);	
-	}
 	else if (isset($_SESSION['lstTradsErreur'][$pCode]))	
 	{	
 		return addslashes($_SESSION['lstTradsErreur'][$pCode]);	
@@ -307,5 +324,4 @@ function getTrad2($pCode, $pPage = "")
 	else
 		return addslashes("Trad. inconnue : '$pCode' ($_SESSION[vsLang])");
 }
-
 ?>

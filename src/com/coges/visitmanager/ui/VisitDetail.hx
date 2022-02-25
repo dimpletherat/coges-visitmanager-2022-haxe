@@ -25,6 +25,7 @@ import com.coges.visitmanager.vo.ActivityType;
 import com.coges.visitmanager.vo.ComboListTimeData;
 import com.coges.visitmanager.vo.Country;
 import com.coges.visitmanager.vo.Period;
+import com.coges.visitmanager.vo.Planning;
 import com.coges.visitmanager.vo.SpecialVisit;
 import com.coges.visitmanager.vo.User;
 import com.coges.visitmanager.vo.UserType;
@@ -112,6 +113,9 @@ class VisitDetail extends Sprite
     private var _btDeleteVisit:VMButton;
     private var _btGetDemand:VMButton;
     private var _btDuplicateVisitForDO:VMButton;
+	//2022-evolution
+	private var _btDuplicateVisitOnWorkingPlanning:VMButton;	
+	
     private var _btClose:VMButton;
     private var _btLockVisit:VMButton;
     private var _btNotes:VMButton;
@@ -273,6 +277,14 @@ class VisitDetail extends Sprite
 		_btDuplicateVisitForDO.toolTipContent = Locale.get("TOOLTIP_BT_DUPLICATE_FOR_DO");
         _btDuplicateVisitForDO.addEventListener(MouseEvent.CLICK, _duplicateForDOClickHandler);
 		addChild(_btDuplicateVisitForDO);
+		
+		//2022-evolution
+		_btDuplicateVisitOnWorkingPlanning = new VMButton(Locale.get("BT_DUPLICATE_VISIT_ON_WORKING_PLANNING_LABEL"), tf13Grey1, SpriteUtils.createRoundSquare(250, 30, 6, 6, Colors.BLUE1) );
+		_btDuplicateVisitOnWorkingPlanning.borderEnabled = false;
+		_btDuplicateVisitOnWorkingPlanning.setIcon( Icons.getIcon( Icon.PLANNING_DUPLICATE), new Point( 40, 30 ) );
+		_btDuplicateVisitOnWorkingPlanning.toolTipContent = Locale.get("TOOLTIP_BT_DUPLICATE_ON_WORKING_PLANNING");
+        _btDuplicateVisitOnWorkingPlanning.addEventListener(MouseEvent.CLICK, _duplicateOnWorkingPlanningClickHandler);
+		addChild(_btDuplicateVisitOnWorkingPlanning);
 		
 		_btGetDemand = new VMButton(Locale.get("BT_GET_DEMAND_VISIT_LABEL"), tf13Grey1, SpriteUtils.createRoundSquare(200, 30, 6, 6, Colors.PURPLE2) );
 		_btGetDemand.borderEnabled = false;
@@ -591,9 +603,12 @@ class VisitDetail extends Sprite
         _isVisitLocked = _data.isLocked;
         _toggleLockVisitButton();
         _toggleLockedVisit();
-        
-        _btDuplicateVisitForDO.enabled = (_data.id != 0);
-        
+        		
+		//2022-evolution
+        //_btDuplicateVisitForDO.enabled = (_data.id != 0);
+        _btDuplicateVisitForDO.enabled = ((_data.id != 0) && _isUserAuthorized);		
+        _btDuplicateVisitOnWorkingPlanning.enabled = ((_data.id != 0) && _isUserAuthorized && _isPlanningLocked);
+        _btDuplicateVisitOnWorkingPlanning.visible = _btDuplicateVisitOnWorkingPlanning.enabled;
     }
     
 		
@@ -1087,8 +1102,7 @@ class VisitDetail extends Sprite
 		_duplicateOverlay.y = _background.y + _duplicateOverlayPosY;
         _duplicateOverlay.addEventListener(Event.CLOSE, _duplicateOverlayCloseHandler);
         addChild(_duplicateOverlay);
-    }
-    
+    }    
 	
     private function _duplicateOverlayCloseHandler(e:Event):Void
     {
@@ -1104,6 +1118,30 @@ class VisitDetail extends Sprite
 				_txtName.state = ToggleTextInputState.DYNAMIC;
 		}
     }
+	
+	//2022-evolution
+    private function _duplicateOnWorkingPlanningClickHandler(e:MouseEvent):Void
+    {
+		//useless ?
+        if (!_isUserAuthorized)
+        {
+            return;
+        }
+		
+		ServiceManager.instance.addEventListener( ServiceEvent.COMPLETE, _duplicateOnWorkingPlanningCompleteHandler );
+		ServiceManager.instance.duplicateVisitOnWorkingPlanning( _data ); 
+		
+    } 	
+	function _duplicateOnWorkingPlanningCompleteHandler(e:ServiceEvent):Void 
+	{
+		if ( e.currentCall == ServiceManager.instance.duplicateVisitOnWorkingPlanning )
+		{
+			ServiceManager.instance.removeEventListener( ServiceEvent.COMPLETE, _duplicateOnWorkingPlanningCompleteHandler );
+			
+			DialogManager.instance.open( new VMMessageDialog( "", Locale.get("ALERT_DUPLICATE_ON_WORKING_PLANNING" ) ) );
+		}
+	}
+	//-----------
     
     private function _statusAcceptClickHandler(e:MouseEvent):Void
     {
@@ -1436,7 +1474,12 @@ class VisitDetail extends Sprite
 		_contentRect = new Rectangle( (w - _width) * 0.5, (h - _height) * 0.5, _width, _height );
 		var contentCenter:Float = _contentRect.left + _contentRect.width * 0.5;
 		
-		SpriteUtils.drawRoundSquare( _background, Std.int(_contentRect.width), Std.int(_contentRect.height), 8, 8, Colors.GREY1 );
+		SpriteUtils.drawRoundSquare( _background, Std.int(_contentRect.width), Std.int(_contentRect.height), 8, 8, Colors.GREY1 );		
+		//2022-evolution
+		if ( _btDuplicateVisitOnWorkingPlanning.visible )
+			SpriteUtils.drawRoundSquare( _background, Std.int(_contentRect.width), Std.int(_contentRect.height) + padding + 30, 8, 8, Colors.GREY1 );		
+			
+		
 		_background.x = _contentRect.x;
 		_background.y = _contentRect.y;
 		
@@ -1605,6 +1648,10 @@ class VisitDetail extends Sprite
 		_btClose.y = buttonLine2PosY;
 		_btDuplicateVisitForDO.x = _contentRect.right - _btDuplicateVisitForDO.width;
 		_btDuplicateVisitForDO.y = buttonLine2PosY;
+		
+		//2022-evolution
+		_btDuplicateVisitOnWorkingPlanning.x = _contentRect.right - _btDuplicateVisitOnWorkingPlanning.width;
+		_btDuplicateVisitOnWorkingPlanning.y = buttonLine2PosY + buttonHeight + padding;
     }	
 }
 

@@ -45,6 +45,11 @@ if ( is_null($pLang) || $pLang === false )
     {
         $pLang = 'en';
     }
+	// EK - 19/10/2021
+	else if ( $pLang === 'esp' )
+    {
+        $pLang = 'es';
+    }
 }
 $checkSelect = filter_input( INPUT_GET, 'checkSelect' );
 if ( is_null($checkSelect) || $checkSelect === false )
