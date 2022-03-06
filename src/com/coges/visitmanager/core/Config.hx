@@ -174,7 +174,13 @@ class Config
 		var rootURL:String = "../"; //'/site/visitmanager' directory
 		if ( !_isOnline )
 		{
-			rootURL = "http://eurosatory.dev.object23.fr/site/visitmanager/";
+			//2022-evolution
+			//rootURL = "http://eurosatory.dev.object23.fr/site/visitmanager/";
+			//dev
+			//rootURL = "https://rcpt-eurosatory.visitmanager.events/site/visitmanager/";
+			//prod
+			rootURL = "https://eurosatory.visitmanager.events/site/visitmanager/";
+			
 		}
 		
 		//TODO: to test

@@ -1,0 +1,8 @@
+* "Attention plusieurs PROGRAMMEURS(Utilisateurs ?) sont actuellement connectés sur la DO."
+* types d'utilisateurs : "Programmeurs"/ "Attaché Défense"(Ministère Defense ?) /"Officiers Accompagnateurs"/"Officiers de Zone"/"Membres du bureau" ( COGES ? )
+
+* "Dupliquer sur Planning 'Travail'"
+* "Dupliquer le rendez-vous sur le planning de travail de cette DO"
+* "Le rendez-vous a bien été dupliqué sur le planning de Travail de cette DO."
+* "L'exposant a atteint sa capacité d'accueil pour le créneau demandé. Le rendez-vous a été dupliqué sur le planning de travail en 'Attente'."
+* "Le créneau demandé n'est pas disponible. Le rendez-vous a été dupliqué sur le planning de travail en 'Attente'."

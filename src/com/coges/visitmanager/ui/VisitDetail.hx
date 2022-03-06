@@ -1138,6 +1138,8 @@ class VisitDetail extends Sprite
 		{
 			ServiceManager.instance.removeEventListener( ServiceEvent.COMPLETE, _duplicateOnWorkingPlanningCompleteHandler );
 			
+			//TODO: check result in case Visit is StandBy after duplication
+			var result:Bool = e.result;
 			DialogManager.instance.open( new VMMessageDialog( "", Locale.get("ALERT_DUPLICATE_ON_WORKING_PLANNING" ) ) );
 		}
 	}

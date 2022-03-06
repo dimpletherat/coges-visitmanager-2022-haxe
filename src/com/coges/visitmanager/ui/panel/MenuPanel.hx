@@ -62,6 +62,10 @@ class MenuPanel extends Sprite
 	private var _clDOStatus:ComboListDOStatus;
 	private var _clDO:ComboListDO;
 	
+	//2022-evolution
+	private var _checkMultiUsersResultList:Array<MultiUsersDataJSON>;
+	private var _DONotAvailableDialogIsOpen:Bool = false;
+	
     public function new()
     {
         super();
@@ -230,12 +234,27 @@ class MenuPanel extends Sprite
 			
             if (DO.selected == null)
             {
+				//2022-evolution
+				//if this flag is not managed, this dialog cannot be seen because the 'check multi users' dialog would replace it immediately after.
+				_DONotAvailableDialogIsOpen = true;
+				DialogManager.instance.addEventListener( DialogEvent.CLOSE, _DONotAvailableDialogCloseHandler );
+				//--
                 DialogManager.instance.open( new VMMessageDialog( "Title", Locale.get("MESSAGE_DO_NOT_AVAILABLE"), Icons.getIcon( Icon.DIALOG_INFO ) ) );
+				
                 DO.selected = DO.list.getItemAt(0);
             }
             _fillComboListDO();
         }
     }
+	
+	//2022-evolution
+	function _DONotAvailableDialogCloseHandler(e:DialogEvent):Void 
+	{
+		DialogManager.instance.removeEventListener( DialogEvent.CLOSE, _DONotAvailableDialogCloseHandler );
+		_DONotAvailableDialogIsOpen = false;
+		_displayCheckMultiUsersResult();
+	}
+	//--
     
     private function _fillComboListDO():Void
     {
@@ -277,8 +296,8 @@ class MenuPanel extends Sprite
             ServiceManager.instance.getDOOppositeOwner(DO.selected, User.instance);
         }		
 		
-		//2022-evolution		
-        ServiceManager.instance.addEventListener(ServiceEvent.COMPLETE, _checkMultiUsersCompleteHandler);
+		//2022-evolution
+		ServiceManager.instance.addEventListener(ServiceEvent.COMPLETE, _checkMultiUsersCompleteHandler);
 		ServiceManager.instance.checkMultiUsers(DO.selected, User.instance);
     }
 
@@ -298,28 +317,39 @@ class MenuPanel extends Sprite
         if (e.currentCall == ServiceManager.instance.checkMultiUsers)
         {
             ServiceManager.instance.removeEventListener(ServiceEvent.COMPLETE, _checkMultiUsersCompleteHandler);
-			var ds:DialogSkin = DialogManager.instance.skin.clone();
-			ds.titleBackgroundColor = Colors.YELLOW;
-			ds.contentBackgroundColor = Colors.YELLOW;
-			ds.contentFormat = new TextFormat( Fonts.OPEN_SANS, 16, Colors.GREY5, null, null, null, null, null, TextFormatAlign.CENTER );
-			ds.titleFormat = new TextFormat( Fonts.OPEN_SANS, 16, Colors.GREY5, true );
 			
+			_checkMultiUsersResultList = e.result;
 			
-			var list:Array<MultiUsersDataJSON> = e.result;
-			var message:String = "";
-			for ( m in list)
-			{
-				message += m.type.toUpperCase() + ":<br>";
-				for ( u in m.userList )
-				{
-					message += "- " + u + "<br>";
-				}
-				message += "<br>";
-			}
-			
-			DialogManager.instance.open( new VMMessageDialog( Locale.get( "MESSAGE_MULTI_USERS" ), message, Icons.getIcon( Icon.ALERT_MULTI_USERS ) ), ds );
+			if ( !_DONotAvailableDialogIsOpen )
+				_displayCheckMultiUsersResult();
         }
     }
+	private function _displayCheckMultiUsersResult():Void
+	{
+		if ( _checkMultiUsersResultList == null ) return;
+		if ( _checkMultiUsersResultList.length == 0 ) return;
+		
+		
+		var ds:DialogSkin = DialogManager.instance.skin.clone();
+		ds.titleBackgroundColor = Colors.YELLOW;
+		ds.contentBackgroundColor = Colors.YELLOW;
+		ds.contentFormat = new TextFormat( Fonts.OPEN_SANS, 16, Colors.GREY5, null, null, null, null, null, TextFormatAlign.CENTER );
+		ds.titleFormat = new TextFormat( Fonts.OPEN_SANS, 16, Colors.GREY5, true );
+		
+		
+		var message:String = "";
+		for ( m in _checkMultiUsersResultList)
+		{
+			message += "<font size='20'>(tmp)" + m.type.toUpperCase() + " :</font><br>";
+			for ( u in m.userList )
+			{
+				message += "- " + u + "<br>";
+			}
+			message += "<br>";
+		}
+		
+		DialogManager.instance.open( new VMMessageDialog( Locale.get( "MESSAGE_MULTI_USERS" ), message, Icons.getIcon( Icon.ALERT_MULTI_USERS ) ), ds );
+	}
 	//----
     
     private function _DOSelectHandler(e:Event):Void

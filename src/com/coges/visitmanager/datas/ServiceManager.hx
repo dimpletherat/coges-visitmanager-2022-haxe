@@ -684,18 +684,20 @@ class ServiceManager extends EventDispatcher
     public function checkMultiUsers(delegation:DO, user:User):Void
     {
 		// TODO !
-		var http = new Http("./assets/tmp-datas/check-multi-users.json");
-		//var http = new Http(Config.servicesURL);
+		//var http = new Http("./assets/tmp-datas/check-multi-users.json");
+		var http = new Http(Config.servicesURL);
 		http.onData = _checkMultiUsersCompleteHandler;
 		http.onError = _serviceErrorHandler2;
 		http.addParameter("action", "check-multi-users" );
 		http.addParameter("do-id", Std.string(delegation.id) );
 		http.addParameter("user-id", Std.string(user.id) );
+		http.addParameter("user-type", Std.string(user.type) );
 		http.request(true);
     }
     private function _checkMultiUsersCompleteHandler(result:Dynamic)
     {
-		var resultJSON = Json.parse( result);
+		//trace("result:" + result);
+		var resultJSON = Json.parse(result);
         
         if (resultJSON.success == true )
         {		
@@ -1277,27 +1279,21 @@ class ServiceManager extends EventDispatcher
     }
 	
 	//2022-evolution
-	//duplicateVisitOnWorkingPlanning( VisitVO visit )
     public function duplicateVisitOnWorkingPlanning(visit:Visit):Void
     {
-		//TODO
-		var http = new Http("./assets/tmp-datas/duplicate-visit-on-working-planning.json");
-		//var http = new Http( Config.servicesURL );
+		//var http = new Http("./assets/tmp-datas/duplicate-visit-on-working-planning.json");
+		var http = new Http( Config.servicesURL );
 		http.onData = _duplicateVisitOnWorkingPlanningCompleteHandler;
 		http.onError = _serviceErrorHandler2;
 		http.addParameter("action", "duplicate-visit-on-working-planning" );
 		http.addParameter("visit", Json.stringify(visit.getJSONRepresentation()) );
-		/*
-		var list:Array<String> = new Array<String>();
-		for ( d in doList )
-		{
-			list.push( Std.string(d.id) );
-		}
-		http.addParameter("do-id-list", Json.stringify( list ) );*/
+		http.addParameter("lang", Config.LANG );
+		
 		http.request(true);
     }
     private function _duplicateVisitOnWorkingPlanningCompleteHandler(result:Dynamic):Void
-    {	
+    {
+		//trace( result);
 		var resultJSON = Json.parse( result);
 		
         if (resultJSON.success == true )
