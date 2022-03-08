@@ -1137,10 +1137,22 @@ class VisitDetail extends Sprite
 		if ( e.currentCall == ServiceManager.instance.duplicateVisitOnWorkingPlanning )
 		{
 			ServiceManager.instance.removeEventListener( ServiceEvent.COMPLETE, _duplicateOnWorkingPlanningCompleteHandler );
-			
-			//TODO: check result in case Visit is StandBy after duplication
-			var result:Bool = e.result;
-			DialogManager.instance.open( new VMMessageDialog( "", Locale.get("ALERT_DUPLICATE_ON_WORKING_PLANNING" ) ) );
+		
+			var result:String = e.result;
+			var msg:String = Locale.get("ALERT_DUPLICATE_ON_WORKING_PLANNING" );
+			switch (result) 
+			{
+				case "ok":
+					msg = Locale.get("ALERT_DUPLICATE_ON_WORKING_PLANNING_OK" );
+				case "exhibitor-not-available":
+					msg = Locale.get("ALERT_DUPLICATE_ON_WORKING_PLANNING_EXH_NOT_AVAILABLE" );
+				case "time-slot-not-free":
+					msg = Locale.get("ALERT_DUPLICATE_ON_WORKING_PLANNING_SLOT_NOT_FREE" );
+				default:
+					msg = Locale.get("ALERT_DUPLICATE_ON_WORKING_PLANNING_OK" );
+			}
+				
+			DialogManager.instance.open( new VMMessageDialog( "", msg ) );
 		}
 	}
 	//-----------

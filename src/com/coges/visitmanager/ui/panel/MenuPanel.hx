@@ -340,7 +340,7 @@ class MenuPanel extends Sprite
 		var message:String = "";
 		for ( m in _checkMultiUsersResultList)
 		{
-			message += "<font size='20'>(tmp)" + m.type.toUpperCase() + " :</font><br>";
+			message += "<font size='20'>" + Locale.get( "LBL_USER_TYPE_" + m.type.toUpperCase() ).toUpperCase() + " :</font><br>";
 			for ( u in m.userList )
 			{
 				message += "- " + u + "<br>";

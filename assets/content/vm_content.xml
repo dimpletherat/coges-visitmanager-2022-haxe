@@ -647,21 +647,33 @@ Only 'Working' version schedule can be modified.]]></en>
       </item>
 	<!--2022-->
   <item id="BT_DUPLICATE_VISIT_ON_WORKING_PLANNING_LABEL">
-        <fr><![CDATA[Dupliquer sur planning 'Travail']]></fr>
-        <es><![CDATA[todo*Duplicar para programa 'Trabajo'.]]></es>
-        <en><![CDATA[todo*Duplicate for 'Working' schedule]]></en>
+        <fr><![CDATA[Dupliquer sur Planning 'Travail']]></fr>
+        <es><![CDATA[Duplicar en el calendario 'Trabajo']]></es>
+        <en><![CDATA[Duplicate on "Work" schedule]]></en>
       </item>
 	<!--2022-->
   <item id="TOOLTIP_BT_DUPLICATE_ON_WORKING_PLANNING">
-        <fr><![CDATA[Dupliquer le rendez-vous sur le planning de Travail de cette DO]]></fr>
-        <es><![CDATA[todo*Duplicar la cita para el programa 'Trabajo']]></es>
-        <en><![CDATA[todo*Duplicate this appointment for the 'Working' version schedule]]></en>
+        <fr><![CDATA[Dupliquer le rendez-vous sur le planning de travail de cette DO]]></fr>
+        <es><![CDATA[Duplicar la cita en el calendario de trabajo de esta DO]]></es>
+        <en><![CDATA[Duplicate the appointment on the work schedule of this DO]]></en>
       </item>
 	<!--2022-->
-  <item id="ALERT_DUPLICATE_ON_WORKING_PLANNING">
+  <item id="ALERT_DUPLICATE_ON_WORKING_PLANNING_OK">
         <fr><![CDATA[Le rendez-vous a bien été dupliqué sur le planning de Travail de cette DO.]]></fr>
-        <es><![CDATA[todo*Se duplicó la cita para el programa 'Trabajo'.]]></es>
-        <en><![CDATA[todo*This appointment has been duplicated for the 'Working' version schedule.]]></en>
+        <es><![CDATA[La cita se ha duplicado en el calendario de trabajo de esta DO.]]></es>
+        <en><![CDATA[The appointment has been duplicated on the work schedule of this DO.]]></en>
+      </item>
+	<!--2022-->
+  <item id="ALERT_DUPLICATE_ON_WORKING_PLANNING_EXH_NOT_AVAILABLE">
+        <fr><![CDATA[L'exposant a atteint sa capacité d'accueil pour le créneau demandé.<br><br>Le rendez-vous a été dupliqué sur le planning de travail en 'Attente'.]]></fr>
+        <es><![CDATA[El expositor ha alcanzado su capacidad para el espacio solicitado.<br><br>La cita se ha duplicado en el calendario de trabajo 'Pendiente'.]]></es>
+        <en><![CDATA[The exhibitor has reached its capacity for the requested slot.<br><br>The appointment has been duplicated on the "pending" work schedule.]]></en>
+      </item>
+	<!--2022-->
+  <item id="ALERT_DUPLICATE_ON_WORKING_PLANNING_SLOT_NOT_FREE">
+        <fr><![CDATA[Le créneau demandé n'est pas disponible.<br><br>Le rendez-vous a été dupliqué sur le planning de travail en 'Attente'.]]></fr>
+        <es><![CDATA[El espacio solicitado no está disponible.<br><br>La cita se ha duplicado en el calendario de trabajo 'Pendiente'.]]></es>
+        <en><![CDATA[The requested slot is not available.<br><br>The appointment has been duplicated on the 'Pending' work schedule.]]></en>
       </item>
   <item id="LABEL_AVAILABLE_DO_LIST">
         <fr><![CDATA[Liste des délégations disponibles]]></fr>
@@ -945,8 +957,32 @@ You will find below the list of ODs to which this appointment has not been dupli
 	</item>
 	<!--2022-->
 	<item id="MESSAGE_MULTI_USERS">
-        <fr><![CDATA[Attention plusieurs PROGRAMMEURS sont actuellement connectés sur la DO"]]></fr>
-		<es><![CDATA[todo:translation]]></es>
-		<en><![CDATA[todo:translation]]></en>
+        <fr><![CDATA[Attention plusieurs Utilisateurs sont actuellement connectés sur la DO."]]></fr>
+		<es><![CDATA[Tenga en cuenta que varios usuarios están actualmente conectados al DO.]]></es>
+		<en><![CDATA[Please note that several users are currently connected to the DO.]]></en>
+	</item>
+	<!--2022-->
+	<item id="LBL_USER_TYPE_PROG">
+        <fr><![CDATA[Programmeurs]]></fr>
+		<es><![CDATA[programadores]]></es>
+		<en><![CDATA[Programmers]]></en>
+	</item>
+	<!--2022-->
+	<item id="LBL_USER_TYPE_OZ">
+        <fr><![CDATA[Officiers de Zone]]></fr>
+		<es><![CDATA[Oficiales de área]]></es>
+		<en><![CDATA[Zone Officers]]></en>
+	</item>
+	<!--2022-->
+	<item id="LBL_USER_TYPE_ATT_DEF">
+        <fr><![CDATA[Attaché Défense]]></fr>
+		<es><![CDATA[Agregado de Defensa]]></es>
+		<en><![CDATA[Defence Representative]]></en>
+	</item>
+	<!--2022-->
+	<item id="LBL_USER_TYPE_MEM_BUR">
+        <fr><![CDATA[Membres du bureau]]></fr>
+		<es><![CDATA[Miembros de la Junta]]></es>
+		<en><![CDATA[Members of the office]]></en>
 	</item>
 </translations>
