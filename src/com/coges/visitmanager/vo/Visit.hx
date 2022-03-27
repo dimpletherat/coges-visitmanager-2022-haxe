@@ -101,7 +101,11 @@ class Visit
     public var dateEndString(default, null):String;
     public var period(default, null):Period;
     public var idVotePeriod(default, null):String;
-    public var isOfficial(default, default):Bool;
+	
+	//2022-evolution
+	//never used ?
+    //public var isOfficial(default, default):Bool;
+	
     public var contact(default, default):String;
     public var phone(default, default):String;
     public var isLocked(default, default):Bool;

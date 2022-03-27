@@ -24,6 +24,7 @@ import com.coges.visitmanager.vo.Planning;
 import com.coges.visitmanager.vo.User;
 import com.coges.visitmanager.vo.UserType;
 import nbigot.ui.IconPosition;
+import nbigot.ui.control.Label;
 import nbigot.ui.control.WaitPanel;
 import nbigot.ui.dialog.DialogEvent;
 import nbigot.ui.dialog.DialogManager;
@@ -60,11 +61,12 @@ class MenuPanel extends Sprite
 	private var _btAddDONote:VMButton;
     private var _btEditDOAvailablePeriod:VMButton;
 	private var _clDOStatus:ComboListDOStatus;
-	private var _clDO:ComboListDO;
+	private var _clDO:ComboListDO;	
 	
 	//2022-evolution
 	private var _checkMultiUsersResultList:Array<MultiUsersDataJSON>;
 	private var _DONotAvailableDialogIsOpen:Bool = false;
+	private var _lblMultiUserNum:Label;
 	
     public function new()
     {
@@ -136,7 +138,14 @@ class MenuPanel extends Sprite
         }		
         
 		DataUpdater.instance.addEventListener(DataUpdaterEvent.DO_SELECTED_CHANGE, _changeDOHandler );
-        
+		
+		
+		
+		//2022-evolution
+		_lblMultiUserNum = new  Label( "99", new TextFormat(Fonts.OPEN_SANS, 15, Colors.RED2, true) );
+		_lblMultiUserNum.mouseEnabled = false;
+		_lblMultiUserNum.mouseChildren = false;
+		addChild( _lblMultiUserNum );
         
         addEventListener(Event.ADDED_TO_STAGE, _init);
     }
@@ -318,7 +327,7 @@ class MenuPanel extends Sprite
         {
             ServiceManager.instance.removeEventListener(ServiceEvent.COMPLETE, _checkMultiUsersCompleteHandler);
 			
-			_checkMultiUsersResultList = e.result;
+			_checkMultiUsersResultList = e.result;			
 			
 			if ( !_DONotAvailableDialogIsOpen )
 				_displayCheckMultiUsersResult();
@@ -326,9 +335,12 @@ class MenuPanel extends Sprite
     }
 	private function _displayCheckMultiUsersResult():Void
 	{
-		if ( _checkMultiUsersResultList == null ) return;
-		if ( _checkMultiUsersResultList.length == 0 ) return;
+		_lblMultiUserNum.setText("1");
 		
+		if ( _checkMultiUsersResultList == null ) return;
+		if ( _checkMultiUsersResultList.length == 0 ) return;		
+		
+		_lblMultiUserNum.setText( Std.string(_checkMultiUsersResultList.length+1) );
 		
 		var ds:DialogSkin = DialogManager.instance.skin.clone();
 		ds.titleBackgroundColor = Colors.YELLOW;
@@ -463,6 +475,10 @@ class MenuPanel extends Sprite
 		/*
 		INFO_LIMIT_LEFT = Std.int(_clDO.x);
 		INFO_LIMIT_RIGHT = Std.int(_btRefreshAll.x);*/
+		
+		//2022-evolution
+		_lblMultiUserNum.x = _btAddDONote.x - _lblMultiUserNum.width * 0.5 - 5;
+		_lblMultiUserNum.y = (_btAddDONote.height - _lblMultiUserNum.height) * 0.5;
 		
 	} 
 }

@@ -957,7 +957,7 @@ You will find below the list of ODs to which this appointment has not been dupli
 	</item>
 	<!--2022-->
 	<item id="MESSAGE_MULTI_USERS">
-        <fr><![CDATA[Attention plusieurs Utilisateurs sont actuellement connectés sur la DO."]]></fr>
+        <fr><![CDATA[Attention plusieurs Utilisateurs sont actuellement connectés sur la DO.]]></fr>
 		<es><![CDATA[Tenga en cuenta que varios usuarios están actualmente conectados al DO.]]></es>
 		<en><![CDATA[Please note that several users are currently connected to the DO.]]></en>
 	</item>
