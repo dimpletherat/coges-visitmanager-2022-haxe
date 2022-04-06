@@ -956,6 +956,18 @@ You will find below the list of ODs to which this appointment has not been dupli
 		<en><![CDATA[Vacant reserved slot]]></en>
 	</item>
 	<!--2022-->
+	<item id="LBL_LEGEND_STATUS_BY_OA_DONE">
+        <fr><![CDATA[RDV effectué]]></fr>
+		<es><![CDATA[Cita hecha]]></es>
+		<en><![CDATA[Appointment done]]></en>
+	</item>
+	<!--2022-->
+	<item id="LBL_LEGEND_STATUS_BY_OA_CANCEL">
+        <fr><![CDATA[RDV non-effectué]]></fr>
+		<es><![CDATA[Cita no hecha]]></es>
+		<en><![CDATA[Appointment not done]]></en>
+	</item>
+	<!--2022-->
 	<item id="MESSAGE_MULTI_USERS">
         <fr><![CDATA[Attention plusieurs Utilisateurs sont actuellement connectés sur la DO.]]></fr>
 		<es><![CDATA[Tenga en cuenta que varios usuarios están actualmente conectados al DO.]]></es>
