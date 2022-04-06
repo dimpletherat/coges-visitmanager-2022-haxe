@@ -8,6 +8,7 @@ import com.coges.visitmanager.vo.User;
 import com.coges.visitmanager.vo.UserType;
 import com.coges.visitmanager.vo.Visit;
 import com.coges.visitmanager.vo.VisitStatus;
+import com.coges.visitmanager.vo.VisitStatusByOA;
 import com.coges.visitmanager.vo.VisitStatusID;
 import nbigot.utils.SpriteUtils;
 import nbigot.utils.TextFieldUtils;
@@ -121,7 +122,15 @@ class VisitDisplay extends Sprite
 	
 	function _draw() 
 	{
-		SpriteUtils.drawRoundSquare( _background, Std.int(_width), Std.int(_height), 4, 4, _status.colorLight, 1, _status.colorDark );
+		if ( _data.statusByOA != null )
+		{
+			if ( _data.statusByOA == VisitStatusByOA.DONE )
+				SpriteUtils.drawRoundSquare( _background, Std.int(_width), Std.int(_height), 4, 4, Colors.VISIT_STATUS_BY_OA_DONE, 1, Colors.GREY5 );
+			else
+				SpriteUtils.drawRoundSquare( _background, Std.int(_width), Std.int(_height), 4, 4, Colors.VISIT_STATUS_BY_OA_CANCEL, 1, Colors.GREY5 );
+		}else{
+			SpriteUtils.drawRoundSquare( _background, Std.int(_width), Std.int(_height), 4, 4, _status.colorLight, 1, _status.colorDark );
+		}
 		
 		var paddingV = 4;
 		if ( _background.height <= 20 ) paddingV = 0;
