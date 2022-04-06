@@ -296,7 +296,8 @@ class PendingPanel extends Sprite
 				visitActivityList:null, 
 				idVotePeriod:"",
 				//2022-evolution
-				exhibitorIsSensitive:false
+				exhibitorIsSensitive:false,
+				statusByOA:null
 			};
             datas.addItem(new PendingVisit( pvJSON ));
         }
