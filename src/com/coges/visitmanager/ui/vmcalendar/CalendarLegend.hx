@@ -66,6 +66,20 @@ class CalendarLegend extends Sprite
 		
 		
 		
+		
+		var iconStatus6 = SpriteUtils.createRoundSquare( 10, 12, 2, 2, Colors.VISIT_STATUS_BY_OA_DONE, 1, Colors.GREY4 );
+		iconStatus6.x = lblStatus5.x + lblStatus5.width + spacer * 4;
+		addChild( iconStatus6 );
+		var lblStatus6 = new Label( Locale.get("LBL_LEGEND_STATUS_BY_OA_DONE").toUpperCase(), tfStatus );
+		lblStatus6.x = iconStatus6.x + iconStatus6.width + spacer;
+		addChild( lblStatus6 );
+		
+		var iconStatus7 = SpriteUtils.createRoundSquare( 10, 12, 2, 2, Colors.VISIT_STATUS_BY_OA_CANCEL, 1, Colors.GREY4 );
+		iconStatus7.x = lblStatus6.x + lblStatus6.width + spacer * 2;
+		addChild( iconStatus7 );
+		var lblStatus7 = new Label( Locale.get("LBL_LEGEND_STATUS_BY_OA_CANCEL").toUpperCase(), tfStatus );
+		lblStatus7.x = iconStatus7.x + iconStatus7.width + spacer;
+		addChild( lblStatus7 );
 	}
 	
 }
