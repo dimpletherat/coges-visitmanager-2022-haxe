@@ -36,4 +36,6 @@ enum abstract Colors(Int) from Int to Int
 	var GREY4 = 0x7f8c8d;
 	//2022-evolution	
 	var GREY5 = 0x576574;
+	var VISIT_STATUS_BY_OA_DONE = 0x00ffd4;
+	var VISIT_STATUS_BY_OA_CANCEL = 0xf05a5b;
 }
