@@ -58,6 +58,7 @@ typedef VisitJSON =
 	
 	//2022-evolution
     var exhibitorIsSensitive:Bool;
+	var statusByOA:String;
 }
 	 
 	 
@@ -198,6 +199,7 @@ class Visit
 	
 	//2022-evolution
     public var exhibitorIsSensitive(default, null):Bool;
+    public var statusByOA(default, null):VisitStatusByOA;
     
     
     
@@ -242,6 +244,7 @@ class Visit
 		
 		//2022-evolution
 		exhibitorIsSensitive = ( json.exhibitorIsSensitive == null ) ? false : json.exhibitorIsSensitive;
+		statusByOA = ( json.statusByOA == null ) ? null : json.statusByOA;
 		//TODO:TEST
 		//if ( Math.round( Math.random() ) == 1 )
 		//	exhibitorIsSensitive = true;
@@ -333,7 +336,8 @@ class Visit
 			visitActivityList:visitActivityList.innerArray, 
 			idVotePeriod:idVotePeriod,
 			//2022-evolution
-			exhibitorIsSensitive:exhibitorIsSensitive
+			exhibitorIsSensitive:exhibitorIsSensitive,
+			statusByOA:statusByOA
 		};
         //return Json.stringify( json );
         return json;
@@ -398,7 +402,8 @@ class Visit
 			visitActivityList:null, 
 			idVotePeriod:null,
 			//2022-evolution
-			exhibitorIsSensitive:false
+			exhibitorIsSensitive:false,
+			statusByOA:null
 		};
         var v:Visit = new Visit(json);
         v.dateStart = startDate;
@@ -440,7 +445,8 @@ class Visit
 			visitActivityList:activityList, 
 			idVotePeriod:null,
 			//2022-evolution
-			exhibitorIsSensitive:searchResult.exhibitorIsSensitive
+			exhibitorIsSensitive:searchResult.exhibitorIsSensitive,
+			statusByOA:null
 		};
 		
         var v:Visit = new Visit(json);
