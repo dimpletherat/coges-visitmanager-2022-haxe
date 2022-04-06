@@ -338,9 +338,7 @@ class MenuPanel extends Sprite
 		_lblMultiUserNum.setText("1");
 		
 		if ( _checkMultiUsersResultList == null ) return;
-		if ( _checkMultiUsersResultList.length == 0 ) return;		
-		
-		_lblMultiUserNum.setText( Std.string(_checkMultiUsersResultList.length+1) );
+		if ( _checkMultiUsersResultList.length == 0 ) return;
 		
 		var ds:DialogSkin = DialogManager.instance.skin.clone();
 		ds.titleBackgroundColor = Colors.YELLOW;
@@ -348,7 +346,7 @@ class MenuPanel extends Sprite
 		ds.contentFormat = new TextFormat( Fonts.OPEN_SANS, 16, Colors.GREY5, null, null, null, null, null, TextFormatAlign.CENTER );
 		ds.titleFormat = new TextFormat( Fonts.OPEN_SANS, 16, Colors.GREY5, true );
 		
-		
+		var multiuserNum = 1;
 		var message:String = "";
 		for ( m in _checkMultiUsersResultList)
 		{
@@ -356,9 +354,11 @@ class MenuPanel extends Sprite
 			for ( u in m.userList )
 			{
 				message += "- " + u + "<br>";
+				multiuserNum ++;
 			}
 			message += "<br>";
 		}
+		_lblMultiUserNum.setText( Std.string(multiuserNum) );
 		
 		DialogManager.instance.open( new VMMessageDialog( Locale.get( "MESSAGE_MULTI_USERS" ), message, Icons.getIcon( Icon.ALERT_MULTI_USERS ) ), ds );
 	}
