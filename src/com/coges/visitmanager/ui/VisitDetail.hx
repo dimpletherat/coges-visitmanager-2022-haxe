@@ -609,6 +609,7 @@ class VisitDetail extends Sprite
         _btDuplicateVisitForDO.enabled = ((_data.id != 0) && _isUserAuthorized);		
         _btDuplicateVisitOnWorkingPlanning.enabled = ((_data.id != 0) && _isUserAuthorized && _isPlanningLocked);
         _btDuplicateVisitOnWorkingPlanning.visible = _btDuplicateVisitOnWorkingPlanning.enabled;
+		
     }
     
 		
@@ -1097,7 +1098,15 @@ class VisitDetail extends Sprite
 				_txtName.state = ToggleTextInputState.STATIC;
 		}
 		
-        _duplicateOverlay = new VisitDetailDuplicateVisitOverlay(_data, _width, _height - _duplicateOverlayPosY);
+		//2022-evolution
+		var hOverlay = _height;
+		if ( _btDuplicateVisitOnWorkingPlanning.visible )
+			hOverlay += 20 + 30;
+			
+        //_duplicateOverlay = new VisitDetailDuplicateVisitOverlay(_data, _width, _height - _duplicateOverlayPosY);		
+        _duplicateOverlay = new VisitDetailDuplicateVisitOverlay(_data, _width, hOverlay - _duplicateOverlayPosY);
+		//-------
+		
 		_duplicateOverlay.x = _background.x;
 		_duplicateOverlay.y = _background.y + _duplicateOverlayPosY;
         _duplicateOverlay.addEventListener(Event.CLOSE, _duplicateOverlayCloseHandler);
@@ -1487,12 +1496,14 @@ class VisitDetail extends Sprite
 				
 		_contentRect = new Rectangle( (w - _width) * 0.5, (h - _height) * 0.5, _width, _height );
 		var contentCenter:Float = _contentRect.left + _contentRect.width * 0.5;
+				
 		
 		SpriteUtils.drawRoundSquare( _background, Std.int(_contentRect.width), Std.int(_contentRect.height), 8, 8, Colors.GREY1 );		
+		
 		//2022-evolution
 		if ( _btDuplicateVisitOnWorkingPlanning.visible )
 			SpriteUtils.drawRoundSquare( _background, Std.int(_contentRect.width), Std.int(_contentRect.height) + padding + 30, 8, 8, Colors.GREY1 );		
-			
+		
 		
 		_background.x = _contentRect.x;
 		_background.y = _contentRect.y;
@@ -1502,6 +1513,11 @@ class VisitDetail extends Sprite
 			var overlayRect = _contentRect.clone();
 			overlayRect.y += _duplicateOverlayPosY;
 			overlayRect.height -= _duplicateOverlayPosY;
+			
+			//2022-evolution
+			if ( _btDuplicateVisitOnWorkingPlanning.visible )
+				overlayRect.height += padding + 30;
+	
 			_duplicateOverlay.setRect( overlayRect );
 		}
 		
